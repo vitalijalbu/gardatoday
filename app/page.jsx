@@ -1,6 +1,9 @@
 'use client';
 import RootLayout from "./layout";
-import SectionBlog from "@/shared/sections/section-blog";
+import SectionBlog from "@/shared/sections/section-full";
+import SectionGrid from "@/shared/sections/section-grid";
+import Section1 from "@/shared/sections/section-1";
+import Section2 from "@/shared/sections/section-2";
 
   const Page = () => {
 
@@ -15,7 +18,10 @@ import SectionBlog from "@/shared/sections/section-blog";
     return(
 
       <div>
-        
+         <Section2/>
+        <Section1/>
+        <SectionBlog/>
+        <SectionGrid/>
         {/* This is a button toggling the modal */}
         <button
             className="uk-button uk-button-default"
@@ -67,7 +73,8 @@ import SectionBlog from "@/shared/sections/section-blog";
             </div>
           </div>
         </div>
-        <SectionBlog/>
+        
+       
         </div>
 
   );

@@ -1,6 +1,7 @@
 'use client';
 
 import "@/assets/css/uikit.css";
+import "@/assets/css/app.css";
 
 import UIkit from "uikit";
 import Icons from "uikit/dist/js/uikit-icons";
@@ -16,9 +17,11 @@ function RootLayout({ children }) {
         <title>Play Turo</title>
         </head>
       <body>
+        <main id="main-layout">
         <Nav/>
             {children}
             <Footer/>
+            </main>
       </body>
     </html>
   );

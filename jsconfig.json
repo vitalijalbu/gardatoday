@@ -3,7 +3,7 @@
       "baseUrl": "./app",
         "paths": {
         "@/components/*": ["utils/components/*"],
-        "@/shared/*": ["utils/shared/*"],
+        "@/shared/*": ["shared/*"],
         "@/data/*": ["../data/*"],
         "@/assets/*": ["../assets/*"],
         "@/icons/*": ["components/icons/*"],
