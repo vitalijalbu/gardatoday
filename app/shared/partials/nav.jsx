@@ -7,56 +7,2147 @@ const Nav = () => {
 
   return (
     <div id="Nav">
-     <div className="tm-header-mobile uk-hidden@l tm-header-overlay" uk-header="">
+<div className="tm-header uk-visible@l tm-header-overlay" uk-header="">
+  <div className="tm-headerbar tm-headerbar-top uk-dark">
+    <div className="uk-container uk-container-xlarge">
+      <div className="uk-position-relative uk-flex uk-flex-center uk-flex-middle">
+        <div className="uk-position-center-left tm-position-z-index-high">
+          <div
+            className="uk-grid-medium uk-child-width-auto uk-flex-middle uk-grid"
+            uk-grid=""
+          >
+            <div className="uk-first-column">
+              <div className="uk-panel" id="module-106">
+                <a
+                  className="uk-search-toggle uk-display-block uk-icon uk-search-icon"
+                  href="#search-106-modal"
+                  uk-search-icon=""
+                  uk-toggle=""
+                  aria-expanded="false"
+                >
+                  <svg
+                    width={20}
+                    height={20}
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      fill="none"
+                      stroke="#000"
+                      strokeWidth="1.1"
+                      cx={9}
+                      cy={9}
+                      r={7}
+                    />
+                    <path
+                      fill="none"
+                      stroke="#000"
+                      strokeWidth="1.1"
+                      d="M14,14 L18,18 L14,14 Z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  id="search-106-modal"
+                  className="uk-modal-full uk-modal"
+                  uk-modal="container: true"
+                >
+                  <div
+                    className="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle"
+                    uk-height-viewport=""
+                  >
+                    <button
+                      className="uk-modal-close-full uk-close-large uk-icon uk-close"
+                      type="button"
+                      uk-close=""
+                      uk-toggle="cls: uk-modal-close-full uk-close-large uk-modal-close-default; mode: media; media: @s"
+                    >
+                      <svg
+                        width={20}
+                        height={20}
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <line
+                          fill="none"
+                          stroke="#000"
+                          strokeWidth="1.4"
+                          x1={1}
+                          y1={1}
+                          x2={19}
+                          y2={19}
+                        />
+                        <line
+                          fill="none"
+                          stroke="#000"
+                          strokeWidth="1.4"
+                          x1={19}
+                          y1={1}
+                          x2={1}
+                          y2={19}
+                        />
+                      </svg>
+                    </button>
+                    <div className="uk-search uk-search-large">
+                      <form
+                        id="search-106"
+                        action="/joomla/themes/paladin/"
+                        method="post"
+                        role="search"
+                        className="uk-search uk-search-large"
+                      >
+                        <input
+                          name="searchword"
+                          placeholder="Search"
+                          minLength={3}
+                          aria-label="Search"
+                          type="search"
+                          className="uk-search-input uk-text-center"
+                          autofocus=""
+                        />
+                        <input
+                          type="hidden"
+                          name="task"
+                          defaultValue="search"
+                        />
+                        <input
+                          type="hidden"
+                          name="option"
+                          defaultValue="com_search"
+                        />
+                        <input type="hidden" name="Itemid" defaultValue={101} />
+                      </form>{" "}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="uk-panel" id="module-96">
+                <div className="uk-margin-remove-last-child custom">
+                  <time
+                    className="uk-text-small uk-text-emphasis"
+                    dateTime="2022-12-05T12:56:46.542Z"
+                  >
+                    Monday, 5 December 2022
+                  </time>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          aria-label="Back to home"
+          className="uk-logo"
+        >
+          <img
+            alt="GardaToday"
+            loading="eager"
+            width={300}
+            height={50}
+            uk-svg=""
+            src="https://gardatoday.it/assets/images/logo_vertical.svg"
+            hidden=""
+          />
+        </a>
+        <div className="uk-position-center-right tm-position-z-index-high">
+          <div className="uk-panel" id="module-103">
+            <div
+              className="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
+              uk-grid=""
+            >
+              <div className="uk-width-1-1 uk-first-column">
+                <div className="uk-margin">
+                  <div
+                    className="uk-flex-middle uk-grid-small uk-child-width-auto uk-grid"
+                    uk-grid=""
+                  >
+                    <div className="el-item uk-first-column">
+                      <a
+                        className="el-content uk-button uk-button-default"
+                        href="#"
+                        uk-scroll=""
+                      >
+                        Subscribe
+                      </a>
+                    </div>
+                    <div className="el-item">
+                      <a
+                        className="el-content uk-button uk-button-default"
+                        href="#"
+                        uk-scroll=""
+                      >
+                        Sign Up
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div
     uk-sticky=""
-    show-on-up=""
-    animation="uk-animation-slide-top"
+    media="@l"
     cls-active="uk-navbar-sticky"
     sel-target=".uk-navbar-container"
     className="uk-sticky"
-    style={{}}
   >
     <div className="uk-navbar-container uk-navbar-transparent uk-dark">
-      <div className="uk-container uk-container-expand">
+      <div className="uk-container uk-container-xlarge">
         <nav
           className="uk-navbar"
-          uk-navbar='{"container":".tm-header-mobile > [uk-sticky]"}'
+          uk-navbar='{"align":"left","container":".tm-header > [uk-sticky]","boundary":".tm-header .uk-navbar-container"}'
         >
-          <div className="uk-navbar-left">
-            <a
-              href="https://demo.yootheme.com/joomla/themes/paladin/"
-              aria-label="Back to home"
-              className="uk-logo uk-navbar-item"
-            >
-              <img
-                alt="The Paladin"
-                loading="eager"
-                width={170}
-                height={30}
-                uk-svg=""
-                src="/demo/paladin/images/logo-mobile.svg"
-                hidden=""
-              />
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={170}
-                height={30}
-                viewBox="0 0 170 30"
-                className=" uk-svg"
-              >
-                <path
-                  fill="#111"
-                  d="M36.58,28.06c0,.15,0,.22-.15.22-.6,0-1.08,0-1.43,0l-2,0-2.06,0c-.38,0-.86,0-1.46,0-.05,0-.08-.07-.08-.22s0-.23.08-.23a2.51,2.51,0,0,0,1.87-.5,3.33,3.33,0,0,0,.45-2.08V19.4A5.26,5.26,0,0,0,31,16.16a3,3,0,0,0-2.55-1.07,5.09,5.09,0,0,0-2.25.58,7.42,7.42,0,0,0-2.1,1.6v8a3.33,3.33,0,0,0,.45,2.08,2.45,2.45,0,0,0,1.84.5c.1,0,.15.08.15.23s-.05.22-.15.22c-.6,0-1.08,0-1.43,0l-2,0-2.06,0c-.38,0-.86,0-1.46,0-.05,0-.08-.07-.08-.22s0-.23.08-.23a2.51,2.51,0,0,0,1.87-.5,3.33,3.33,0,0,0,.45-2.08V6c0-.32-.19-.49-.56-.49H15.25a9.74,9.74,0,0,0-2.15.17,1.3,1.3,0,0,0-.9.66A3.89,3.89,0,0,0,12,8V25.25a4.28,4.28,0,0,0,.24,1.68,1.36,1.36,0,0,0,1,.72,10.89,10.89,0,0,0,2.35.18c.05,0,.07.08.07.23s0,.22-.07.22c-.85,0-1.53,0-2,0l-3,0-2.85,0q-.75,0-2.1,0s-.07-.07-.07-.22,0-.23.07-.23a10.93,10.93,0,0,0,2.33-.18,1.45,1.45,0,0,0,1-.73,4.15,4.15,0,0,0,.26-1.67V7.9a3.84,3.84,0,0,0-.24-1.6A1.26,1.26,0,0,0,8,5.68a12,12,0,0,0-2.19-.15A4.82,4.82,0,0,0,2.27,6.79,7.91,7.91,0,0,0,.45,10.93c0,.08-.11.11-.24.1S0,11,0,10.93c.1-.7.21-1.82.34-3.37S.52,4.84.52,4c0-.13.08-.19.23-.19S1,3.91,1,4c0,.55.68.82,2,.82s3.93.08,7.53.08,6,0,7.23-.08a7.26,7.26,0,0,0,3.81-1.05,4.65,4.65,0,0,0,2-2.7c0-.07.07-.11.22-.11A.49.49,0,0,1,24,1a.11.11,0,0,1,.09.11V16.59a10.78,10.78,0,0,1,2.81-2.4,6.09,6.09,0,0,1,3-.78A4.2,4.2,0,0,1,33,14.6,4.77,4.77,0,0,1,34.14,18v7.23a3.33,3.33,0,0,0,.45,2.08,2.45,2.45,0,0,0,1.84.5C36.53,27.83,36.58,27.91,36.58,28.06ZM50.9,26.11a.25.25,0,0,1,.2.13.2.2,0,0,1,0,.24,8.12,8.12,0,0,1-5.55,2.25,7,7,0,0,1-3.78-1,6.49,6.49,0,0,1-2.4-2.66,8.25,8.25,0,0,1,.24-7.63,8,8,0,0,1,7-4,4.57,4.57,0,0,1,3.31,1.11,4.19,4.19,0,0,1,1.15,3.16c0,.68-.15,1-.45,1l-9.26,0c-.05.55-.08,1-.08,1.28a8.35,8.35,0,0,0,1.54,5.24,5.16,5.16,0,0,0,4.35,2A5.46,5.46,0,0,0,49,27a10.7,10.7,0,0,0,1.82-.92ZM42.72,15.3a5.45,5.45,0,0,0-1.31,3l6.82-.15a4.72,4.72,0,0,0-.76-2.91,2.58,2.58,0,0,0-2.16-1A3.43,3.43,0,0,0,42.72,15.3ZM69,26.84a1.78,1.78,0,0,0,1.2.77,12.7,12.7,0,0,0,2.81.22c.07,0,.11.08.11.23s0,.22-.11.22q-1.55,0-2.4,0l-3.26,0-2.55,0c-.45,0-1.09,0-1.91,0-.08,0-.11-.07-.11-.22s0-.23.11-.23a7.87,7.87,0,0,0,2-.18,1.27,1.27,0,0,0,.87-.73A4.69,4.69,0,0,0,66,25.25V7.9a4.49,4.49,0,0,0-.22-1.65,1.3,1.3,0,0,0-.87-.73,6.79,6.79,0,0,0-2-.21c-.08,0-.11-.08-.11-.22s0-.23.11-.23l1.91,0c1,0,1.89.07,2.51.07s1.31,0,2.14-.11c.3,0,.76,0,1.4-.06s1.19,0,1.67,0a9.29,9.29,0,0,1,5.6,1.55A5.48,5.48,0,0,1,80.24,11,6.88,6.88,0,0,1,79,15.13a7.47,7.47,0,0,1-3.11,2.51,9.69,9.69,0,0,1-3.91.82,8,8,0,0,1-1.84-.18s-.08-.06-.08-.19a.46.46,0,0,1,.06-.22c0-.08.08-.1.13-.08a5.13,5.13,0,0,0,1.31.15,5.39,5.39,0,0,0,3.94-1.61,6.33,6.33,0,0,0,1.61-4.65A6.64,6.64,0,0,0,75.59,7a5.21,5.21,0,0,0-4-1.68,6.5,6.5,0,0,0-1.8.17,1.22,1.22,0,0,0-.81.71A4.6,4.6,0,0,0,68.7,8V25.1A3.77,3.77,0,0,0,69,26.84Zm27.24-.58a.19.19,0,0,1,.19.17.19.19,0,0,1-.11.24l-3.86,1.84a.74.74,0,0,1-.34.07,1.08,1.08,0,0,1-.88-.65,4.74,4.74,0,0,1-.54-1.78l-1.88,1.23a6.61,6.61,0,0,1-1.63.9,4.39,4.39,0,0,1-1.55.27,3.15,3.15,0,0,1-2.21-.73A2.42,2.42,0,0,1,82.64,26a2.51,2.51,0,0,1,1-2,10.85,10.85,0,0,1,3.06-1.6l4-1.46V18.43a6.81,6.81,0,0,0-.58-3.26,1.86,1.86,0,0,0-1.71-1A2.17,2.17,0,0,0,86.5,15,4.48,4.48,0,0,0,85.67,17c-.15,1.1-.66,1.64-1.53,1.64a1.38,1.38,0,0,1-1-.33,1.12,1.12,0,0,1-.34-.83A2.52,2.52,0,0,1,84,15.58,9.92,9.92,0,0,1,86.82,14a8.83,8.83,0,0,1,2.94-.6,2.93,2.93,0,0,1,2.38,1A4.3,4.3,0,0,1,93,17.3v6.94a3.74,3.74,0,0,0,.36,1.87,1.19,1.19,0,0,0,1.1.6,4.64,4.64,0,0,0,1.73-.45Zm-5.58-.67V21.43L87.51,22.7a4.16,4.16,0,0,0-1.54.92A1.89,1.89,0,0,0,85.45,25,2,2,0,0,0,86,26.47a2,2,0,0,0,1.48.58,3.35,3.35,0,0,0,1.69-.57Zm7.08,2.47c0-.15,0-.23.11-.23a2.45,2.45,0,0,0,1.84-.5,3.33,3.33,0,0,0,.45-2.08V6A5.7,5.7,0,0,0,99.9,4,.89.89,0,0,0,99,3.4a4.49,4.49,0,0,0-1.69.52h0c-.1,0-.18-.07-.24-.2s0-.22.06-.25l4.94-2.32.15,0a.47.47,0,0,1,.26.11c.1.08.15.15.15.23v23.8a3.41,3.41,0,0,0,.44,2.08,2.42,2.42,0,0,0,1.85.5c.08,0,.11.08.11.23s0,.22-.11.22c-.6,0-1.09,0-1.46,0l-2.06,0-2.1,0c-.35,0-.83,0-1.43,0C97.78,28.28,97.74,28.21,97.74,28.06Zm24-1.8c.1,0,.16.06.19.17a.2.2,0,0,1-.12.24l-3.86,1.84a.72.72,0,0,1-.33.07c-.33,0-.62-.21-.89-.65a4.74,4.74,0,0,1-.54-1.78l-1.87,1.23a6.79,6.79,0,0,1-1.63.9,4.49,4.49,0,0,1-1.56.27,3.17,3.17,0,0,1-2.21-.73,2.45,2.45,0,0,1-.79-1.86,2.49,2.49,0,0,1,1-2,10.77,10.77,0,0,1,3-1.6l4-1.46V18.43a6.81,6.81,0,0,0-.58-3.26,1.84,1.84,0,0,0-1.7-1A2.19,2.19,0,0,0,112,15a4.47,4.47,0,0,0-.82,1.95c-.15,1.1-.66,1.64-1.54,1.64a1.4,1.4,0,0,1-1-.33,1.16,1.16,0,0,1-.34-.83,2.55,2.55,0,0,1,1.18-1.87A9.92,9.92,0,0,1,112.3,14a8.83,8.83,0,0,1,2.94-.6,2.92,2.92,0,0,1,2.38,1,4.25,4.25,0,0,1,.85,2.86v6.94a3.87,3.87,0,0,0,.35,1.87,1.2,1.2,0,0,0,1.11.6,4.6,4.6,0,0,0,1.72-.45Zm-5.59-.67V21.43L113,22.7a4.08,4.08,0,0,0-1.54.92,1.89,1.89,0,0,0-.53,1.37A2,2,0,0,0,113,27.05a3.29,3.29,0,0,0,1.68-.57Zm24.7.52c.08,0,.14.06.19.19s0,.2,0,.22l-4.31,2.06-.26.08c-.33,0-.6-.26-.82-.79a5.94,5.94,0,0,1-.38-2.21,13.11,13.11,0,0,1-2.85,2.25,6.55,6.55,0,0,1-3.3.86,5.21,5.21,0,0,1-2.92-.88A6.11,6.11,0,0,1,124,25.36a8.47,8.47,0,0,1-.81-3.78A7.74,7.74,0,0,1,124.5,17a8.31,8.31,0,0,1,3.3-2.77,9.42,9.42,0,0,1,4-.92,7,7,0,0,1,3.45.86V6A5.17,5.17,0,0,0,135,4a1,1,0,0,0-.94-.58,5.25,5.25,0,0,0-1.65.48h-.07a.21.21,0,0,1-.21-.17.18.18,0,0,1,.06-.24L137,1.15a.49.49,0,0,1,.19,0,.42.42,0,0,1,.24.11.31.31,0,0,1,.13.23V24.12a4.48,4.48,0,0,0,.3,1.93,1.05,1.05,0,0,0,1,.59,3.83,3.83,0,0,0,1.88-.53Zm-7.81.62A9.6,9.6,0,0,0,135.22,25v-8.4a6.28,6.28,0,0,0-1.87-1.84,4.8,4.8,0,0,0-2.51-.63,4.41,4.41,0,0,0-3.62,1.63,7.23,7.23,0,0,0-1.33,4.7,8.48,8.48,0,0,0,1.33,5,4,4,0,0,0,3.43,1.9A4.83,4.83,0,0,0,133,26.73Zm9.84,1.33c0-.15,0-.23.11-.23a2.43,2.43,0,0,0,1.83-.5,3.33,3.33,0,0,0,.45-2.08v-7a5,5,0,0,0-.26-1.91.93.93,0,0,0-.93-.6,3.78,3.78,0,0,0-1.65.52h0a.25.25,0,0,1-.23-.19.18.18,0,0,1,.08-.26l5-2.32.15,0a.42.42,0,0,1,.25.11.34.34,0,0,1,.13.23c0,.17,0,.67,0,1.5s0,1.8,0,2.92v7a6,6,0,0,0,.17,1.63,1.13,1.13,0,0,0,.66.75,3.88,3.88,0,0,0,1.46.2c.07,0,.11.08.11.23s0,.22-.11.22c-.63,0-1.11,0-1.46,0l-2,0-2.09,0c-.36,0-.82,0-1.39,0C142.9,28.28,142.87,28.21,142.87,28.06Zm2-19.3a1.71,1.71,0,0,1-.47-1.28,1.6,1.6,0,0,1,.47-1.2,1.78,1.78,0,0,1,1.29-.45,1.67,1.67,0,0,1,1.24.45,1.62,1.62,0,0,1,.45,1.2,1.74,1.74,0,0,1-.45,1.28,1.67,1.67,0,0,1-1.24.45A1.78,1.78,0,0,1,144.91,8.76ZM170,28.06c0,.15,0,.22-.11.22-.63,0-1.11,0-1.46,0l-2,0-2,0c-.35,0-.83,0-1.43,0-.07,0-.11-.07-.11-.22s0-.23.11-.23a3.83,3.83,0,0,0,1.45-.2,1.14,1.14,0,0,0,.63-.75,5.6,5.6,0,0,0,.17-1.63v-6a5.26,5.26,0,0,0-.8-3.21,3.09,3.09,0,0,0-2.57-1,5,5,0,0,0-2.23.57,7,7,0,0,0-2.08,1.57v8.06a6,6,0,0,0,.17,1.63,1.14,1.14,0,0,0,.65.75,4,4,0,0,0,1.47.2c.07,0,.11.08.11.23s0,.22-.11.22q-.94,0-1.47,0l-2,0-2,0c-.35,0-.83,0-1.43,0-.07,0-.11-.07-.11-.22s0-.23.11-.23a3.83,3.83,0,0,0,1.45-.2,1.14,1.14,0,0,0,.63-.75,6,6,0,0,0,.17-1.63V17.9a4.06,4.06,0,0,0-.3-1.8,1,1,0,0,0-1-.56,6.71,6.71,0,0,0-2,.56h0a.23.23,0,0,1-.22-.16c0-.12,0-.2.07-.25l4.5-2.17.23,0c.24,0,.49.28.73.84a6.62,6.62,0,0,1,.39,2.23c1.82-2.14,3.73-3.22,5.73-3.22a4.22,4.22,0,0,1,3.21,1.2,4.76,4.76,0,0,1,1.14,3.41v7.31a6,6,0,0,0,.17,1.63,1.13,1.13,0,0,0,.66.75,3.88,3.88,0,0,0,1.46.2C170,27.83,170,27.91,170,28.06Z"
-                />
-              </svg>
-            </a>
-          </div>
-          <div className="uk-navbar-right">
+          <div className="uk-navbar-center">
+            <ul className="uk-navbar-nav">
+              <li className="item-101 uk-active">
+                <a href="/joomla/themes/paladin/" className="uk-preserve-width">
+                  <span uk-icon="icon: home;" className="uk-icon">
+                    <svg
+                      width={20}
+                      height={20}
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon points="18.65 11.35 10 2.71 1.35 11.35 0.65 10.65 10 1.29 19.35 10.65" />
+                      <polygon points="15 4 18 4 18 7 17 7 17 5 15 5" />
+                      <polygon points="3 11 4 11 4 18 7 18 7 12 12 12 12 18 16 18 16 11 17 11 17 19 11 19 11 13 8 13 8 19 3 19" />
+                    </svg>
+                  </span>{" "}
+                </a>
+              </li>
+              <li className="item-108 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/politics"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Politics
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-108\\#3 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/environment"
+                            >
+                              Environment
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/health"
+                            >
+                              Health
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/education"
+                            >
+                              Education
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/economy"
+                            >
+                              Economy
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/united-states"
+                            >
+                              United States
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/world"
+                            >
+                              World
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/brexit"
+                            >
+                              Brexit
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/state-justice"
+                            >
+                              State &amp; Justice
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/elections"
+                            >
+                              Elections
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/politics/politics-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-108#3" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                                aria-label="The voter turnout shows the importance of this year’s election"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/f0/politics-post-voter-turnout-shows-importance-of-elections-f04cf242.webp 340w, /joomla/templates/yootheme/cache/87/politics-post-voter-turnout-shows-importance-of-elections-872d3349.webp 679w, /joomla/templates/yootheme/cache/36/politics-post-voter-turnout-shows-importance-of-elections-365e05cf.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/96/politics-post-voter-turnout-shows-importance-of-elections-96d632ba.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Nationwide elections
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                                  className="uk-link-heading"
+                                >
+                                  The voter turnout shows the importance of this
+                                  year’s election
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                                aria-label="Opposing camps clashed in heated dispute during today’s rally"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/36/politics-post-opposing-camps-at-rally-3611bd19.webp 340w, /joomla/templates/yootheme/cache/a7/politics-post-opposing-camps-at-rally-a7d3ded3.webp 679w, /joomla/templates/yootheme/cache/16/politics-post-opposing-camps-at-rally-16a0e855.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/df/politics-post-opposing-camps-at-rally-df230e10.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                At California rally
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                                  className="uk-link-heading"
+                                >
+                                  Opposing camps clashed in heated dispute
+                                  during today’s rally
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Sea te hinc legimus omnesque, per et dicat
+                                scaevola omittantur, saepe possim quaes...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                                aria-label="The current crisis reveals the staggering problems in our national healthcare system"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/e7/politics-post-crisis-national-healthcare-system-e702084a.webp 340w, /joomla/templates/yootheme/cache/19/politics-post-crisis-national-healthcare-system-19c8a8ba.webp 679w, /joomla/templates/yootheme/cache/a8/politics-post-crisis-national-healthcare-system-a8bb9e3c.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/30/politics-post-crisis-national-healthcare-system-300a8f71.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Low healthcare funds
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                                  className="uk-link-heading"
+                                >
+                                  The current crisis reveals the staggering
+                                  problems in our national healthcare system
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Tempor integre sit cu, alia iuvaret atomorum his
+                                cu, error omnium at nam. Ei decor...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                                aria-label="What we have learned 30 years after the fall of the Berlin Wall"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/2b/politics-post-30-years-after-fall-of-berlin-wall-2b269d23.webp 340w, /joomla/templates/yootheme/cache/b4/politics-post-30-years-after-fall-of-berlin-wall-b48df9c9.webp 679w, /joomla/templates/yootheme/cache/05/politics-post-30-years-after-fall-of-berlin-wall-05fecf4f.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/11/politics-post-30-years-after-fall-of-berlin-wall-116dd15a.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Lessons from the Iron Curtain
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                                  className="uk-link-heading"
+                                >
+                                  What we have learned 30 years after the fall
+                                  of the Berlin Wall
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor inc...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-109 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/sports"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Sports
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-109\\#4 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/martial-arts"
+                            >
+                              Martial Arts
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/motorsports"
+                            >
+                              Motorsports
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/baseball"
+                            >
+                              Baseball
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/football"
+                            >
+                              Football
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/athletics"
+                            >
+                              Athletics
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/soccer"
+                            >
+                              Soccer
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/basketball"
+                            >
+                              Basketball
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/winter-sports"
+                            >
+                              Winter Sports
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/sports/sports-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-109#4" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/sports/winter-sports/63-nicola-aebi-is-poised-to-set-a-new-world-record-again"
+                                aria-label="Nicola Aebi is poised to set a new world record again"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/eb/sports-post-nicola-aebli-poised-to-set-new-world-record-eb9b58ad.webp 340w, /joomla/templates/yootheme/cache/21/sports-post-nicola-aebli-poised-to-set-new-world-record-21737c7a.webp 679w, /joomla/templates/yootheme/cache/90/sports-post-nicola-aebli-poised-to-set-new-world-record-90004afc.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/7b/sports-post-nicola-aebli-poised-to-set-new-world-record-7ba9491c.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Ski Alpin
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/sports/winter-sports/63-nicola-aebi-is-poised-to-set-a-new-world-record-again"
+                                  className="uk-link-heading"
+                                >
+                                  Nicola Aebi is poised to set a new world
+                                  record again
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Sea te hinc legimus omnesque, per et dicat
+                                scaevola omittantur, saepe possim quaes...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/sports/athletics/123-max-meyer-i-feel-better-prepared-than-ever"
+                                aria-label="Max Meyer: “I feel better prepared than ever”"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/44/sports-post-interview-with-pole-vaulter-max-meyer-44771fe8.webp 340w, /joomla/templates/yootheme/cache/c4/sports-post-interview-with-pole-vaulter-max-meyer-c41afe85.webp 679w, /joomla/templates/yootheme/cache/75/sports-post-interview-with-pole-vaulter-max-meyer-7569c803.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/b4/sports-post-interview-with-pole-vaulter-max-meyer-b43fa9cc.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Interview with pole vaulter
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/sports/athletics/123-max-meyer-i-feel-better-prepared-than-ever"
+                                  className="uk-link-heading"
+                                >
+                                  Max Meyer: “I feel better prepared than ever”
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Sea te hinc legimus omnesque, per et dicat
+                                scaevola omittantur, saepe possim quaes...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/sports/athletics/111-western-europe-tour-reaching-the-last-stage-today"
+                                aria-label="Western Europe Road Tour reaching the last stage today"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/0e/sports-post-western-europe-road-tour-reaching-last-stage-today-0e122f13.webp 340w, /joomla/templates/yootheme/cache/14/sports-post-western-europe-road-tour-reaching-last-stage-today-14b52176.webp 679w, /joomla/templates/yootheme/cache/a5/sports-post-western-europe-road-tour-reaching-last-stage-today-a5c617f0.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/46/sports-post-western-europe-road-tour-reaching-last-stage-today-4697cbef.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                End of Western Europe tour
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/sports/athletics/111-western-europe-tour-reaching-the-last-stage-today"
+                                  className="uk-link-heading"
+                                >
+                                  Western Europe Road Tour reaching the last
+                                  stage today
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Cursus sit amet dictum sit amet justo donec enim
+                                diam vulputate ut pharetra sit am...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/sports/martial-arts/64-impressive-duel-concluded-the-fencing-championship"
+                                aria-label="Impressive duel concluded the fencing championship"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/3f/sports-post-impressive-duel-concludes-fencing-championship-3f3922b8.webp 340w, /joomla/templates/yootheme/cache/1f/sports-post-impressive-duel-concludes-fencing-championship-1f175cfa.webp 679w, /joomla/templates/yootheme/cache/ae/sports-post-impressive-duel-concludes-fencing-championship-ae646a7c.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/2b/sports-post-impressive-duel-concludes-fencing-championship-2b1cd244.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Fencing Championship
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/sports/martial-arts/64-impressive-duel-concluded-the-fencing-championship"
+                                  className="uk-link-heading"
+                                >
+                                  Impressive duel concluded the fencing
+                                  championship
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Cursus sit amet dictum sit amet justo donec enim
+                                diam vulputate ut pharetra sit am...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-110 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/technology"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Technology
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-110\\#5 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/multimedia"
+                            >
+                              Multimedia
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/transportation"
+                            >
+                              Transportation
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/electronics"
+                            >
+                              Electronics
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/innovation"
+                            >
+                              Innovation
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/reviews"
+                            >
+                              Reviews
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/security"
+                            >
+                              Security
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/gaming"
+                            >
+                              Gaming
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/technology/technology-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-110#5" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                                aria-label="Presenting the most prominent features of the new mobile OS"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/f9/technology-post-most-prominent-features-of-the-new-mobile-os-f958fed9.webp 340w, /joomla/templates/yootheme/cache/ed/technology-post-most-prominent-features-of-the-new-mobile-os-ed2d7226.webp 679w, /joomla/templates/yootheme/cache/5c/technology-post-most-prominent-features-of-the-new-mobile-os-5c5e44a0.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/57/technology-post-most-prominent-features-of-the-new-mobile-os-574b97f5.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                New mobile OS
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                                  className="uk-link-heading"
+                                >
+                                  Presenting the most prominent features of the
+                                  new mobile OS
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Adipiscing elit duis tristique sollicitudin nibh
+                                sit amet commodo nulla facilisi n...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                                aria-label="The new tablet manages to inspire with unique features"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/6b/technology-post-new-tablet-inspires-with-unique-features-6be7101d.webp 340w, /joomla/templates/yootheme/cache/41/technology-post-new-tablet-inspires-with-unique-features-415dacee.webp 679w, /joomla/templates/yootheme/cache/f0/technology-post-new-tablet-inspires-with-unique-features-f02e9a68.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/95/technology-post-new-tablet-inspires-with-unique-features-9562fca3.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Innovations for designers
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                                  className="uk-link-heading"
+                                >
+                                  The new tablet manages to inspire with unique
+                                  features
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Lorem ipsum dolor sit amet, consectetur adipis
+                                cing elit, sed do eiusmod tempor in...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                                aria-label="The 16-inch MacBook Pro considerably improves performance"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/d2/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-d2a21b50.webp 340w, /joomla/templates/yootheme/cache/2b/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-2bc24839.webp 679w, /joomla/templates/yootheme/cache/9a/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-9ab17ebf.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/aa/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-aac3f81d.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                16-inch MacBook Pro
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                                  className="uk-link-heading"
+                                >
+                                  The 16-inch MacBook Pro considerably improves
+                                  performance
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Adipiscing elit duis tristique sollicitudin nibh
+                                sit amet commodo nulla facilisi n...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                                aria-label="What can we expect from the updated Home Smart Speaker"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/5b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-5b716f72.webp 340w, /joomla/templates/yootheme/cache/2a/technology-post-what-can-we-expect-from-updated-home-smart-speaker-2a35783b.webp 679w, /joomla/templates/yootheme/cache/9b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-9b464ebd.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/3b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-3bb2f9ee.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Home smart speaker
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                                  className="uk-link-heading"
+                                >
+                                  What can we expect from the updated Home Smart
+                                  Speaker
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Tempor integre sit cu, alia iuvaret atomorum his
+                                cu, error omnium at nam. Ei decor...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-111 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/science"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Science
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-111\\#6 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/space-cosmos"
+                            >
+                              Space &amp; Cosmos
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/animal-world"
+                            >
+                              Animal World
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/our-climate"
+                            >
+                              Our Climate
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/human-health"
+                            >
+                              Human &amp; Health
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/physics-tech"
+                            >
+                              Physics &amp; Tech
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/environment"
+                            >
+                              Environment
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/humanities"
+                            >
+                              Humanities
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/science/science-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-111#6" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/science/space-cosmos/53-more-than-2218-satellites-orbit-our-planet-each-with-its-own-purpose"
+                                aria-label="More than 2218 satellites orbit our planet, each with its own purpose"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/1b/science-post-more-than-2218-satellites-orbit-our-planet-1bec1982.webp 340w, /joomla/templates/yootheme/cache/0a/science-post-more-than-2218-satellites-orbit-our-planet-0afcb843.webp 679w, /joomla/templates/yootheme/cache/bb/science-post-more-than-2218-satellites-orbit-our-planet-bb8f8ec5.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/8a/science-post-more-than-2218-satellites-orbit-our-planet-8a100c9a.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                What are satellites used for?
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/science/space-cosmos/53-more-than-2218-satellites-orbit-our-planet-each-with-its-own-purpose"
+                                  className="uk-link-heading"
+                                >
+                                  More than 2218 satellites orbit our planet,
+                                  each with its own purpose
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Aenean commodo ligula eget dolor. Aenean massa.
+                                Cum sociis natoque penatibus et ma...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/science/animal-world/72-exploring-hidden-marine-species-with-steve-vernon"
+                                aria-label="Exploring hidden marine species with Steve Vernon"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/32/science-post-exploring-hidden-marine-species-with-steve-vernon-32f7f3ba.webp 340w, /joomla/templates/yootheme/cache/01/science-post-exploring-hidden-marine-species-with-steve-vernon-01916f06.webp 679w, /joomla/templates/yootheme/cache/b0/science-post-exploring-hidden-marine-species-with-steve-vernon-b0e25980.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/86/science-post-exploring-hidden-marine-species-with-steve-vernon-86cc1a97.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Our oceans
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/science/animal-world/72-exploring-hidden-marine-species-with-steve-vernon"
+                                  className="uk-link-heading"
+                                >
+                                  Exploring hidden marine species with Steve
+                                  Vernon
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Adipiscing elit duis tristique sollicitudin nibh
+                                sit amet commodo nulla facilisi n...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/science/space-cosmos/149-the-next-iss-crew-is-planned-to-launch-this-weekend"
+                                aria-label="The next ISS crew is planned to launch this weekend"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/73/science-post-next-iss-crew-planned-to-launch-this-weekend-73b610d2.webp 340w, /joomla/templates/yootheme/cache/a8/science-post-next-iss-crew-planned-to-launch-this-weekend-a8ebc5fa.webp 679w, /joomla/templates/yootheme/cache/19/science-post-next-iss-crew-planned-to-launch-this-weekend-1998f37c.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/54/science-post-next-iss-crew-planned-to-launch-this-weekend-54685319.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Launch at Cape Canaveral
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/science/space-cosmos/149-the-next-iss-crew-is-planned-to-launch-this-weekend"
+                                  className="uk-link-heading"
+                                >
+                                  The next ISS crew is planned to launch this
+                                  weekend
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Excepteur sint occaecat cupidatat non proident,
+                                sunt in culpa qui officia deserunt...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/science/environment/175-some-coral-reefs-seem-to-be-recovering-miraculously-marine-biologists-find"
+                                aria-label="Some coral reefs seem to be recovering miraculously, marine biologists find"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/0a/science-post-some-coral-reefs-recovering-0a5e58dc.webp 340w, /joomla/templates/yootheme/cache/52/science-post-some-coral-reefs-recovering-52a5218b.webp 679w, /joomla/templates/yootheme/cache/e3/science-post-some-coral-reefs-recovering-e3d6170d.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/b8/science-post-some-coral-reefs-recovering-b8765316.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Saving bleached coral reefs
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/science/environment/175-some-coral-reefs-seem-to-be-recovering-miraculously-marine-biologists-find"
+                                  className="uk-link-heading"
+                                >
+                                  Some coral reefs seem to be recovering
+                                  miraculously, marine biologists find
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Sea te hinc legimus omnesque, per et dicat
+                                scaevola omittantur, saepe possim quaes...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-112 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/entertainment"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Entertainment
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-112\\#7 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/movies"
+                            >
+                              Movies
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/tv-shows"
+                            >
+                              TV Shows
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/podcasts"
+                            >
+                              Podcasts
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/festivals"
+                            >
+                              Festivals
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/art-culture"
+                            >
+                              Art &amp; Culture
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/music"
+                            >
+                              Music
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/celebrities"
+                            >
+                              Celebrities
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/books"
+                            >
+                              Books
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/entertainment/entertainment-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-112#7" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/entertainment/movies/54-in-zack-schreiber-s-new-comedy-a-dad-goes-through-the-motions"
+                                aria-label="In Zack Schreiber’s new comedy a Dad goes through the motions"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/ea/entertainment-post-zack-schreiber-s-new-comedy-eae49303.webp 340w, /joomla/templates/yootheme/cache/17/entertainment-post-zack-schreiber-s-new-comedy-17d0278a.webp 679w, /joomla/templates/yootheme/cache/a6/entertainment-post-zack-schreiber-s-new-comedy-a6a3110c.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/c4/entertainment-post-zack-schreiber-s-new-comedy-c47c3618.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                A grown-up movie
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/entertainment/movies/54-in-zack-schreiber-s-new-comedy-a-dad-goes-through-the-motions"
+                                  className="uk-link-heading"
+                                >
+                                  In Zack Schreiber’s new comedy a Dad goes
+                                  through the motions
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor inc...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/entertainment/tv-shows/79-looking-glass-was-picked-up-for-two-more-seasons"
+                                aria-label="Looking Glass was picked up for two more seasons"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/ae/entertainment-post-looking-glass-picked-up-for-two-more-seasons-ae0cf467.webp 340w, /joomla/templates/yootheme/cache/7b/entertainment-post-looking-glass-picked-up-for-two-more-seasons-7bbf0bc5.webp 679w, /joomla/templates/yootheme/cache/ca/entertainment-post-looking-glass-picked-up-for-two-more-seasons-cacc3d43.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/5e/entertainment-post-looking-glass-picked-up-for-two-more-seasons-5ee72eec.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Good news for fans
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/entertainment/tv-shows/79-looking-glass-was-picked-up-for-two-more-seasons"
+                                  className="uk-link-heading"
+                                >
+                                  Looking Glass was picked up for two more
+                                  seasons
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Gravida cum socis natoque penatibus et magnis
+                                dis parturient montes nascetur ridic...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/entertainment/celebrities/80-allie-holiday-confirms-new-album-coming-soon"
+                                aria-label="Allie Holiday confirms: New album coming soon"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/f4/entertainment-post-allie-holiday-new-album-coming-soon-f435a2d9.webp 340w, /joomla/templates/yootheme/cache/64/entertainment-post-allie-holiday-new-album-coming-soon-64b8a02d.webp 679w, /joomla/templates/yootheme/cache/d5/entertainment-post-allie-holiday-new-album-coming-soon-d5cb96ab.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/ef/entertainment-post-allie-holiday-new-album-coming-soon-efe61e24.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Allie Holiday working on new songs
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/entertainment/celebrities/80-allie-holiday-confirms-new-album-coming-soon"
+                                  className="uk-link-heading"
+                                >
+                                  Allie Holiday confirms: New album coming soon
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                His cu cibo primis, vix quas argumentum ei, qui
+                                in esse laoreet! Sea te hinc legim...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/entertainment/podcasts/81-podcast-relationships-in-times-of-crisis"
+                                aria-label="Podcast: Relationships in times of crisis"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/5c/entertainment-post-podcast-relationships-in-times-of-crisis-5c2702c4.webp 340w, /joomla/templates/yootheme/cache/68/entertainment-post-podcast-relationships-in-times-of-crisis-68797a65.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/7d/entertainment-post-podcast-relationships-in-times-of-crisis-7d71dbd6.jpeg"
+                                    width={340}
+                                    height={198}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Days of thunder
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/entertainment/podcasts/81-podcast-relationships-in-times-of-crisis"
+                                  className="uk-link-heading"
+                                >
+                                  Podcast: Relationships in times of crisis
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Malesuada bibendum arcu vitae elementum
+                                curabitur vitae nunc sed velit dignissim s...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-113 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/business"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Business
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-113\\#8 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/economy"
+                            >
+                              Economy
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/markets"
+                            >
+                              Markets
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/companies"
+                            >
+                              Companies
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/real-estate"
+                            >
+                              Real Estate
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/banks-finance"
+                            >
+                              Banks &amp; Finance
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/energy"
+                            >
+                              Energy
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/consumer-service"
+                            >
+                              Consumer &amp; Service
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/business/business-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-113#8" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
+                                aria-label="Experts predict the markets won’t be out of recession before next year"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/7e/business-post-markets-not-out-of-recession-before-next-year-7e70e3ab.webp 340w, /joomla/templates/yootheme/cache/46/business-post-markets-not-out-of-recession-before-next-year-46281791.webp 679w, /joomla/templates/yootheme/cache/f7/business-post-markets-not-out-of-recession-before-next-year-f75b2117.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/23/business-post-markets-not-out-of-recession-before-next-year-2333d9ba.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Long way out of recession
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
+                                  className="uk-link-heading"
+                                >
+                                  Experts predict the markets won’t be out of
+                                  recession before next year
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor inc...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/business/real-estate/272-is-this-the-best-or-the-worst-time-to-invest-in-real-estate"
+                                aria-label="Is this the best or the worst time to invest in real estate?"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/5a/business-post-best-or-worst-time-to-invest-in-real-estate-5ab282f9.webp 340w, /joomla/templates/yootheme/cache/5b/business-post-best-or-worst-time-to-invest-in-real-estate-5bad15c9.webp 679w, /joomla/templates/yootheme/cache/ea/business-post-best-or-worst-time-to-invest-in-real-estate-eade234f.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/1e/business-post-best-or-worst-time-to-invest-in-real-estate-1eb85004.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Real estate
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/business/real-estate/272-is-this-the-best-or-the-worst-time-to-invest-in-real-estate"
+                                  className="uk-link-heading"
+                                >
+                                  Is this the best or the worst time to invest
+                                  in real estate?
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Malesuada bibendum arcu vitae elementum
+                                curabitur vitae nunc sed velit dignissim s...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/business/economy/273-more-concerns-about-possible-deflation-are-rising"
+                                aria-label="More concerns about possible deflation are rising"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/bb/business-post-more-concerns-about-possible-deflation-rising-bb13e00a.webp 340w, /joomla/templates/yootheme/cache/19/business-post-more-concerns-about-possible-deflation-rising-1959e885.webp 679w, /joomla/templates/yootheme/cache/a8/business-post-more-concerns-about-possible-deflation-rising-a82ade03.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/36/business-post-more-concerns-about-possible-deflation-rising-36914c60.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Investors alarmed
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/business/economy/273-more-concerns-about-possible-deflation-are-rising"
+                                  className="uk-link-heading"
+                                >
+                                  More concerns about possible deflation are
+                                  rising
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Cursus sit amet dictum sit amet justo donec enim
+                                diam vulputate ut pharetra sit am...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/business/banks-finance/274-after-deep-plunge-stocks-are-starting-to-recover"
+                                aria-label="After deep plunge stocks are starting to recover"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/df/business-post-after-deep-plunge-stocks-starting-to-recover-dfe8afe1.webp 340w, /joomla/templates/yootheme/cache/9e/business-post-after-deep-plunge-stocks-starting-to-recover-9e035f10.webp 679w, /joomla/templates/yootheme/cache/2f/business-post-after-deep-plunge-stocks-starting-to-recover-2f706996.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/8d/business-post-after-deep-plunge-stocks-starting-to-recover-8db669c6.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Wall Street crisis
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/business/banks-finance/274-after-deep-plunge-stocks-are-starting-to-recover"
+                                  className="uk-link-heading"
+                                >
+                                  After deep plunge stocks are starting to
+                                  recover
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Gravida cum socis natoque penatibus et magnis
+                                dis parturient montes nascetur ridic...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-117 uk-parent">
+                <a
+                  href="/joomla/themes/paladin/travel"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  {" "}
+                  Travel
+                </a>
+                <div
+                  className="uk-navbar-dropdown"
+                  uk-drop='{"clsDrop":"uk-navbar-dropdown","flip":"false","container":".tm-header > [uk-sticky]","pos":"bottom-left","stretch":"x","boundary":".tm-header .uk-navbar"}'
+                >
+                  <style
+                    className="uk-margin-remove-adjacent"
+                    dangerouslySetInnerHTML={{
+                      __html:
+                        "@media (max-width: 1599px) { #menu-item-117\\#9 > * > :nth-child(4n+0) { display: none; } } "
+                    }}
+                  />
+                  <div
+                    className="tm-grid-expand uk-grid-divider uk-grid-margin uk-grid uk-grid-stack"
+                    uk-grid=""
+                  >
+                    <div className="uk-width-1-4@m">
+                      <div className="uk-h6"> Categories </div>
+                      <div className="uk-margin">
+                        <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
+                          {" "}
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/destinations"
+                            >
+                              Destinations
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/travel-report"
+                            >
+                              Travel Report
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/city-guide"
+                            >
+                              City Guide
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/sustainability"
+                            >
+                              Sustainability
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/travel-advice"
+                            >
+                              Travel Advice
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/weather"
+                            >
+                              Weather
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/route-planner"
+                            >
+                              Route Planner
+                            </a>
+                          </li>
+                          <li className="el-item ">
+                            <a
+                              className="el-link"
+                              href="/joomla/themes/paladin/travel/travel-archive"
+                            >
+                              Archive
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="uk-width-3-4@m">
+                      <div className="uk-h6"> Latest Articles </div>
+                      <div id="menu-item-117#9" className="uk-margin">
+                        <div
+                          className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@xl uk-grid-column-small uk-grid-divider uk-grid-match uk-grid uk-grid-stack"
+                          uk-grid=""
+                        >
+                          {" "}
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/travel/destinations/55-visiting-some-of-the-most-popular-destinations-in-central-europe"
+                                aria-label="Visiting some of the most popular destinations in Central Europe"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/16/travel-post-most-popular-destinations-in-central-europe-1657b17a.webp 340w, /joomla/templates/yootheme/cache/4d/travel-post-most-popular-destinations-in-central-europe-4da88324.webp 679w, /joomla/templates/yootheme/cache/fc/travel-post-most-popular-destinations-in-central-europe-fcdbb5a2.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/13/travel-post-most-popular-destinations-in-central-europe-136df68c.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Photo reports
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/travel/destinations/55-visiting-some-of-the-most-popular-destinations-in-central-europe"
+                                  className="uk-link-heading"
+                                >
+                                  Visiting some of the most popular destinations
+                                  in Central Europe
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Gravida cum socis natoque penatibus et magnis
+                                dis parturient montes nascetur ridic...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/travel/travel-report/265-backpacking-indonesia-adventure-friendly-locals-and-of-course-white-beaches"
+                                aria-label="Backpacking Indonesia: Adventure, friendly locals and, of course, white beaches"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/09/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-0900e378.webp 340w, /joomla/templates/yootheme/cache/b0/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-b02d436c.webp 679w, /joomla/templates/yootheme/cache/01/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-015e75ea.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/83/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-8345c5b8.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Bali on a budget
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/travel/travel-report/265-backpacking-indonesia-adventure-friendly-locals-and-of-course-white-beaches"
+                                  className="uk-link-heading"
+                                >
+                                  Backpacking Indonesia: Adventure, friendly
+                                  locals and, of course, white beaches
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit, sed do eiusmod tempor inc...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/travel/city-guide/244-between-canals-and-dams-out-and-about-in-amsterdam"
+                                aria-label="Between canals and dams – Out and about in Amsterdam"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/c0/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-c0097ab7.webp 340w, /joomla/templates/yootheme/cache/95/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-9589dccd.webp 679w, /joomla/templates/yootheme/cache/24/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-24faea4b.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/2f/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-2ffc62c9.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Amsterdam city trip
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/travel/city-guide/244-between-canals-and-dams-out-and-about-in-amsterdam"
+                                  className="uk-link-heading"
+                                >
+                                  Between canals and dams – Out and about in
+                                  Amsterdam
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Cursus sit amet dictum sit amet justo donec enim
+                                diam vulputate ut pharetra sit am...
+                              </div>
+                            </div>
+                          </div>
+                          <div>
+                            <div className="el-item uk-panel uk-margin-remove-first-child">
+                              <a
+                                href="/joomla/themes/paladin/travel/weather/246-consequences-of-the-rising-heat-for-desert-life"
+                                aria-label="Consequences of the rising heat for desert life"
+                              >
+                                <picture>
+                                  <source
+                                    type="image/webp"
+                                    srcSet="/joomla/templates/yootheme/cache/d6/travel-post-consequences-of-rising-heat-for-desert-life-d6fe5d6c.webp 340w, /joomla/templates/yootheme/cache/ad/travel-post-consequences-of-rising-heat-for-desert-life-adc794eb.webp 679w, /joomla/templates/yootheme/cache/1c/travel-post-consequences-of-rising-heat-for-desert-life-1cb4a26d.webp 680w"
+                                    sizes="(min-width: 340px) 340px"
+                                  />
+                                  <img
+                                    src="/joomla/templates/yootheme/cache/0e/travel-post-consequences-of-rising-heat-for-desert-life-0eac6b02.jpeg"
+                                    width={340}
+                                    height={213}
+                                    className="el-image"
+                                    alt=""
+                                  />
+                                </picture>
+                              </a>
+                              <div className="el-meta uk-h6 uk-text-primary uk-margin-top uk-margin-remove-bottom">
+                                Climate change
+                              </div>
+                              <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
+                                {" "}
+                                <a
+                                  href="/joomla/themes/paladin/travel/weather/246-consequences-of-the-rising-heat-for-desert-life"
+                                  className="uk-link-heading"
+                                >
+                                  Consequences of the rising heat for desert
+                                  life
+                                </a>{" "}
+                              </div>
+                              <div className="el-content uk-panel uk-margin-small-top">
+                                Adipiscing elit duis tristique sollicitudin nibh
+                                sit amet commodo nulla facilisi n...
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="item-118">
+                <a href="/joomla/themes/paladin/archive"> Archive</a>
+              </li>
+            </ul>
             <a
               uk-toggle=""
               aria-label="Open Menu"
-              href="#tm-dialog-mobile"
+              href="#tm-dialog"
               className="uk-navbar-toggle"
               aria-expanded="false"
             >
@@ -90,14 +2181,15 @@ const Nav = () => {
   </div>
   <div
     className="uk-sticky-placeholder"
-    style={{ height: 62, width: 1174, margin: 0 }}
     hidden=""
+    style={{ height: 63, width: 1415, margin: 0 }}
   />
   <div
-    id="tm-dialog-mobile"
-    uk-offcanvas="container: true; overlay: true"
+    id="tm-dialog"
+    uk-offcanvas="container: true"
     mode="slide"
     flip=""
+    overlay=""
     className="uk-offcanvas"
   >
     <div className="uk-offcanvas-bar uk-flex uk-flex-column">
@@ -137,9 +2229,9 @@ const Nav = () => {
         <div className="uk-grid uk-child-width-1-1 uk-grid-stack" uk-grid="">
           {" "}
           <div>
-            <div className="uk-panel" id="module-tm-4">
+            <div className="uk-panel" id="module-tm-3">
               <form
-                id="search-tm-4"
+                id="search-tm-3"
                 action="/joomla/themes/paladin/"
                 method="post"
                 role="search"
@@ -183,7 +2275,7 @@ const Nav = () => {
             </div>
           </div>{" "}
           <div>
-            <div className="uk-panel" id="module-menu-dialog-mobile">
+            <div className="uk-panel" id="module-menu-dialog">
               <ul
                 className="uk-nav uk-nav-default uk-nav-divider uk-nav-accordion"
                 uk-nav="targets: > .js-accordion"
@@ -755,9 +2847,9 @@ const Nav = () => {
             </div>
           </div>{" "}
           <div>
-            <div className="uk-panel" id="module-104">
+            <div className="uk-panel" id="module-105">
               <div
-                className="tm-grid-expand uk-grid-small uk-margin-xlarge uk-grid uk-grid-stack"
+                className="tm-grid-expand uk-grid-small uk-margin-large uk-grid uk-grid-stack"
                 uk-grid=""
               >
                 <div className="uk-width-1-2">
@@ -794,7 +2886,7 @@ const Nav = () => {
                   >
                     <a className="el-link" href="/joomla/themes/paladin/">
                       <img
-                        src="/demo/paladin/images/logo.svg"
+                        src="https://gardatoday.it/assets/images/logo_vertical.svg"
                         width={140}
                         height={23}
                         className="el-image uk-text-emphasis"
@@ -802,18 +2894,6 @@ const Nav = () => {
                         uk-svg=""
                         hidden=""
                       />
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width={140}
-                        height={23}
-                        viewBox="0 0 300 50"
-                        className="el-image uk-text-emphasis uk-svg"
-                      >
-                        <path
-                          fill="#111"
-                          d="M64.55,48.25c0,.27-.09.4-.26.4-1.06,0-1.9,0-2.52-.07l-3.57-.06-3.64.06c-.66.05-1.52.07-2.58.07-.08,0-.13-.13-.13-.4s0-.4.13-.4c1.68,0,2.78-.29,3.31-.89s.79-1.82.79-3.67V33q0-3.82-1.45-5.72a5.34,5.34,0,0,0-4.5-1.88,8.9,8.9,0,0,0-4,1,13.06,13.06,0,0,0-3.7,2.81V43.29c0,1.85.27,3.08.79,3.67s1.61.89,3.24.89c.18,0,.27.14.27.4s-.09.4-.27.4c-1.05,0-1.89,0-2.51-.07l-3.57-.06-3.64.06c-.66.05-1.52.07-2.58.07-.09,0-.13-.13-.13-.4s0-.4.13-.4c1.68,0,2.78-.29,3.31-.89s.79-1.82.79-3.67V9.36c0-.57-.33-.86-1-.86H26.92a16.82,16.82,0,0,0-3.8.3A2.28,2.28,0,0,0,21.53,10a6.74,6.74,0,0,0-.43,2.84V43.29a7.51,7.51,0,0,0,.43,3,2.38,2.38,0,0,0,1.72,1.25,18.35,18.35,0,0,0,4.13.33c.09,0,.13.14.13.4s0,.4-.13.4c-1.5,0-2.69,0-3.57-.07l-5.23-.06-5,.06c-.88.05-2.12.07-3.71.07-.08,0-.13-.13-.13-.4s0-.4.13-.4A18.58,18.58,0,0,0,14,47.52a2.5,2.5,0,0,0,1.78-1.29,7,7,0,0,0,.46-2.94V12.67a6.52,6.52,0,0,0-.43-2.81,2.18,2.18,0,0,0-1.58-1.09,19.25,19.25,0,0,0-3.87-.27A8.54,8.54,0,0,0,4,10.72C2.52,12.2,1.46,14.63.79,18c0,.13-.18.18-.43.16S0,18.12,0,18c.18-1.24.37-3.22.6-6s.33-4.8.33-6.21q0-.33.39-.33c.27,0,.4.11.4.33,0,1,1.19,1.45,3.57,1.45s7,.13,13.29.13,10.65,0,12.77-.13a12.74,12.74,0,0,0,6.71-1.85A8.18,8.18,0,0,0,41.53.7c0-.13.14-.2.4-.2a.94.94,0,0,1,.37.07.22.22,0,0,1,.16.19V28a18.78,18.78,0,0,1,5-4.23,10.64,10.64,0,0,1,5.23-1.39,7.33,7.33,0,0,1,5.58,2.12,8.36,8.36,0,0,1,2,6V43.29c0,1.85.27,3.08.8,3.67s1.6.89,3.24.89C64.46,47.85,64.55,48,64.55,48.25Zm25.27-3.44a.46.46,0,0,1,.36.23.35.35,0,0,1,0,.43,14.31,14.31,0,0,1-9.79,4,12.27,12.27,0,0,1-6.68-1.75A11.43,11.43,0,0,1,69.51,43a14.12,14.12,0,0,1,12.7-20.47,8,8,0,0,1,5.85,2,7.38,7.38,0,0,1,2,5.58c0,1.19-.26,1.79-.79,1.79L73,31.92c-.09,1-.13,1.71-.13,2.24q0,5.76,2.71,9.26a9.12,9.12,0,0,0,7.67,3.51,9.79,9.79,0,0,0,3.34-.5,19.27,19.27,0,0,0,3.21-1.62ZM75.4,25.73A9.6,9.6,0,0,0,73.08,31l12-.27a8.22,8.22,0,0,0-1.36-5.12A4.52,4.52,0,0,0,80,23.85,6,6,0,0,0,75.4,25.73ZM121.76,46.1a3.13,3.13,0,0,0,2.12,1.36,22.69,22.69,0,0,0,5,.39c.13,0,.19.14.19.4s-.06.4-.19.4c-1.81,0-3.22,0-4.24-.07l-5.75-.06-4.5.06c-.79.05-1.92.07-3.37.07-.13,0-.2-.13-.2-.4s.07-.4.2-.4a13.47,13.47,0,0,0,3.5-.33A2.2,2.2,0,0,0,116,46.23a8,8,0,0,0,.4-2.94V12.67a7.78,7.78,0,0,0-.4-2.91,2.29,2.29,0,0,0-1.52-1.29,12.39,12.39,0,0,0-3.5-.36c-.13,0-.2-.14-.2-.4s.07-.4.2-.4l3.37.07c1.85.09,3.33.13,4.43.13s2.32-.07,3.77-.2c.53,0,1.36,0,2.48-.1s2.11-.1,3-.1q6.15,0,9.88,2.75t3.74,8.3a12.08,12.08,0,0,1-2.15,7.27A13.06,13.06,0,0,1,134,29.87a17.14,17.14,0,0,1-6.91,1.45,13.58,13.58,0,0,1-3.24-.33c-.09,0-.13-.11-.13-.33a.85.85,0,0,1,.1-.4c.06-.13.14-.17.23-.13a8.85,8.85,0,0,0,2.31.26,9.44,9.44,0,0,0,7-2.84c1.89-1.89,2.84-4.63,2.84-8.2s-.9-6.22-2.71-8.2a9.19,9.19,0,0,0-7.14-3,12,12,0,0,0-3.18.3,2.2,2.2,0,0,0-1.42,1.26,8,8,0,0,0-.43,3.07V43A6.7,6.7,0,0,0,121.76,46.1Zm48.08-1a.32.32,0,0,1,.33.29.34.34,0,0,1-.2.43L163.16,49a1.28,1.28,0,0,1-.59.14c-.58,0-1.1-.39-1.56-1.16a8.38,8.38,0,0,1-1-3.14l-3.3,2.18a12.46,12.46,0,0,1-2.88,1.59,8.06,8.06,0,0,1-2.75.46,5.53,5.53,0,0,1-3.9-1.29,4.29,4.29,0,0,1-1.39-3.27A4.47,4.47,0,0,1,147.52,41a18.65,18.65,0,0,1,5.39-2.81L160,35.62V31.25a12.13,12.13,0,0,0-1-5.75,3.27,3.27,0,0,0-3-1.79,3.83,3.83,0,0,0-3.3,1.53,7.85,7.85,0,0,0-1.46,3.43c-.26,1.95-1.17,2.91-2.71,2.91a2.42,2.42,0,0,1-1.79-.59,2,2,0,0,1-.59-1.46c0-1.1.69-2.2,2.08-3.3a17.57,17.57,0,0,1,5-2.71,15.5,15.5,0,0,1,5.19-1.06,5.2,5.2,0,0,1,4.2,1.75,7.64,7.64,0,0,1,1.49,5.06V41.51a6.63,6.63,0,0,0,.63,3.3,2.08,2.08,0,0,0,1.95,1.06,8.15,8.15,0,0,0,3-.79ZM160,43.89V36.54l-5.56,2.25a7.32,7.32,0,0,0-2.71,1.62,3.34,3.34,0,0,0-.93,2.42,3.5,3.5,0,0,0,1,2.61,3.54,3.54,0,0,0,2.61,1,5.91,5.91,0,0,0,3-1Zm12.5,4.36c0-.26.06-.4.2-.4,1.63,0,2.71-.29,3.24-.89s.79-1.82.79-3.67V9.23a9.84,9.84,0,0,0-.43-3.44,1.57,1.57,0,0,0-1.55-1.06,7.93,7.93,0,0,0-3,.93h-.07c-.17,0-.32-.12-.43-.37s-.07-.38.1-.43l8.73-4.1.27-.06a.78.78,0,0,1,.46.2.51.51,0,0,1,.26.39v42c0,1.85.26,3.08.77,3.67s1.59.89,3.27.89c.13,0,.2.14.2.4s-.07.4-.2.4c-1.06,0-1.92,0-2.58-.07l-3.64-.06-3.7.06c-.62.05-1.46.07-2.51.07C172.55,48.65,172.49,48.52,172.49,48.25Zm42.32-3.17a.33.33,0,0,1,.34.29.36.36,0,0,1-.2.43L208.13,49a1.25,1.25,0,0,1-.59.14c-.57,0-1.09-.39-1.55-1.16a8,8,0,0,1-1-3.14l-3.31,2.18a12.46,12.46,0,0,1-2.88,1.59,8,8,0,0,1-2.74.46,5.49,5.49,0,0,1-3.9-1.29,4.26,4.26,0,0,1-1.39-3.27A4.46,4.46,0,0,1,192.49,41a18.79,18.79,0,0,1,5.39-2.81L205,35.62V31.25a12,12,0,0,0-1-5.75,3.27,3.27,0,0,0-3-1.79,3.84,3.84,0,0,0-3.31,1.53,8,8,0,0,0-1.46,3.43c-.26,1.95-1.17,2.91-2.71,2.91a2.39,2.39,0,0,1-1.78-.59,2,2,0,0,1-.6-1.46c0-1.1.7-2.2,2.08-3.3a17.57,17.57,0,0,1,5-2.71,15.5,15.5,0,0,1,5.19-1.06,5.2,5.2,0,0,1,4.2,1.75,7.64,7.64,0,0,1,1.49,5.06V41.51a6.63,6.63,0,0,0,.63,3.3,2.1,2.1,0,0,0,1.95,1.06,8.11,8.11,0,0,0,3-.79ZM205,43.89V36.54l-5.56,2.25a7.32,7.32,0,0,0-2.71,1.62,3.34,3.34,0,0,0-.92,2.42,3.53,3.53,0,0,0,1,2.61,3.57,3.57,0,0,0,2.61,1,5.85,5.85,0,0,0,3-1Zm43.58.92c.14,0,.25.11.34.33s.06.36-.07.4l-7.61,3.64a2.46,2.46,0,0,1-.46.13c-.57,0-1.06-.46-1.45-1.39a11,11,0,0,1-.67-3.9,23.23,23.23,0,0,1-5,4,11.54,11.54,0,0,1-5.82,1.52A9.25,9.25,0,0,1,222.62,48a10.74,10.74,0,0,1-3.8-4.46,15,15,0,0,1-1.43-6.68,13.54,13.54,0,0,1,2.32-8,14.45,14.45,0,0,1,5.82-4.89,16.58,16.58,0,0,1,7-1.62,12.25,12.25,0,0,1,6.08,1.52V9.23a9,9,0,0,0-.46-3.41,1.67,1.67,0,0,0-1.65-1,9,9,0,0,0-2.91.86h-.13a.38.38,0,0,1-.37-.3c-.06-.2,0-.34.1-.43L241.8.76a.81.81,0,0,1,.33-.06.67.67,0,0,1,.43.2.55.55,0,0,1,.23.39v40a8,8,0,0,0,.53,3.4,1.84,1.84,0,0,0,1.79,1,6.67,6.67,0,0,0,3.3-.93ZM234.76,45.9a16.65,16.65,0,0,0,3.86-3.07V28a11,11,0,0,0-3.3-3.24,8.38,8.38,0,0,0-4.43-1.12,7.82,7.82,0,0,0-6.39,2.88q-2.34,2.87-2.34,8.3a15,15,0,0,0,2.34,8.82A7.12,7.12,0,0,0,230.55,47,8.5,8.5,0,0,0,234.76,45.9Zm17.36,2.35c0-.26.06-.4.19-.4,1.64,0,2.72-.29,3.24-.89s.8-1.82.8-3.67V31a9.18,9.18,0,0,0-.46-3.37,1.66,1.66,0,0,0-1.66-1.06,6.85,6.85,0,0,0-2.91.92h-.06c-.18,0-.31-.11-.4-.33s-.05-.37.13-.46l8.8-4.1.26-.07a.7.7,0,0,1,.43.2.53.53,0,0,1,.23.4q0,.46-.06,2.64c0,1.46-.07,3.18-.07,5.16V43.29a10.32,10.32,0,0,0,.3,2.88A2,2,0,0,0,262,47.49a7,7,0,0,0,2.58.36c.13,0,.19.14.19.4s-.06.4-.19.4c-1.11,0-2,0-2.58-.07l-3.57-.06-3.71.06c-.62.05-1.43.07-2.45.07C252.18,48.65,252.12,48.52,252.12,48.25Zm3.6-34.06a3,3,0,0,1-.83-2.25,2.78,2.78,0,0,1,.83-2.11A3.15,3.15,0,0,1,258,9a2.94,2.94,0,0,1,2.18.8,2.83,2.83,0,0,1,.8,2.11,3,3,0,0,1-.8,2.25A2.93,2.93,0,0,1,258,15,3.15,3.15,0,0,1,255.72,14.19ZM300,48.25c0,.27-.07.4-.2.4-1.1,0-2,0-2.58-.07l-3.57-.06-3.57.06c-.62.05-1.46.07-2.51.07-.14,0-.2-.13-.2-.4s.06-.4.2-.4a6.73,6.73,0,0,0,2.54-.36,2,2,0,0,0,1.13-1.32,10.8,10.8,0,0,0,.29-2.88V32.78q0-3.84-1.42-5.66a5.41,5.41,0,0,0-4.53-1.82,8.86,8.86,0,0,0-3.93,1A12.42,12.42,0,0,0,278,29.07V43.29a10.4,10.4,0,0,0,.29,2.88,2,2,0,0,0,1.16,1.32,7,7,0,0,0,2.58.36c.13,0,.2.14.2.4s-.07.4-.2.4c-1.1,0-2,0-2.58-.07l-3.57-.06-3.57.06c-.62.05-1.46.07-2.52.07-.13,0-.19-.13-.19-.4s.06-.4.19-.4a6.76,6.76,0,0,0,2.55-.36,2,2,0,0,0,1.12-1.32,10.32,10.32,0,0,0,.3-2.88v-13a7,7,0,0,0-.53-3.18,1.8,1.8,0,0,0-1.72-1,11.63,11.63,0,0,0-3.5,1h-.07a.42.42,0,0,1-.39-.29c-.09-.2,0-.35.13-.43l7.93-3.84.4-.07c.44,0,.87.5,1.29,1.49A11.17,11.17,0,0,1,278,28c3.21-3.79,6.59-5.69,10.11-5.69a7.42,7.42,0,0,1,5.66,2.12,8.38,8.38,0,0,1,2,6v12.9a10.8,10.8,0,0,0,.29,2.88,2,2,0,0,0,1.16,1.32,7,7,0,0,0,2.58.36C299.93,47.85,300,48,300,48.25Z"
-                        />
-                      </svg>
                     </a>
                   </div>
                   <div>
@@ -958,38 +3038,6 @@ const Nav = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div
-  className="uk-section-default uk-section uk-section-small"
-  tm-header-transparent="dark"
->
-  <div className="uk-container uk-container-xlarge">
-    <div
-      className="tm-header-placeholder uk-margin-remove-adjacent"
-      style={{ height: 193 }}
-    />
-    <div
-      className="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
-      uk-grid=""
-    >
-      <div className="uk-width-1-1 uk-first-column">
-        <div className="uk-alert uk-alert-primary uk-text-center">
-          <a
-            className="el-link uk-link-reset"
-            href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
-          >
-            <h2 className="el-title uk-h3 uk-display-inline uk-text-middle">
-              Breaking News —
-            </h2>
-            <div className="el-content uk-panel uk-display-inline uk-text-middle">
-              Experts predict the markets won’t be out of recession before next
-              year
-            </div>
-          </a>
         </div>
       </div>
     </div>
