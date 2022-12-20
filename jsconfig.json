@@ -1,13 +1,16 @@
 {
     "compilerOptions": {
-      "baseUrl": "./app",
+      "baseUrl": "./src",
         "paths": {
-        "@/components/*": ["utils/components/*"],
         "@/shared/*": ["shared/*"],
-        "@/data/*": ["../data/*"],
+        "@/layouts/*": ["layouts/*"],
+        "@/api/*": ["lib/api/*"],
         "@/assets/*": ["../assets/*"],
-        "@/icons/*": ["components/icons/*"],
-        "@/utils/*": ["utils/*"]
+        "@/data/*": ["../data/*"],
+        "@/lib/*": ["lib/*"]
       }
     }
   }
+
+
+  

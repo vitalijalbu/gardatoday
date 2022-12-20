@@ -1,16 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '',
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   swcMinify: true,
-  experimental: {
+  trailingSlash: true,
+  /*experimental: {
     // Required:
     appDir: true
-  },
-  lessLoaderOptions: {
-    javascriptEnabled: true
-  }
-};
+  }*/
+}
 
-
-
-module.exports = nextConfig;
+module.exports = nextConfig
