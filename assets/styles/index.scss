@@ -1,147 +1,21 @@
-@import './_variables.scss';
+// 1. Your custom variables and variable overwrites.
+@import 'variables';
 
 
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
 
+// 3. Your custom mixin overwrites.
+@mixin hook-card() { color: #000; }
 
-#__next, main {
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-}
-#main-layout {
-    margin: auto;
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1440px;
-}
-a, a *{
-    text-decoration: none;
-    color: initial;
-}
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
 
-/* Pages */
-
-.search-hero{
-    background-color: #eee;
-    min-height: 40vh;
-    display: flex;
-    align-items: center;
-}
-
-.page-heading{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-bottom: 15px;
-    position: relative;
-    background-color: #F7F7F7;
-    border-bottom: 1px solid var(--f7-border-color) !important;
-}
-
-/* 
-  Sections
-*/
-.section-title {
-    display: block;
-    margin-bottom: 15px;
-}
-.section-content{
-    padding: 15px 0;
-}
-.close.button {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    color: #222;
-    //background: #007aff14;
-}
-ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-}
-
-.map-container {
-    height: 500px;
-    position: relative;
-    display: block;
-}
-.leaflet-container{
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-}
-
-/* 
-  ##MANTINE UI IOS LIKE STYILING
-*/
-.mantine-NavLink-root * {
-    font-weight: 500;
-}
-.mantine-Drawer-drawer {
-    padding: 0;
-}
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Tablets, Ipads (portrait)
-    ##Screen = B/w 768px to 1024px
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-
-@media (min-width: 481px) and (max-width: 767px) {
-    /* CSS */
-    .nav-item{
-        display: none;
-    }
-}
-
-
-/* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-
-@media (min-width: 320px) and (max-width: 480px) {
-    .panel {
-        width: 80%;
-    }
-}
+@import 'grid';
+@import 'components/_header';
+@import 'components/_layout';
+@import 'components/_footer';
+@import 'components/_swiper';
+@import "swiper/css";
+@import "swiper/css/pagination";

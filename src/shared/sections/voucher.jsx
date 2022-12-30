@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 
-const Section1 = () => {
+const Voucher = () => {
   const [expanded, setExpanded] = useState(true);
 
   return(
@@ -93,4 +93,4 @@ const Section1 = () => {
 </div>
 );
 }
-export default Section1;
+export default Voucher;

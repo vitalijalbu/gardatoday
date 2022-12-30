@@ -11,63 +11,63 @@ const Nav = () => {
     <div className="uk-navbar-left">
       <ul className="uk-navbar-nav">
         <li className="uk-active">
-          <a href="#">Active</a>
+          <a href="/sezioni/politica">Active</a>
         </li>
         <li>
-          <a href="#">
+          <a href="/sezioni/politica">
             Parent <span uk-navbar-parent-icon="" />
           </a>
           <div className="uk-navbar-dropdown">
             <ul className="uk-nav uk-navbar-dropdown-nav">
               <li className="uk-active">
-                <a href="#">Active</a>
+                <a href="/sezioni/politica">Active</a>
               </li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li className="uk-nav-header">Header</li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li className="uk-nav-divider" />
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
             </ul>
           </div>
         </li>
         <li>
-          <a href="#">Item</a>
+          <a href="/sezioni/politica">Item</a>
         </li>
       </ul>
     </div>
     <div className="uk-navbar-right">
       <ul className="uk-navbar-nav">
         <li>
-          <a href="#">
+          <a href="/sezioni/politica">
             Parent <span uk-navbar-parent-icon="" />
           </a>
           <div className="uk-navbar-dropdown">
             <ul className="uk-nav uk-navbar-dropdown-nav">
               <li className="uk-active">
-                <a href="#">Active</a>
+                <a href="/sezioni/politica">Active</a>
               </li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li className="uk-nav-header">Header</li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
               <li className="uk-nav-divider" />
               <li>
-                <a href="#">Item</a>
+                <a href="/sezioni/politica">Item</a>
               </li>
             </ul>
           </div>

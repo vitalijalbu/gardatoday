@@ -19,7 +19,7 @@ const SectionGrid = () => {
           {" "}
           <a
             className="el-link uk-link-heading"
-            href="/joomla/themes/paladin/politics"
+            href="/notizie/demo-notizia"
           >
             Politics
           </a>{" "}
@@ -33,7 +33,7 @@ const SectionGrid = () => {
             <div className="uk-first-column">
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                  href="/notizie/demo-notizia"
                   aria-label="The voter turnout shows the importance of this year’s election"
                 >
                   <picture>
@@ -55,7 +55,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     The voter turnout shows the importance of this year’s
@@ -72,7 +72,7 @@ const SectionGrid = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                  href="/notizie/demo-notizia"
                   aria-label="Opposing camps clashed in heated dispute during today’s rally"
                 >
                   <picture>
@@ -94,7 +94,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     Opposing camps clashed in heated dispute during today’s
@@ -111,7 +111,7 @@ const SectionGrid = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                  href="/notizie/demo-notizia"
                   aria-label="The current crisis reveals the staggering problems in our national healthcare system"
                 >
                   <picture>
@@ -133,7 +133,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     The current crisis reveals the staggering problems in our
@@ -150,7 +150,7 @@ const SectionGrid = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                  href="/notizie/demo-notizia"
                   aria-label="What we have learned 30 years after the fall of the Berlin Wall"
                 >
                   <picture>
@@ -172,7 +172,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     What we have learned 30 years after the fall of the Berlin
@@ -199,7 +199,7 @@ const SectionGrid = () => {
           {" "}
           <a
             className="el-container uk-inline-clip uk-link-toggle"
-            href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+            href="/notizie/demo-notizia"
             aria-label="The voter turnout shows the importance of this year’s election"
           >
             <picture>
@@ -244,7 +244,7 @@ const SectionGrid = () => {
             <div className="uk-first-column">
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                  href="/notizie/demo-notizia"
                   aria-label="Opposing camps clashed in heated dispute during today’s rally"
                 >
                   <picture>
@@ -269,7 +269,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     Opposing camps clashed in heated dispute during today’s
@@ -286,7 +286,7 @@ const SectionGrid = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                  href="/notizie/demo-notizia"
                   aria-label="The current crisis reveals the staggering problems in our national healthcare system"
                 >
                   <picture>
@@ -311,7 +311,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     The current crisis reveals the staggering problems in our
@@ -328,7 +328,7 @@ const SectionGrid = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                  href="/notizie/demo-notizia"
                   aria-label="What we have learned 30 years after the fall of the Berlin Wall"
                 >
                   <picture>
@@ -353,7 +353,7 @@ const SectionGrid = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     What we have learned 30 years after the fall of the Berlin
