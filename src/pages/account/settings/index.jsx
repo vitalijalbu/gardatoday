@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-  const Favorites = () => {
+  const Settings = () => {
  
     return (
    
@@ -16,4 +16,4 @@ import React from 'react';
     );
 };
 
-export default Favorites;
+export default Settings;

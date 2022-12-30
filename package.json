@@ -4,6 +4,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export -o www/",
+    "build-prod": "run-s clean build export",
+    "clean": "rimraf .next out",
     "start": "next start",
     "lint": "next lint"
   },

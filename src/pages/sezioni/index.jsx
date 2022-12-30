@@ -277,6 +277,7 @@ import React from 'react';
     <hr className="uk-margin-medium" />
   </div>
 </div>
+</div>
       
     );
 };
