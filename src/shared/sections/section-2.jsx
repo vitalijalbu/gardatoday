@@ -28,7 +28,7 @@ const Section1 = () => {
                   {" "}
                   <div className="uk-width-auto uk-first-column">
                     <a
-                      href="/joomla/themes/paladin/politics/politics-archive/35-your-daily-brief-government-talks-about-steps-of-coming-out-of-the-crisis"
+                      href="/notizie/demo-notizia"
                       aria-label="Your daily brief: Government talks about steps of coming out of the crisis"
                     >
                       <picture>
@@ -52,7 +52,7 @@ const Section1 = () => {
                     <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                       {" "}
                       <a
-                        href="/joomla/themes/paladin/politics/politics-archive/35-your-daily-brief-government-talks-about-steps-of-coming-out-of-the-crisis"
+                        href="/notizie/demo-notizia"
                         className="uk-link-heading"
                       >
                         Your daily brief: Government talks about steps of coming
@@ -75,7 +75,7 @@ const Section1 = () => {
                   {" "}
                   <div className="uk-width-auto uk-first-column">
                     <a
-                      href="/joomla/themes/paladin/politics/world/37-a-new-chapter-of-eu-history-started-after-last-week-s-elections"
+                      href="/notizie/demo-notizia"
                       aria-label="A new chapter of EU history started after last week’s elections"
                     >
                       <picture>
@@ -99,7 +99,7 @@ const Section1 = () => {
                     <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                       {" "}
                       <a
-                        href="/joomla/themes/paladin/politics/world/37-a-new-chapter-of-eu-history-started-after-last-week-s-elections"
+                        href="/notizie/demo-notizia"
                         className="uk-link-heading"
                       >
                         A new chapter of EU history started after last week’s
@@ -122,7 +122,7 @@ const Section1 = () => {
                   {" "}
                   <div className="uk-width-auto uk-first-column">
                     <a
-                      href="/joomla/themes/paladin/science/humanities/36-speculation-about-new-york-s-famous-landmark-turned-out-false"
+                      href="/notizie/demo-notizia"
                       aria-label="Speculation around New York’s famous landmark turned out false"
                     >
                       <picture>
@@ -146,7 +146,7 @@ const Section1 = () => {
                     <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                       {" "}
                       <a
-                        href="/joomla/themes/paladin/science/humanities/36-speculation-about-new-york-s-famous-landmark-turned-out-false"
+                        href="/notizie/demo-notizia"
                         className="uk-link-heading"
                       >
                         Speculation around New York’s famous landmark turned out
@@ -169,7 +169,7 @@ const Section1 = () => {
                   {" "}
                   <div className="uk-width-auto uk-first-column">
                     <a
-                      href="/joomla/themes/paladin/science/our-climate/38-high-temperature-is-causing-record-wildfires-all-over-the-world"
+                      href="/notizie/demo-notizia"
                       aria-label="High temperature is causing record wildfires all over the world"
                     >
                       <picture>
@@ -193,7 +193,7 @@ const Section1 = () => {
                     <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                       {" "}
                       <a
-                        href="/joomla/themes/paladin/science/our-climate/38-high-temperature-is-causing-record-wildfires-all-over-the-world"
+                        href="/notizie/demo-notizia"
                         className="uk-link-heading"
                       >
                         High temperature is causing record wildfires all over

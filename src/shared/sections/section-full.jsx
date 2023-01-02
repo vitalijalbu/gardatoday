@@ -18,7 +18,7 @@ const SectionFull = () => {
           {" "}
           <a
             className="el-link uk-link-heading"
-            href="/joomla/themes/paladin/technology"
+            href="/notizie/demo-notizia"
           >
             Technology
           </a>{" "}
@@ -45,7 +45,7 @@ const SectionFull = () => {
               {" "}
               <a
                 className="el-link uk-link-heading"
-                href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                href="/notizie/demo-notizia"
               >
                 Presenting the most prominent features of the new mobile OS
               </a>{" "}
@@ -93,7 +93,7 @@ const SectionFull = () => {
             <div className="uk-hidden@xl uk-margin uk-width-large uk-margin-auto">
               <a
                 className="el-link"
-                href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                href="/notizie/demo-notizia"
               >
                 <picture>
                   <source
@@ -125,7 +125,7 @@ const SectionFull = () => {
             <div className="uk-first-column">
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                  href="/notizie/demo-notizia"
                   aria-label="The new tablet manages to inspire with unique features"
                 >
                   <picture>
@@ -150,7 +150,7 @@ const SectionFull = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     The new tablet manages to inspire with unique features
@@ -166,7 +166,7 @@ const SectionFull = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                  href="/notizie/demo-notizia"
                   aria-label="The 16-inch MacBook Pro considerably improves performance"
                 >
                   <picture>
@@ -191,7 +191,7 @@ const SectionFull = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     The 16-inch MacBook Pro considerably improves performance
@@ -216,7 +216,7 @@ const SectionFull = () => {
             <div className="uk-first-column">
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                  href="/notizie/demo-notizia"
                   aria-label="What can we expect from the updated Home Smart Speaker"
                 >
                   <picture>
@@ -241,7 +241,7 @@ const SectionFull = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     What can we expect from the updated Home Smart Speaker
@@ -257,7 +257,7 @@ const SectionFull = () => {
             <div>
               <div className="el-item uk-panel uk-margin-remove-first-child">
                 <a
-                  href="/joomla/themes/paladin/technology/multimedia/147-with-the-next-big-update-it-will-be-possible-to-track-your-sleep-with-the-apple-watch"
+                  href="/notizie/demo-notizia"
                   aria-label="With the next update it will be possible to track your sleep"
                 >
                   <picture>
@@ -282,7 +282,7 @@ const SectionFull = () => {
                 <h3 className="el-title uk-h3 uk-margin-small-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/joomla/themes/paladin/technology/multimedia/147-with-the-next-big-update-it-will-be-possible-to-track-your-sleep-with-the-apple-watch"
+                    href="/notizie/demo-notizia"
                     className="uk-link-heading"
                   >
                     With the next update it will be possible to track your sleep

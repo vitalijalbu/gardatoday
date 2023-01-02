@@ -7,6 +7,7 @@ const Nav = () => {
 
   return (
     <div id="Nav">
+    <div>
 <div className="tm-header uk-visible@l tm-header-overlay" uk-header="">
   <div className="tm-headerbar tm-headerbar-top uk-dark">
     <div className="uk-container uk-container-xlarge">
@@ -20,7 +21,7 @@ const Nav = () => {
               <div className="uk-panel" id="module-106">
                 <a
                   className="uk-search-toggle uk-display-block uk-icon uk-search-icon"
-                  href="#search-106-modal"
+                  href="/sezioni/politica"
                   uk-search-icon=""
                   uk-toggle=""
                   aria-expanded="false"
@@ -137,7 +138,7 @@ const Nav = () => {
           </div>
         </div>
         <a
-          href="#"
+          href="/"
           aria-label="Back to home"
           className="uk-logo"
         >
@@ -166,7 +167,7 @@ const Nav = () => {
                     <div className="el-item uk-first-column">
                       <a
                         className="el-content uk-button uk-button-default"
-                        href="#"
+                        href="/sezioni/politica"
                         uk-scroll=""
                       >
                         Subscribe
@@ -175,7 +176,7 @@ const Nav = () => {
                     <div className="el-item">
                       <a
                         className="el-content uk-button uk-button-default"
-                        href="#"
+                        href="/sezioni/politica"
                         uk-scroll=""
                       >
                         Sign Up
@@ -206,7 +207,7 @@ const Nav = () => {
           <div className="uk-navbar-center">
             <ul className="uk-navbar-nav">
               <li className="item-101 uk-active">
-                <a href="/joomla/themes/paladin/" className="uk-preserve-width">
+                <a href="/sezioni/politica" className="uk-preserve-width">
                   <span uk-icon="icon: home;" className="uk-icon">
                     <svg
                       width={20}
@@ -223,7 +224,7 @@ const Nav = () => {
               </li>
               <li className="item-108 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/politics"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -253,7 +254,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/environment"
+                              href="/sezioni/politica"
                             >
                               Environment
                             </a>
@@ -261,7 +262,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/health"
+                              href="/sezioni/politica"
                             >
                               Health
                             </a>
@@ -269,7 +270,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/education"
+                              href="/sezioni/politica"
                             >
                               Education
                             </a>
@@ -277,7 +278,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/economy"
+                              href="/sezioni/politica"
                             >
                               Economy
                             </a>
@@ -285,7 +286,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/united-states"
+                              href="/sezioni/politica"
                             >
                               United States
                             </a>
@@ -293,7 +294,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/world"
+                              href="/sezioni/politica"
                             >
                               World
                             </a>
@@ -301,7 +302,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/brexit"
+                              href="/sezioni/politica"
                             >
                               Brexit
                             </a>
@@ -309,7 +310,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/state-justice"
+                              href="/sezioni/politica"
                             >
                               State &amp; Justice
                             </a>
@@ -317,7 +318,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/elections"
+                              href="/sezioni/politica"
                             >
                               Elections
                             </a>
@@ -325,7 +326,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/politics/politics-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -344,7 +345,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                                href="/sezioni/politica"
                                 aria-label="The voter turnout shows the importance of this year’s election"
                               >
                                 <picture>
@@ -368,7 +369,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/politics/elections/26-the-voter-turnout-shows-the-importance-of-this-year-s-election"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   The voter turnout shows the importance of this
@@ -384,7 +385,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                                href="/sezioni/politica"
                                 aria-label="Opposing camps clashed in heated dispute during today’s rally"
                               >
                                 <picture>
@@ -408,7 +409,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/politics/state-justice/27-opposing-camps-clashed-in-heated-dispute-during-today-s-rally"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Opposing camps clashed in heated dispute
@@ -424,7 +425,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                                href="/sezioni/politica"
                                 aria-label="The current crisis reveals the staggering problems in our national healthcare system"
                               >
                                 <picture>
@@ -448,7 +449,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/politics/health/28-the-current-crisis-reveals-the-staggering-problems-in-our-national-healthcare-system"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   The current crisis reveals the staggering
@@ -464,7 +465,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                                href="/sezioni/politica"
                                 aria-label="What we have learned 30 years after the fall of the Berlin Wall"
                               >
                                 <picture>
@@ -488,7 +489,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/politics/world/30-what-we-have-learned-30-years-after-the-fall-of-the-berlin-wall"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   What we have learned 30 years after the fall
@@ -509,7 +510,7 @@ const Nav = () => {
               </li>
               <li className="item-109 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/sports"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -539,7 +540,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/martial-arts"
+                              href="/sezioni/politica"
                             >
                               Martial Arts
                             </a>
@@ -547,7 +548,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/motorsports"
+                              href="/sezioni/politica"
                             >
                               Motorsports
                             </a>
@@ -555,7 +556,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/baseball"
+                              href="/sezioni/politica"
                             >
                               Baseball
                             </a>
@@ -563,7 +564,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/football"
+                              href="/sezioni/politica"
                             >
                               Football
                             </a>
@@ -571,7 +572,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/athletics"
+                              href="/sezioni/politica"
                             >
                               Athletics
                             </a>
@@ -579,7 +580,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/soccer"
+                              href="/sezioni/politica"
                             >
                               Soccer
                             </a>
@@ -587,7 +588,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/basketball"
+                              href="/sezioni/politica"
                             >
                               Basketball
                             </a>
@@ -595,7 +596,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/winter-sports"
+                              href="/sezioni/politica"
                             >
                               Winter Sports
                             </a>
@@ -603,7 +604,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/sports/sports-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -622,7 +623,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/sports/winter-sports/63-nicola-aebi-is-poised-to-set-a-new-world-record-again"
+                                href="/sezioni/politica"
                                 aria-label="Nicola Aebi is poised to set a new world record again"
                               >
                                 <picture>
@@ -646,7 +647,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/sports/winter-sports/63-nicola-aebi-is-poised-to-set-a-new-world-record-again"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Nicola Aebi is poised to set a new world
@@ -662,7 +663,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/sports/athletics/123-max-meyer-i-feel-better-prepared-than-ever"
+                                href="/sezioni/politica"
                                 aria-label="Max Meyer: “I feel better prepared than ever”"
                               >
                                 <picture>
@@ -686,7 +687,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/sports/athletics/123-max-meyer-i-feel-better-prepared-than-ever"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Max Meyer: “I feel better prepared than ever”
@@ -701,7 +702,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/sports/athletics/111-western-europe-tour-reaching-the-last-stage-today"
+                                href="/sezioni/politica"
                                 aria-label="Western Europe Road Tour reaching the last stage today"
                               >
                                 <picture>
@@ -725,7 +726,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/sports/athletics/111-western-europe-tour-reaching-the-last-stage-today"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Western Europe Road Tour reaching the last
@@ -741,7 +742,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/sports/martial-arts/64-impressive-duel-concluded-the-fencing-championship"
+                                href="/sezioni/politica"
                                 aria-label="Impressive duel concluded the fencing championship"
                               >
                                 <picture>
@@ -765,7 +766,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/sports/martial-arts/64-impressive-duel-concluded-the-fencing-championship"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Impressive duel concluded the fencing
@@ -786,7 +787,7 @@ const Nav = () => {
               </li>
               <li className="item-110 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/technology"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -816,7 +817,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/multimedia"
+                              href="/sezioni/politica"
                             >
                               Multimedia
                             </a>
@@ -824,7 +825,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/transportation"
+                              href="/sezioni/politica"
                             >
                               Transportation
                             </a>
@@ -832,7 +833,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/electronics"
+                              href="/sezioni/politica"
                             >
                               Electronics
                             </a>
@@ -840,7 +841,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/innovation"
+                              href="/sezioni/politica"
                             >
                               Innovation
                             </a>
@@ -848,7 +849,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/reviews"
+                              href="/sezioni/politica"
                             >
                               Reviews
                             </a>
@@ -856,7 +857,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/security"
+                              href="/sezioni/politica"
                             >
                               Security
                             </a>
@@ -864,7 +865,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/gaming"
+                              href="/sezioni/politica"
                             >
                               Gaming
                             </a>
@@ -872,7 +873,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/technology/technology-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -891,7 +892,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                                href="/sezioni/politica"
                                 aria-label="Presenting the most prominent features of the new mobile OS"
                               >
                                 <picture>
@@ -915,7 +916,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/technology/electronics/51-presenting-the-most-prominent-features-of-the-new-mobile-os"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Presenting the most prominent features of the
@@ -931,7 +932,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                                href="/sezioni/politica"
                                 aria-label="The new tablet manages to inspire with unique features"
                               >
                                 <picture>
@@ -955,7 +956,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/technology/electronics/85-the-new-tablet-manages-to-inspire-with-unique-features"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   The new tablet manages to inspire with unique
@@ -971,7 +972,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                                href="/sezioni/politica"
                                 aria-label="The 16-inch MacBook Pro considerably improves performance"
                               >
                                 <picture>
@@ -995,7 +996,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/technology/multimedia/146-the-16-inch-macbook-pro-considerably-improves-performance"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   The 16-inch MacBook Pro considerably improves
@@ -1011,7 +1012,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                                href="/sezioni/politica"
                                 aria-label="What can we expect from the updated Home Smart Speaker"
                               >
                                 <picture>
@@ -1035,7 +1036,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/technology/multimedia/132-what-can-we-expect-from-the-updated-home-smart-speaker"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   What can we expect from the updated Home Smart
@@ -1056,7 +1057,7 @@ const Nav = () => {
               </li>
               <li className="item-111 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/science"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1086,7 +1087,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/space-cosmos"
+                              href="/sezioni/politica"
                             >
                               Space &amp; Cosmos
                             </a>
@@ -1094,7 +1095,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/animal-world"
+                              href="/sezioni/politica"
                             >
                               Animal World
                             </a>
@@ -1102,7 +1103,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/our-climate"
+                              href="/sezioni/politica"
                             >
                               Our Climate
                             </a>
@@ -1110,7 +1111,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/human-health"
+                              href="/sezioni/politica"
                             >
                               Human &amp; Health
                             </a>
@@ -1118,7 +1119,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/physics-tech"
+                              href="/sezioni/politica"
                             >
                               Physics &amp; Tech
                             </a>
@@ -1126,7 +1127,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/environment"
+                              href="/sezioni/politica"
                             >
                               Environment
                             </a>
@@ -1134,7 +1135,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/humanities"
+                              href="/sezioni/politica"
                             >
                               Humanities
                             </a>
@@ -1142,7 +1143,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/science/science-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -1161,7 +1162,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/science/space-cosmos/53-more-than-2218-satellites-orbit-our-planet-each-with-its-own-purpose"
+                                href="/sezioni/politica"
                                 aria-label="More than 2218 satellites orbit our planet, each with its own purpose"
                               >
                                 <picture>
@@ -1185,7 +1186,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/science/space-cosmos/53-more-than-2218-satellites-orbit-our-planet-each-with-its-own-purpose"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   More than 2218 satellites orbit our planet,
@@ -1201,7 +1202,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/science/animal-world/72-exploring-hidden-marine-species-with-steve-vernon"
+                                href="/sezioni/politica"
                                 aria-label="Exploring hidden marine species with Steve Vernon"
                               >
                                 <picture>
@@ -1225,7 +1226,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/science/animal-world/72-exploring-hidden-marine-species-with-steve-vernon"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Exploring hidden marine species with Steve
@@ -1241,7 +1242,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/science/space-cosmos/149-the-next-iss-crew-is-planned-to-launch-this-weekend"
+                                href="/sezioni/politica"
                                 aria-label="The next ISS crew is planned to launch this weekend"
                               >
                                 <picture>
@@ -1265,7 +1266,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/science/space-cosmos/149-the-next-iss-crew-is-planned-to-launch-this-weekend"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   The next ISS crew is planned to launch this
@@ -1281,7 +1282,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/science/environment/175-some-coral-reefs-seem-to-be-recovering-miraculously-marine-biologists-find"
+                                href="/sezioni/politica"
                                 aria-label="Some coral reefs seem to be recovering miraculously, marine biologists find"
                               >
                                 <picture>
@@ -1305,7 +1306,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/science/environment/175-some-coral-reefs-seem-to-be-recovering-miraculously-marine-biologists-find"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Some coral reefs seem to be recovering
@@ -1326,7 +1327,7 @@ const Nav = () => {
               </li>
               <li className="item-112 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/entertainment"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1356,7 +1357,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/movies"
+                              href="/sezioni/politica"
                             >
                               Movies
                             </a>
@@ -1364,7 +1365,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/tv-shows"
+                              href="/sezioni/politica"
                             >
                               TV Shows
                             </a>
@@ -1372,7 +1373,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/podcasts"
+                              href="/sezioni/politica"
                             >
                               Podcasts
                             </a>
@@ -1380,7 +1381,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/festivals"
+                              href="/sezioni/politica"
                             >
                               Festivals
                             </a>
@@ -1388,7 +1389,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/art-culture"
+                              href="/sezioni/politica"
                             >
                               Art &amp; Culture
                             </a>
@@ -1396,7 +1397,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/music"
+                              href="/sezioni/politica"
                             >
                               Music
                             </a>
@@ -1404,7 +1405,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/celebrities"
+                              href="/sezioni/politica"
                             >
                               Celebrities
                             </a>
@@ -1412,7 +1413,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/books"
+                              href="/sezioni/politica"
                             >
                               Books
                             </a>
@@ -1420,7 +1421,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/entertainment/entertainment-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -1439,7 +1440,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/entertainment/movies/54-in-zack-schreiber-s-new-comedy-a-dad-goes-through-the-motions"
+                                href="/sezioni/politica"
                                 aria-label="In Zack Schreiber’s new comedy a Dad goes through the motions"
                               >
                                 <picture>
@@ -1463,7 +1464,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/entertainment/movies/54-in-zack-schreiber-s-new-comedy-a-dad-goes-through-the-motions"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   In Zack Schreiber’s new comedy a Dad goes
@@ -1479,7 +1480,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/entertainment/tv-shows/79-looking-glass-was-picked-up-for-two-more-seasons"
+                                href="/sezioni/politica"
                                 aria-label="Looking Glass was picked up for two more seasons"
                               >
                                 <picture>
@@ -1503,7 +1504,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/entertainment/tv-shows/79-looking-glass-was-picked-up-for-two-more-seasons"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Looking Glass was picked up for two more
@@ -1519,7 +1520,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/entertainment/celebrities/80-allie-holiday-confirms-new-album-coming-soon"
+                                href="/sezioni/politica"
                                 aria-label="Allie Holiday confirms: New album coming soon"
                               >
                                 <picture>
@@ -1543,7 +1544,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/entertainment/celebrities/80-allie-holiday-confirms-new-album-coming-soon"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Allie Holiday confirms: New album coming soon
@@ -1558,7 +1559,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/entertainment/podcasts/81-podcast-relationships-in-times-of-crisis"
+                                href="/sezioni/politica"
                                 aria-label="Podcast: Relationships in times of crisis"
                               >
                                 <picture>
@@ -1582,7 +1583,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/entertainment/podcasts/81-podcast-relationships-in-times-of-crisis"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Podcast: Relationships in times of crisis
@@ -1602,7 +1603,7 @@ const Nav = () => {
               </li>
               <li className="item-113 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/business"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1632,7 +1633,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/economy"
+                              href="/sezioni/politica"
                             >
                               Economy
                             </a>
@@ -1640,7 +1641,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/markets"
+                              href="/sezioni/politica"
                             >
                               Markets
                             </a>
@@ -1648,7 +1649,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/companies"
+                              href="/sezioni/politica"
                             >
                               Companies
                             </a>
@@ -1656,7 +1657,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/real-estate"
+                              href="/sezioni/politica"
                             >
                               Real Estate
                             </a>
@@ -1664,7 +1665,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/banks-finance"
+                              href="/sezioni/politica"
                             >
                               Banks &amp; Finance
                             </a>
@@ -1672,7 +1673,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/energy"
+                              href="/sezioni/politica"
                             >
                               Energy
                             </a>
@@ -1680,7 +1681,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/consumer-service"
+                              href="/sezioni/politica"
                             >
                               Consumer &amp; Service
                             </a>
@@ -1688,7 +1689,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/business/business-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -1707,7 +1708,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
+                                href="/sezioni/politica"
                                 aria-label="Experts predict the markets won’t be out of recession before next year"
                               >
                                 <picture>
@@ -1731,7 +1732,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Experts predict the markets won’t be out of
@@ -1747,7 +1748,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/business/real-estate/272-is-this-the-best-or-the-worst-time-to-invest-in-real-estate"
+                                href="/sezioni/politica"
                                 aria-label="Is this the best or the worst time to invest in real estate?"
                               >
                                 <picture>
@@ -1771,7 +1772,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/business/real-estate/272-is-this-the-best-or-the-worst-time-to-invest-in-real-estate"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Is this the best or the worst time to invest
@@ -1787,7 +1788,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/business/economy/273-more-concerns-about-possible-deflation-are-rising"
+                                href="/sezioni/politica"
                                 aria-label="More concerns about possible deflation are rising"
                               >
                                 <picture>
@@ -1811,7 +1812,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/business/economy/273-more-concerns-about-possible-deflation-are-rising"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   More concerns about possible deflation are
@@ -1827,7 +1828,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/business/banks-finance/274-after-deep-plunge-stocks-are-starting-to-recover"
+                                href="/sezioni/politica"
                                 aria-label="After deep plunge stocks are starting to recover"
                               >
                                 <picture>
@@ -1851,7 +1852,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/business/banks-finance/274-after-deep-plunge-stocks-are-starting-to-recover"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   After deep plunge stocks are starting to
@@ -1872,7 +1873,7 @@ const Nav = () => {
               </li>
               <li className="item-117 uk-parent">
                 <a
-                  href="/joomla/themes/paladin/travel"
+                  href="/sezioni/politica"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1902,7 +1903,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/destinations"
+                              href="/sezioni/politica"
                             >
                               Destinations
                             </a>
@@ -1910,7 +1911,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/travel-report"
+                              href="/sezioni/politica"
                             >
                               Travel Report
                             </a>
@@ -1918,7 +1919,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/city-guide"
+                              href="/sezioni/politica"
                             >
                               City Guide
                             </a>
@@ -1926,7 +1927,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/sustainability"
+                              href="/sezioni/politica"
                             >
                               Sustainability
                             </a>
@@ -1934,7 +1935,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/travel-advice"
+                              href="/sezioni/politica"
                             >
                               Travel Advice
                             </a>
@@ -1942,7 +1943,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/weather"
+                              href="/sezioni/politica"
                             >
                               Weather
                             </a>
@@ -1950,7 +1951,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/route-planner"
+                              href="/sezioni/politica"
                             >
                               Route Planner
                             </a>
@@ -1958,7 +1959,7 @@ const Nav = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/joomla/themes/paladin/travel/travel-archive"
+                              href="/sezioni/politica"
                             >
                               Archive
                             </a>
@@ -1977,7 +1978,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/travel/destinations/55-visiting-some-of-the-most-popular-destinations-in-central-europe"
+                                href="/sezioni/politica"
                                 aria-label="Visiting some of the most popular destinations in Central Europe"
                               >
                                 <picture>
@@ -2001,7 +2002,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/travel/destinations/55-visiting-some-of-the-most-popular-destinations-in-central-europe"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Visiting some of the most popular destinations
@@ -2017,7 +2018,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/travel/travel-report/265-backpacking-indonesia-adventure-friendly-locals-and-of-course-white-beaches"
+                                href="/sezioni/politica"
                                 aria-label="Backpacking Indonesia: Adventure, friendly locals and, of course, white beaches"
                               >
                                 <picture>
@@ -2041,7 +2042,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/travel/travel-report/265-backpacking-indonesia-adventure-friendly-locals-and-of-course-white-beaches"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Backpacking Indonesia: Adventure, friendly
@@ -2057,7 +2058,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/travel/city-guide/244-between-canals-and-dams-out-and-about-in-amsterdam"
+                                href="/sezioni/politica"
                                 aria-label="Between canals and dams – Out and about in Amsterdam"
                               >
                                 <picture>
@@ -2081,7 +2082,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/travel/city-guide/244-between-canals-and-dams-out-and-about-in-amsterdam"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Between canals and dams – Out and about in
@@ -2097,7 +2098,7 @@ const Nav = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/joomla/themes/paladin/travel/weather/246-consequences-of-the-rising-heat-for-desert-life"
+                                href="/sezioni/politica"
                                 aria-label="Consequences of the rising heat for desert life"
                               >
                                 <picture>
@@ -2121,7 +2122,7 @@ const Nav = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/joomla/themes/paladin/travel/weather/246-consequences-of-the-rising-heat-for-desert-life"
+                                  href="/sezioni/politica"
                                   className="uk-link-heading"
                                 >
                                   Consequences of the rising heat for desert
@@ -2141,13 +2142,13 @@ const Nav = () => {
                 </div>
               </li>
               <li className="item-118">
-                <a href="/joomla/themes/paladin/archive"> Archive</a>
+                <a href="/sezioni/politica"> Archive</a>
               </li>
             </ul>
             <a
               uk-toggle=""
               aria-label="Open Menu"
-              href="#tm-dialog"
+              href="/sezioni/politica"
               className="uk-navbar-toggle"
               aria-expanded="false"
             >
@@ -2281,7 +2282,7 @@ const Nav = () => {
                 uk-nav="targets: > .js-accordion"
               >
                 <li className="item-170 uk-active">
-                  <a href="/joomla/themes/paladin/"> Home</a>
+                  <a href="/sezioni/politica"> Home</a>
                 </li>
                 <li className="item-171 js-accordion uk-parent">
                   <a href="">
@@ -2308,61 +2309,61 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-260">
-                      <a href="/joomla/themes/paladin/politics"> Politics</a>
+                      <a href="/sezioni/politica"> Politics</a>
                     </li>
                     <li className="item-172">
-                      <a href="/joomla/themes/paladin/politics/environment">
+                      <a href="/sezioni/politica">
                         {" "}
                         Environment
                       </a>
                     </li>
                     <li className="item-173">
-                      <a href="/joomla/themes/paladin/politics/health">
+                      <a href="/sezioni/politica">
                         {" "}
                         Health
                       </a>
                     </li>
                     <li className="item-174">
-                      <a href="/joomla/themes/paladin/politics/education">
+                      <a href="/sezioni/politica">
                         {" "}
                         Education
                       </a>
                     </li>
                     <li className="item-175">
-                      <a href="/joomla/themes/paladin/politics/economy">
+                      <a href="/sezioni/politica">
                         {" "}
                         Economy
                       </a>
                     </li>
                     <li className="item-176">
-                      <a href="/joomla/themes/paladin/politics/united-states">
+                      <a href="/sezioni/politica">
                         {" "}
                         United States
                       </a>
                     </li>
                     <li className="item-177">
-                      <a href="/joomla/themes/paladin/politics/world"> World</a>
+                      <a href="/sezioni/politica"> World</a>
                     </li>
                     <li className="item-178">
-                      <a href="/joomla/themes/paladin/politics/brexit">
+                      <a href="/sezioni/politica">
                         {" "}
                         Brexit
                       </a>
                     </li>
                     <li className="item-179">
-                      <a href="/joomla/themes/paladin/politics/state-justice">
+                      <a href="/sezioni/politica">
                         {" "}
                         State &amp; Justice
                       </a>
                     </li>
                     <li className="item-180">
-                      <a href="/joomla/themes/paladin/politics/elections">
+                      <a href="/sezioni/politica">
                         {" "}
                         Elections
                       </a>
                     </li>
                     <li className="item-274">
-                      <a href="/joomla/themes/paladin/politics/politics-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2394,55 +2395,55 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-261">
-                      <a href="/joomla/themes/paladin/sports"> Sports</a>
+                      <a href="/sezioni/politica"> Sports</a>
                     </li>
                     <li className="item-182">
-                      <a href="/joomla/themes/paladin/sports/martial-arts">
+                      <a href="/sezioni/politica">
                         {" "}
                         Martial Arts
                       </a>
                     </li>
                     <li className="item-183">
-                      <a href="/joomla/themes/paladin/sports/motorsports">
+                      <a href="/sezioni/politica">
                         {" "}
                         Motorsports
                       </a>
                     </li>
                     <li className="item-184">
-                      <a href="/joomla/themes/paladin/sports/baseball">
+                      <a href="/sezioni/politica">
                         {" "}
                         Baseball
                       </a>
                     </li>
                     <li className="item-185">
-                      <a href="/joomla/themes/paladin/sports/football">
+                      <a href="/sezioni/politica">
                         {" "}
                         Football
                       </a>
                     </li>
                     <li className="item-186">
-                      <a href="/joomla/themes/paladin/sports/athletics">
+                      <a href="/sezioni/politica">
                         {" "}
                         Athletics
                       </a>
                     </li>
                     <li className="item-187">
-                      <a href="/joomla/themes/paladin/sports/soccer"> Soccer</a>
+                      <a href="/sezioni/politica"> Soccer</a>
                     </li>
                     <li className="item-188">
-                      <a href="/joomla/themes/paladin/sports/basketball">
+                      <a href="/sezioni/politica">
                         {" "}
                         Basketball
                       </a>
                     </li>
                     <li className="item-189">
-                      <a href="/joomla/themes/paladin/sports/winter-sports">
+                      <a href="/sezioni/politica">
                         {" "}
                         Winter Sports
                       </a>
                     </li>
                     <li className="item-275">
-                      <a href="/joomla/themes/paladin/sports/sports-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2474,55 +2475,55 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-262">
-                      <a href="/joomla/themes/paladin/technology">
+                      <a href="/sezioni/politica">
                         {" "}
                         Technology
                       </a>
                     </li>
                     <li className="item-191">
-                      <a href="/joomla/themes/paladin/technology/multimedia">
+                      <a href="/sezioni/politica">
                         {" "}
                         Multimedia
                       </a>
                     </li>
                     <li className="item-192">
-                      <a href="/joomla/themes/paladin/technology/transportation">
+                      <a href="/sezioni/politica">
                         {" "}
                         Transportation
                       </a>
                     </li>
                     <li className="item-193">
-                      <a href="/joomla/themes/paladin/technology/electronics">
+                      <a href="/sezioni/politica">
                         {" "}
                         Electronics
                       </a>
                     </li>
                     <li className="item-195">
-                      <a href="/joomla/themes/paladin/technology/innovation">
+                      <a href="/sezioni/politica">
                         {" "}
                         Innovation
                       </a>
                     </li>
                     <li className="item-196">
-                      <a href="/joomla/themes/paladin/technology/reviews">
+                      <a href="/sezioni/politica">
                         {" "}
                         Reviews
                       </a>
                     </li>
                     <li className="item-197">
-                      <a href="/joomla/themes/paladin/technology/security">
+                      <a href="/sezioni/politica">
                         {" "}
                         Security
                       </a>
                     </li>
                     <li className="item-198">
-                      <a href="/joomla/themes/paladin/technology/gaming">
+                      <a href="/sezioni/politica">
                         {" "}
                         Gaming
                       </a>
                     </li>
                     <li className="item-276">
-                      <a href="/joomla/themes/paladin/technology/technology-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2554,52 +2555,52 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-263">
-                      <a href="/joomla/themes/paladin/science"> Science</a>
+                      <a href="/sezioni/politica"> Science</a>
                     </li>
                     <li className="item-199">
-                      <a href="/joomla/themes/paladin/science/space-cosmos">
+                      <a href="/sezioni/politica">
                         {" "}
                         Space &amp; Cosmos
                       </a>
                     </li>
                     <li className="item-200">
-                      <a href="/joomla/themes/paladin/science/animal-world">
+                      <a href="/sezioni/politica">
                         {" "}
                         Animal World
                       </a>
                     </li>
                     <li className="item-201">
-                      <a href="/joomla/themes/paladin/science/our-climate">
+                      <a href="/sezioni/politica">
                         {" "}
                         Our Climate
                       </a>
                     </li>
                     <li className="item-202">
-                      <a href="/joomla/themes/paladin/science/human-health">
+                      <a href="/sezioni/politica">
                         {" "}
                         Human &amp; Health
                       </a>
                     </li>
                     <li className="item-203">
-                      <a href="/joomla/themes/paladin/science/physics-tech">
+                      <a href="/sezioni/politica">
                         {" "}
                         Physics &amp; Tech
                       </a>
                     </li>
                     <li className="item-204">
-                      <a href="/joomla/themes/paladin/science/environment">
+                      <a href="/sezioni/politica">
                         {" "}
                         Environment
                       </a>
                     </li>
                     <li className="item-205">
-                      <a href="/joomla/themes/paladin/science/humanities">
+                      <a href="/sezioni/politica">
                         {" "}
                         Humanities
                       </a>
                     </li>
                     <li className="item-277">
-                      <a href="/joomla/themes/paladin/science/science-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2631,61 +2632,61 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-264">
-                      <a href="/joomla/themes/paladin/entertainment">
+                      <a href="/sezioni/politica">
                         {" "}
                         Entertainment
                       </a>
                     </li>
                     <li className="item-207">
-                      <a href="/joomla/themes/paladin/entertainment/movies">
+                      <a href="/sezioni/politica">
                         {" "}
                         Movies
                       </a>
                     </li>
                     <li className="item-208">
-                      <a href="/joomla/themes/paladin/entertainment/tv-shows">
+                      <a href="/sezioni/politica">
                         {" "}
                         TV Shows
                       </a>
                     </li>
                     <li className="item-209">
-                      <a href="/joomla/themes/paladin/entertainment/podcasts">
+                      <a href="/sezioni/politica">
                         {" "}
                         Podcasts
                       </a>
                     </li>
                     <li className="item-210">
-                      <a href="/joomla/themes/paladin/entertainment/festivals">
+                      <a href="/sezioni/politica">
                         {" "}
                         Festivals
                       </a>
                     </li>
                     <li className="item-211">
-                      <a href="/joomla/themes/paladin/entertainment/art-culture">
+                      <a href="/sezioni/politica">
                         {" "}
                         Art &amp; Culture
                       </a>
                     </li>
                     <li className="item-212">
-                      <a href="/joomla/themes/paladin/entertainment/music">
+                      <a href="/sezioni/politica">
                         {" "}
                         Music
                       </a>
                     </li>
                     <li className="item-213">
-                      <a href="/joomla/themes/paladin/entertainment/celebrities">
+                      <a href="/sezioni/politica">
                         {" "}
                         Celebrities
                       </a>
                     </li>
                     <li className="item-214">
-                      <a href="/joomla/themes/paladin/entertainment/books">
+                      <a href="/sezioni/politica">
                         {" "}
                         Books
                       </a>
                     </li>
                     <li className="item-278">
-                      <a href="/joomla/themes/paladin/entertainment">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2717,49 +2718,49 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-232">
-                      <a href="/joomla/themes/paladin/business/economy">
+                      <a href="/sezioni/politica">
                         {" "}
                         Economy
                       </a>
                     </li>
                     <li className="item-233">
-                      <a href="/joomla/themes/paladin/business/markets">
+                      <a href="/sezioni/politica">
                         {" "}
                         Markets
                       </a>
                     </li>
                     <li className="item-234">
-                      <a href="/joomla/themes/paladin/business/companies">
+                      <a href="/sezioni/politica">
                         {" "}
                         Companies
                       </a>
                     </li>
                     <li className="item-235">
-                      <a href="/joomla/themes/paladin/business/real-estate">
+                      <a href="/sezioni/politica">
                         {" "}
                         Real Estate
                       </a>
                     </li>
                     <li className="item-236">
-                      <a href="/joomla/themes/paladin/business/banks-finance">
+                      <a href="/sezioni/politica">
                         {" "}
                         Banks &amp; Finance
                       </a>
                     </li>
                     <li className="item-237">
-                      <a href="/joomla/themes/paladin/business/energy">
+                      <a href="/sezioni/politica">
                         {" "}
                         Energy
                       </a>
                     </li>
                     <li className="item-238">
-                      <a href="/joomla/themes/paladin/business/consumer-service">
+                      <a href="/sezioni/politica">
                         {" "}
                         Consumer &amp; Service
                       </a>
                     </li>
                     <li className="item-279">
-                      <a href="/joomla/themes/paladin/business/business-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2791,49 +2792,49 @@ const Nav = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-239">
-                      <a href="/joomla/themes/paladin/travel/destinations">
+                      <a href="/sezioni/politica">
                         {" "}
                         Destinations
                       </a>
                     </li>
                     <li className="item-240">
-                      <a href="/joomla/themes/paladin/travel/travel-report">
+                      <a href="/sezioni/politica">
                         {" "}
                         Travel Report
                       </a>
                     </li>
                     <li className="item-241">
-                      <a href="/joomla/themes/paladin/travel/city-guide">
+                      <a href="/sezioni/politica">
                         {" "}
                         City Guide
                       </a>
                     </li>
                     <li className="item-242">
-                      <a href="/joomla/themes/paladin/travel/sustainability">
+                      <a href="/sezioni/politica">
                         {" "}
                         Sustainability
                       </a>
                     </li>
                     <li className="item-243">
-                      <a href="/joomla/themes/paladin/travel/travel-advice">
+                      <a href="/sezioni/politica">
                         {" "}
                         Travel Advice
                       </a>
                     </li>
                     <li className="item-244">
-                      <a href="/joomla/themes/paladin/travel/weather">
+                      <a href="/sezioni/politica">
                         {" "}
                         Weather
                       </a>
                     </li>
                     <li className="item-245">
-                      <a href="/joomla/themes/paladin/travel/route-planner">
+                      <a href="/sezioni/politica">
                         {" "}
                         Route Planner
                       </a>
                     </li>
                     <li className="item-280">
-                      <a href="/joomla/themes/paladin/travel/travel-archive">
+                      <a href="/sezioni/politica">
                         {" "}
                         Archive
                       </a>
@@ -2841,7 +2842,7 @@ const Nav = () => {
                   </ul>
                 </li>
                 <li className="item-231">
-                  <a href="/joomla/themes/paladin/archive"> Archive</a>
+                  <a href="/sezioni/politica"> Archive</a>
                 </li>
               </ul>
             </div>
@@ -2856,7 +2857,7 @@ const Nav = () => {
                   <div className="uk-margin-large">
                     <a
                       className="el-content uk-width-1-1 uk-button uk-button-default"
-                      href="#"
+                      href="/sezioni/politica"
                       uk-scroll=""
                     >
                       Subscribe
@@ -2867,7 +2868,7 @@ const Nav = () => {
                   <div className="uk-margin-large">
                     <a
                       className="el-content uk-width-1-1 uk-button uk-button-default"
-                      href="#"
+                      href="/sezioni/politica"
                       uk-scroll=""
                     >
                       Sign Up
@@ -2884,7 +2885,7 @@ const Nav = () => {
                     className="uk-margin"
                     uk-scrollspy="target: [uk-scrollspy-class];"
                   >
-                    <a className="el-link" href="/joomla/themes/paladin/">
+                    <a className="el-link" href="/sezioni/politica">
                       <img
                         src="https://gardatoday.it/assets/images/logo_vertical.svg"
                         width={140}
@@ -2900,22 +2901,22 @@ const Nav = () => {
                     <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
                       {" "}
                       <li className="el-item ">
-                        <a className="el-link" href="#" uk-scroll="">
+                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
                           Terms &amp; Conditions
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="#" uk-scroll="">
+                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
                           Privacy
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="#" uk-scroll="">
+                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
                           Imprint
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="#" uk-scroll="">
+                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
                           Sitemap
                         </a>
                       </li>
@@ -2928,7 +2929,7 @@ const Nav = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="https://www.facebook.com/yootheme"
+                          href="/sezioni/politica"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2949,7 +2950,7 @@ const Nav = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="https://twitter.com/yootheme?lang=en"
+                          href="/sezioni/politica"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2970,7 +2971,7 @@ const Nav = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="https://www.youtube.com/channel/UCScfGdEgRCOh9YJdpGu82eQ"
+                          href="/sezioni/politica"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2991,7 +2992,7 @@ const Nav = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="https://www.instagram.com/"
+                          href="/sezioni/politica"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -3012,7 +3013,7 @@ const Nav = () => {
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="https://www.reddit.com/">
+                        <a className="el-link" href="/sezioni/politica">
                           <span
                             className="el-image uk-margin-small-right uk-icon"
                             uk-icon="icon: reddit;"
@@ -3045,6 +3046,28 @@ const Nav = () => {
 </div>
 
     </div>
+    <div
+    className="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
+    uk-grid=""
+  >
+    <div className="uk-width-1-1 uk-first-column">
+      <div className="uk-alert uk-alert-primary uk-text-center">
+        <a
+          className="el-link uk-link-reset"
+          href="/joomla/themes/paladin/business/markets/52-experts-predict-the-markets-won-t-be-out-of-recession-before-next-year"
+        >
+          <h2 className="el-title uk-h3 uk-display-inline uk-text-middle">
+            Breaking News —
+          </h2>
+          <div className="el-content uk-panel uk-display-inline uk-text-middle">
+            Experts predict the markets won’t be out of recession before next year
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  
   );
 };
 

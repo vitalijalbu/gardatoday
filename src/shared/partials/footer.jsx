@@ -17,7 +17,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/politics"
+                  href="/sezioni/politica"
                 >
                   Politics
                 </a>{" "}
@@ -33,7 +33,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/environment"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Environ&shy;ment
@@ -46,7 +46,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/health"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Health
@@ -59,7 +59,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/education"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Education
@@ -72,7 +72,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/economy"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Economy
@@ -85,7 +85,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/united-states"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           United States
@@ -98,7 +98,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/world"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           World
@@ -111,7 +111,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/brexit"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Brexit
@@ -124,7 +124,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/state-justice"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           State &amp; Justice
@@ -137,7 +137,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/politics/elections"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Elections
@@ -155,7 +155,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/sports"
+                  href="/sezioni/politica"
                 >
                   Sports
                 </a>{" "}
@@ -171,7 +171,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/martial-arts"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Martial Arts
@@ -184,7 +184,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/motorsports"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Motorsports
@@ -197,7 +197,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/baseball"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Baseball
@@ -210,7 +210,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/football"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Football
@@ -223,7 +223,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/athletics"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Athletics
@@ -236,7 +236,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/soccer"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Soccer
@@ -249,7 +249,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/basketball"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Basketball
@@ -262,7 +262,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/sports/winter-sports"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Winter Sports
@@ -280,7 +280,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/technology"
+                  href="/sezioni/politica"
                 >
                   Technology
                 </a>{" "}
@@ -296,7 +296,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/multimedia"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Multimedia
@@ -309,7 +309,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/transportation"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Transportation
@@ -322,7 +322,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/electronics"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Electronics
@@ -335,7 +335,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/innovation"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Innovation
@@ -348,7 +348,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/reviews"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Reviews
@@ -361,7 +361,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/security"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Security
@@ -374,7 +374,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/technology/gaming"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Gaming
@@ -392,7 +392,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/science"
+                  href="/sezioni/politica"
                 >
                   Science
                 </a>{" "}
@@ -408,7 +408,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/space-cosmos"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Space &amp; Cosmos
@@ -421,7 +421,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/animal-world"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Animal World
@@ -434,7 +434,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/our-climate"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Our Climate
@@ -447,7 +447,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/human-health"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Human &amp; Health
@@ -460,7 +460,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/physics-tech"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Physics &amp; Tech
@@ -473,7 +473,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/environment"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Environment
@@ -486,7 +486,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/science/humanities"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Humanities
@@ -512,7 +512,7 @@ const Footer = () => {
                   {" "}
                   <div className="uk-first-column">
                     <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="#" uk-scroll="">
+                      <a href="/sezioni/politica" uk-scroll="">
                         <img
                           src="/demo/paladin/images/badge-app-store.svg"
                           width="120"
@@ -526,7 +526,7 @@ const Footer = () => {
                   </div>
                   <div className="uk-grid-margin uk-first-column">
                     <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="#" uk-scroll="">
+                      <a href="/sezioni/politica" uk-scroll="">
                         <img
                           src="/demo/paladin/images/badge-google-play.svg"
                           width="135"
@@ -552,7 +552,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/entertainment"
+                  href="/sezioni/politica"
                 >
                   Entertainment
                 </a>{" "}
@@ -568,7 +568,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/movies"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Movies
@@ -581,7 +581,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/tv-shows"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           TV Shows
@@ -594,7 +594,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/podcasts"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Podcasts
@@ -607,7 +607,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/festivals"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Festivals
@@ -620,7 +620,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/art-culture"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Art &amp; Culture
@@ -633,7 +633,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/music"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Music
@@ -646,7 +646,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/celebrities"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Celebrities
@@ -659,7 +659,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/entertainment/books"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Books
@@ -677,7 +677,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/business"
+                  href="/sezioni/politica"
                 >
                   Business
                 </a>{" "}
@@ -693,7 +693,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/economy"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Economy
@@ -706,7 +706,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/markets"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Markets
@@ -719,7 +719,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/companies"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Companies
@@ -732,7 +732,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/real-estate"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Real Estate
@@ -745,7 +745,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/banks-finance"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Banks &amp; Finance
@@ -758,7 +758,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/energy"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Energy
@@ -771,7 +771,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/business/consumer-service"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Consumer &amp; Service
@@ -789,7 +789,7 @@ const Footer = () => {
                 {" "}
                 <a
                   className="el-link uk-link-heading"
-                  href="/joomla/themes/paladin/travel"
+                  href="/sezioni/politica"
                 >
                   Travel
                 </a>{" "}
@@ -805,7 +805,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/destinations"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Destinations
@@ -818,7 +818,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/travel-report"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Travel Report
@@ -831,7 +831,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/city-guide"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           City Guide
@@ -844,7 +844,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/sustainability"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Sustainability
@@ -857,7 +857,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/travel-advice"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Travel Advice
@@ -870,7 +870,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/weather"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Weather
@@ -883,7 +883,7 @@ const Footer = () => {
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
                         <a
-                          href="/joomla/themes/paladin/travel/route-planner"
+                          href="/sezioni/politica"
                           className="uk-link-heading"
                         >
                           Route Planner
@@ -908,7 +908,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           Opinion
                         </a>{" "}
                       </div>
@@ -918,7 +918,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           Daily Brief
                         </a>{" "}
                       </div>
@@ -928,7 +928,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           In the News
                         </a>{" "}
                       </div>
@@ -938,7 +938,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           Video
                         </a>{" "}
                       </div>
@@ -948,7 +948,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           Gallery
                         </a>{" "}
                       </div>
@@ -958,7 +958,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="#" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
                           Review
                         </a>{" "}
                       </div>
@@ -988,7 +988,7 @@ const Footer = () => {
                   {" "}
                   <div>
                     <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="#" uk-scroll="">
+                      <a href="/sezioni/politica" uk-scroll="">
                         <img
                           src="/demo/paladin/images/badge-app-store.svg"
                           width="120"
@@ -1002,7 +1002,7 @@ const Footer = () => {
                   </div>
                   <div>
                     <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="#" uk-scroll="">
+                      <a href="/sezioni/politica" uk-scroll="">
                         <img
                           src="/demo/paladin/images/badge-google-play.svg"
                           width="135"
