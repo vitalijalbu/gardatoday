@@ -1,8 +1,10 @@
 import React from 'react';
-
+import RelatedArticles from '@/shared/sections/related-articles';
 
   const View = () => {
     return (
+      <div className='page'>
+      <div className='page-content'>
 <div className="uk-section-default uk-section uk-padding-remove-bottom">
   <div className="uk-container">
     <div className="uk-grid-margin uk-container uk-container-xsmall">
@@ -187,59 +189,16 @@ import React from 'react';
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim.
             </p>
-            <div className="pager">
-              <div
-                className="uk-grid-small uk-flex-middle uk-text-default uk-grid uk-grid-stack"
-                uk-grid=""
-              >
-                <div className="uk-first-column">
-                  <a
-                    className="uk-button uk-button-secondary"
-                    href="/joomla/themes/paladin/science/humanities/36-speculation-about-new-york-s-famous-landmark-turned-out-false?start=1"
-                    aria-label="Next: Page 2 (Page 2 of 2)"
-                    rel="next"
-                  >
-                    Next Page
-                  </a>
-                </div>
-              </div>
-              <div
-                className="uk-grid-small uk-flex-middle uk-child-width-auto uk-text-default uk-margin-top uk-grid"
-                uk-grid=""
-              >
-                <div className="uk-first-column">Page </div>
-                <div>
-                  <ul className="uk-pagination">
-                    <li className="uk-active">
-                      <span>1</span>
-                    </li>
-                    <li>
-                      <a href="/joomla/themes/paladin/science/humanities/36-speculation-about-new-york-s-famous-landmark-turned-out-false?start=1">
-                        2
-                      </a>
-                    </li>
-                    <li>
-                      <a href="/joomla/themes/paladin/science/humanities/36-speculation-about-new-york-s-famous-landmark-turned-out-false?showall=1">
-                        All Pages
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
-          <div className="uk-margin-medium">
-            <a
-              className="el-content uk-button uk-button-primary uk-button-large"
-              href="/"
-            >
-              Back to Homepage
-            </a>
-          </div>
+          
         </div>
       </div>
     </div>
   </div>
+</div>
+</div>
+<RelatedArticles/>
+
 </div>
     );
 };

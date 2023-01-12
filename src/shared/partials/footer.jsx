@@ -4,1023 +4,562 @@ import Link from "next/link";
 const Footer = () => {
   const [expanded, setExpanded] = useState(true);
   return (
-    <footer>
-      <div className="uk-section-secondary uk-section">
-        <div className="uk-container uk-container-xlarge">
-          <div
-            className="tm-grid-expand uk-grid-row-large uk-grid-margin-large uk-grid"
-            uk-grid=""
-          >
-            <div className="uk-width-1-2@s uk-width-1-5@m uk-first-column">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Politics
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Environ&shy;ment
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Health
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Education
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Economy
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          United States
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          World
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Brexit
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          State &amp; Justice
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Elections
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-2@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Sports
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Martial Arts
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Motorsports
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Baseball
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Football
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Athletics
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Soccer
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Basketball
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Winter Sports
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-3@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Technology
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Multimedia
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Transportation
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Electronics
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Innovation
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Reviews
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Security
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Gaming
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-3@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Science
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Space &amp; Cosmos
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Animal World
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Our Climate
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Human &amp; Health
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Physics &amp; Tech
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Environment
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Humanities
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-3@s uk-width-1-5@m uk-visible@m">
-              <div className="uk-divider-small uk-visible@m"></div>
-              <h3 className="uk-h6 uk-visible@m uk-margin-small">
-                {" "}
-                Get the App{" "}
-              </h3>
-              <div className="uk-visible@m uk-margin">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid uk-grid-stack"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="/sezioni/politica" uk-scroll="">
-                        <img
-                          src="/demo/paladin/images/badge-app-store.svg"
-                          width="120"
-                          height="40"
-                          className="el-image"
-                          alt=""
-                          loading="lazy"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="/sezioni/politica" uk-scroll="">
-                        <img
-                          src="/demo/paladin/images/badge-google-play.svg"
-                          width="135"
-                          height="40"
-                          className="el-image"
-                          alt=""
-                          loading="lazy"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="uk-margin-remove-bottom tm-grid-expand uk-grid-row-large uk-margin-large uk-grid"
-            uk-grid=""
-          >
-            <div className="uk-width-1-2@s uk-width-1-5@m uk-first-column">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Entertainment
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Movies
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          TV Shows
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Podcasts
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Festivals
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Art &amp; Culture
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Music
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Celebrities
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Books
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-2@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Business
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Economy
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Markets
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Companies
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Real Estate
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Banks &amp; Finance
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Energy
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Consumer &amp; Service
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-2@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small">
-                {" "}
-                <a
-                  className="el-link uk-link-heading"
-                  href="/sezioni/politica"
-                >
-                  Travel
-                </a>{" "}
-              </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Destinations
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Travel Report
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          City Guide
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Sustainability
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Travel Advice
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Weather
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a
-                          href="/sezioni/politica"
-                          className="uk-link-heading"
-                        >
-                          Route Planner
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-2@s uk-width-1-5@m">
-              <div className="uk-divider-small"></div>
-              <h3 className="uk-h6 uk-margin-small"> Tags </h3>
-              <div className="uk-margin-medium">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div className="uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          Opinion
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          Daily Brief
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          In the News
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          Video
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin uk-first-column">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          Gallery
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="uk-grid-margin">
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <div className="el-title uk-margin-top uk-margin-remove-bottom">
-                        {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
-                          Review
-                        </a>{" "}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="uk-width-1-5@m"></div>
-          </div>
-          <div
-            className="uk-hidden@m uk-margin-remove-top tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
-            uk-grid=""
-          >
-            <div className="uk-width-1-1 uk-hidden@m">
-              <div className="uk-divider-small uk-hidden@m"></div>
-              <h2 className="uk-h6 uk-hidden@m uk-margin-small">
-                {" "}
-                Get the App{" "}
-              </h2>
-              <div className="uk-hidden@m uk-margin">
-                <div
-                  className="uk-child-width-auto uk-grid-small uk-grid-match uk-grid uk-grid-stack"
-                  uk-grid=""
-                >
-                  {" "}
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="/sezioni/politica" uk-scroll="">
-                        <img
-                          src="/demo/paladin/images/badge-app-store.svg"
-                          width="120"
-                          height="40"
-                          className="el-image"
-                          alt=""
-                          loading="lazy"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="el-item uk-panel uk-margin-remove-first-child">
-                      <a href="/sezioni/politica" uk-scroll="">
-                        <img
-                          src="/demo/paladin/images/badge-google-play.svg"
-                          width="135"
-                          height="40"
-                          className="el-image"
-                          alt=""
-                          loading="lazy"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <footer className="site-footer">
+  <div className="site-footer-main">
+    <div className="container">
+      <section>
+        <div className="row clearfix">
+          <div className="col-sm-12">
+            <div className="site-brand-wrapper">
+              <a href="#" className="brand-logo" data-focus-mouse="false">
+                <img
+                  src="https://gardatoday.it/assets/images/logo.svg"
+                  alt="Logo gardatoday"
+                />
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <section>
+        <div className="row">
+          <div className="col-lg-3 col-md-3 col-sm-6 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Amministrazione">
+                Link utili
+              </a>
+            </h4>
+            <div className="link-list-wrapper">
+              <ul className="footer-list uk-list">
+                <li>
+                  <a className="list-item" href="/">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/notizie">
+                    Ultime notizie
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/comuni">
+                    Comuni
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/lavoro">
+                    Offerte di lavoro
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/pubblicita">
+                    Pubblicità
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/carica-contenuto">
+                    Inviaci una segnalazione
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Servizi">
+                Sezioni
+              </a>
+            </h4>
+            <div className="link-list-wrapper">
+              <ul className="footer-list uk-list">
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/ambiente"
+                  >
+                    Ambiente
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/animali"
+                  >
+                    Animali
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/arte-e-cultura"
+                  >
+                    Arte e Cultura
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/attualita"
+                  >
+                    Attualità
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/avvisi"
+                  >
+                    Avvisi
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/casa"
+                  >
+                    Casa
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/comuni"
+                  >
+                    Comuni
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/cronaca"
+                  >
+                    Cronaca
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/economia"
+                  >
+                    Economia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/elezioni-2022"
+                  >
+                    Elezioni amministrative 2022
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/enogastronomia"
+                  >
+                    Enogastronomia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/eventi"
+                  >
+                    Eventi
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/famiglia"
+                  >
+                    Famiglia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/formazione"
+                  >
+                    Formazione
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/sezioni/giovani"
+                  >
+                    Giovani
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Novità">
+                Eventi
+              </a>
+            </h4>
+            <div className="link-list-wrapper">
+              <ul className="footer-list uk-list">
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Arte e cultura
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Teatro
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Shopping
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Tempo libero
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Enogastronomia
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Famiglia
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Ambiente
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Natura
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Sport
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Storia
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Degustazione
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Traffico
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Territorio
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Tecnologia e Web
+                  </a>
+                </li>
+                <li>
+                  <a className="list-item" href="/eventi">
+                    Salute
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 col-sm-6">
+            <h4>
+              <a href="#" title="Vai alla pagina: Documenti">
+                Comuni
+              </a>
+            </h4>
+            <div className="link-list-wrapper">
+              <ul className="footer-list uk-list">
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/brescia"
+                  >
+                    Brescia
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/castiglione-delle-stiviere"
+                  >
+                    Castiglione delle Stiviere
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/desenzano-del-garda"
+                  >
+                    Desenzano del Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/garda"
+                  >
+                    Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/limone-sul-garda"
+                  >
+                    Limone sul Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/lonato-del-garda"
+                  >
+                    Lonato del Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/manerba-del-garda"
+                  >
+                    Manerba del Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/montichiari"
+                  >
+                    Montichiari
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/padenghe-sul-garda"
+                  >
+                    Padenghe sul Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/peschiera-del-garda"
+                  >
+                    Peschiera del Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/riva-del-garda"
+                  >
+                    Riva Del Garda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/salo"
+                  >
+                    Salò
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="list-item"
+                    href="https://gardatoday.it/comuni/sirmione"
+                  >
+                    Sirmione
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-4 border-white border-top">
+        <div className="row">
+          <div className="col-lg-3 col-md-3 pb-2">
+            <p>
+              Allegato ad Area Blu Reg.Trib.Brescia n°32/2006 del 20/07/2006
+            </p>
+          </div>
+          <div className="col-lg-3 col-md-3 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Contatti">
+                Direttore responsabile
+              </a>
+            </h4>
+            <p>
+              <strong>Francesco Salvetti</strong>
+              <br />
+              Via XX Settembre, 30 - 25122 Brescia Codice fiscale / P. IVA:
+              03430470173
+            </p>
+          </div>
+          <div className="col-lg-3 col-md-3 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Newsletter">
+                Newsletter
+              </a>
+            </h4>
+            <div>
+              <form
+                className="js-cm-form form-newsletter"
+                id="subForm"
+                action="https://www.createsend.com/t/subscribeerror?description="
+                method="post"
+                data-id="2BE4EF332AA2E32596E38B640E9056197742D95075D3395E03CF9C67C3BDED1C2152C9B13A19FC4FE4BAD6A1E37F15D3350001FBF87DEF1E3CA6514D23039EA2"
+              >
+                <div>
+                  <div>
+                    <label>Indirizzo email </label>
+                    <input
+                      autoComplete="Email"
+                      aria-label="Indirizzo email"
+                      className="js-cm-email-input qa-input-email"
+                      id="fieldEmail"
+                      maxLength={200}
+                      name="cm-jjdkjjk-jjdkjjk"
+                      placeholder="Indirizzo email"
+                      required=""
+                      type="email"
+                    />
+                  </div>
+                  <div>
+                    <div>
+                      <div>
+                        <div className="form-check form-check-inline">
+                          <input
+                            aria-required=""
+                            id="cm-privacy-consent"
+                            name="cm-privacy-consent"
+                            required=""
+                            type="checkbox"
+                          />
+                          <label
+                            className="text-white"
+                            style={{ fontSize: 12 }}
+                            htmlFor="cm-privacy-consent"
+                          >
+                            Accetto i termini e le condizioni*
+                          </label>
+                        </div>
+                        <input
+                          className="form-control"
+                          id="cm-privacy-consent-hidden"
+                          name="cm-privacy-consent-hidden"
+                          type="hidden"
+                          defaultValue="true"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button className="btn btn-primary btn-icon" type="submit">
+                  <svg className="icon icon-white">
+                    <use xlinkHref="/assets//svg/sprite.svg#site-mail" />
+                  </svg>
+                  <span>Iscriviti</span>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="col-lg-3 col-md-3 pb-2">
+            <h4>
+              <a href="#" title="Vai alla pagina: Seguici su">
+                Seguici su
+              </a>
+            </h4>
+            <ul className="list-inline text-left social">
+              <li className="list-inline-item">
+                <a
+                  className="p-2 text-white"
+                  href="https://www.facebook.com/gardatoday"
+                  target="_blank"
+                >
+                  <svg className="icon icon-sm icon-white align-top">
+                    <use xlinkHref="/assets//svg/sprite.svg#site-facebook" />
+                  </svg>
+                  <span className="sr-only">Facebook</span>
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  className="p-2 text-white"
+                  href="https://www.youtube.com/channel/UC0kbuxE8TIrAlVVKGVxDjfQ"
+                  target="_blank"
+                >
+                  <svg className="icon icon-sm icon-white align-top">
+                    <use xlinkHref="/assets//svg/sprite.svg#site-youtube" />
+                  </svg>
+                  <span className="sr-only">YouTube</span>
+                </a>
+              </li>
+              <li className="list-inline-item">
+                <a
+                  className="p-2 text-white"
+                  aria-label="Youtube"
+                  href="/rss"
+                  target="_blank"
+                >
+                  <svg className="icon icon-sm icon-white align-top">
+                    <use xlinkHref="/assets/svg/sprite.svg#site-rss" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <div className="site-footer-small-prints clearfix">
+    <div className="container">
+      <h3 className="sr-only">Sezione Link Utili</h3>
+      <ul className="site-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+        <li className="list-inline-item">
+          <a href="https://gardatoday.it/legal/cookies" title="Cookies">
+            Cookies
+          </a>
+        </li>
+        <li className="list-inline-item">
+          <a
+            href="https://gardatoday.it/legal/privacy-policy"
+            title="Privacy policy"
+          >
+            Privacy policy
+          </a>
+        </li>
+        <li className="list-inline-item">
+          <a href="/sitemap">Mappa del sito</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
   );
 };
 export default Footer;

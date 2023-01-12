@@ -2,14 +2,14 @@ import React from 'react';
 import 'uikit/dist/css/uikit.css'
 import '@/assets/styles/index.scss';
 
-import TopNav from '@/shared/partials/nav';
+import Header from '@/shared/partials/header';
 import Footer from '@/shared/partials/footer';
 
 
 function MyApp({ Component, pageProps }) {
   return (
       <div id="main-site">
-      <TopNav/>
+      <Header/>
     <Component {...pageProps} />
     <Footer/>
     </div>

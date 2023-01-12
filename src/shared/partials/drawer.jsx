@@ -7,7 +7,7 @@ const Nav = () => {
 
   return (
     <div id="Nav">
-     <nav className="uk-navbar-container" uk-navbar="">
+     <nav className="uk-navbar-container" data-uk-navbar="">
     <div className="uk-navbar-left">
       <ul className="uk-navbar-nav">
         <li className="uk-active">

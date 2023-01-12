@@ -15,7 +15,7 @@ const SectionGrid = () => {
     >
       <div className="uk-width-1-1@m uk-first-column">
         <hr />
-        <h2 className="uk-h6 uk-margin-small">
+        <h2 className="section-title">
           {" "}
           <a
             className="el-link uk-link-heading"

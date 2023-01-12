@@ -1,6 +1,6 @@
 
 #main-site {
-	max-width: 1600px;
+	max-width: 1560px;
 	margin: auto;
 	background: #fff;
 }
@@ -8,5 +8,11 @@
 @media (min-width: 1281px) {
 	#main-site {
 		max-width: 1280px;
+	}
+}
+
+@media (min-width: 1560px) {
+	#main-site {
+		max-width: 1560px;
 	}
 }

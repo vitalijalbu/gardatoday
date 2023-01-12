@@ -5,8 +5,8 @@ import React, { useState, useEffect } from "react";
 const ArticleCard = ({data}) => {
   return (
     <div className="el-item uk-panel uk-margin-remove-first-child">
-  <Link
-    href="/notizie/edm"
+  <a
+    href="/joomla/themes/paladin/business/economy/273-more-concerns-about-possible-deflation-are-rising"
     aria-label="More concerns about possible deflation are rising"
   >
     <picture>
@@ -24,14 +24,12 @@ const ArticleCard = ({data}) => {
         loading="lazy"
       />
     </picture>
-  </Link>
-  <Link href={`/news /${data?.slug}`}>
+  </a>
   <h3 className="el-title uk-h4 uk-margin-top uk-margin-remove-bottom">
-  
+  <Link href={`/news /${data?.slug}`}>
       More concerns about possible deflation are rising
-    
+    </Link>
   </h3>
-  </Link>
 </div>
             );
 };

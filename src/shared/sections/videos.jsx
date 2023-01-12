@@ -11,7 +11,7 @@ const Videos = () => {
     <div className="tm-grid-expand uk-grid-margin uk-grid" uk-grid="">
       <div className="uk-width-1-2@s uk-width-2-5@l uk-first-column">
         <div className="uk-divider-small" />
-        <h2 className="uk-h6 uk-margin-small"> Video </h2>
+        <h2 className="section-title"> Video </h2>
         <h3 className="uk-heading-small">
           {" "}
           <a
