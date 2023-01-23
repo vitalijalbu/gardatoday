@@ -28,7 +28,7 @@ import React from 'react';
                 <div className="uk-hidden@l uk-margin-medium">
                   <a
                     className="el-link"
-                    href="/notizie/demo"
+                    href="/sezioni/politica"
                   >
                     <picture>
                       <source
@@ -57,7 +57,7 @@ import React from 'react';
                   <h2 className="el-title uk-heading-small uk-margin-small-top uk-margin-remove-bottom">
                     {" "}
                     <a
-                      href="/notizie/demo"
+                      href="/sezioni/politica"
                       className="uk-link-heading"
                     >
                       The new tablet manages to inspire with unique features
@@ -95,7 +95,7 @@ import React from 'react';
               {" "}
               <div className="uk-width-auto uk-first-column">
                 <a
-                  href="/notizie/demo"
+                  href="/sezioni/politica"
                   aria-label="This is why you need a wireless stylus even if you don’t draw"
                 >
                   <picture>
@@ -119,7 +119,7 @@ import React from 'react';
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/notizie/demo"
+                    href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     This is why you need a wireless stylus even if you don’t
@@ -142,7 +142,7 @@ import React from 'react';
               {" "}
               <div className="uk-width-auto uk-first-column">
                 <a
-                  href="/notizie/demo"
+                  href="/sezioni/politica"
                   aria-label="Apple Watch: New software updates are in the starting blocks"
                 >
                   <picture>
@@ -166,7 +166,7 @@ import React from 'react';
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/notizie/demo"
+                    href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     Apple Watch: New software updates are in the starting blocks
@@ -188,7 +188,7 @@ import React from 'react';
               {" "}
               <div className="uk-width-auto uk-first-column">
                 <a
-                  href="/notizie/demo"
+                  href="/sezioni/politica"
                   aria-label="It’s official: E3 2020 has been cancelled"
                 >
                   <picture>
@@ -212,7 +212,7 @@ import React from 'react';
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/notizie/demo"
+                    href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     It’s official: E3 2020 has been cancelled
@@ -234,7 +234,7 @@ import React from 'react';
               {" "}
               <div className="uk-width-auto uk-first-column">
                 <a
-                  href="/notizie/demo"
+                  href="/sezioni/politica"
                   aria-label="Porsche launches its first pure electric car with 670 horsepower"
                 >
                   <picture>
@@ -258,7 +258,7 @@ import React from 'react';
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
                   {" "}
                   <a
-                    href="/notizie/demo"
+                    href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     Porsche launches its first pure electric car with 670

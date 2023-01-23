@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="row clearfix">
           <div className="col-sm-12">
             <div className="site-brand-wrapper">
-              <a href="#" className="brand-logo" data-focus-mouse="false">
+              <a href="/" className="site-logo" data-focus-mouse="false">
                 <img
                   src="https://gardatoday.it/assets/images/logo.svg"
                   alt="Logo gardatoday"

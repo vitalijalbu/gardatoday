@@ -20,7 +20,7 @@ const Header = () => {
               <div className="uk-panel" id="module-106">
                 <a
                   className="uk-search-toggle uk-display-block uk-icon uk-search-icon"
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   uk-search-icon=""
                   uk-toggle=""
                   aria-expanded="false"
@@ -152,22 +152,13 @@ const Header = () => {
                     uk-grid=""
                   >
                     <div className="el-item uk-first-column">
-                      <a
+                      <Link
                         className="el-content uk-button uk-button-default"
-                        href="/sezioni/politica"
+                        href="/sezioni/demo"
                         uk-scroll=""
                       >
-                        Subscribe
-                      </a>
-                    </div>
-                    <div className="el-item">
-                      <a
-                        className="el-content uk-button uk-button-default"
-                        href="/sezioni/politica"
-                        uk-scroll=""
-                      >
-                        Sign Up
-                      </a>
+                        Accedi
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -194,24 +185,13 @@ const Header = () => {
           <div className="uk-navbar-center">
             <ul className="uk-navbar-nav">
               <li className="item-101 uk-active">
-                <a href="/sezioni/politica" className="uk-preserve-width">
-                  <span uk-icon="icon: home;" className="uk-icon">
-                    <svg
-                      width={20}
-                      height={20}
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <polygon points="18.65 11.35 10 2.71 1.35 11.35 0.65 10.65 10 1.29 19.35 10.65" />
-                      <polygon points="15 4 18 4 18 7 17 7 17 5 15 5" />
-                      <polygon points="3 11 4 11 4 18 7 18 7 12 12 12 12 18 16 18 16 11 17 11 17 19 11 19 11 13 8 13 8 19 3 19" />
-                    </svg>
-                  </span>{" "}
+                <a href="#" className="uk-preserve-width">
+                 Menu
                 </a>
               </li>
               <li className="item-108 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -241,7 +221,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Environment
                             </a>
@@ -249,7 +229,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Health
                             </a>
@@ -257,7 +237,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Education
                             </a>
@@ -265,7 +245,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Economy
                             </a>
@@ -273,7 +253,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               United States
                             </a>
@@ -281,7 +261,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               World
                             </a>
@@ -289,7 +269,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Brexit
                             </a>
@@ -297,7 +277,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               State &amp; Justice
                             </a>
@@ -305,7 +285,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Elections
                             </a>
@@ -313,7 +293,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -332,17 +312,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="The voter turnout shows the importance of this year’s election"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/f0/politics-post-voter-turnout-shows-importance-of-elections-f04cf242.webp 340w, /joomla/templates/yootheme/cache/87/politics-post-voter-turnout-shows-importance-of-elections-872d3349.webp 679w, /joomla/templates/yootheme/cache/36/politics-post-voter-turnout-shows-importance-of-elections-365e05cf.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/96/politics-post-voter-turnout-shows-importance-of-elections-96d632ba.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -356,7 +336,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   The voter turnout shows the importance of this
@@ -372,17 +352,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Opposing camps clashed in heated dispute during today’s rally"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/36/politics-post-opposing-camps-at-rally-3611bd19.webp 340w, /joomla/templates/yootheme/cache/a7/politics-post-opposing-camps-at-rally-a7d3ded3.webp 679w, /joomla/templates/yootheme/cache/16/politics-post-opposing-camps-at-rally-16a0e855.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/df/politics-post-opposing-camps-at-rally-df230e10.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -396,7 +376,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Opposing camps clashed in heated dispute
@@ -412,17 +392,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="The current crisis reveals the staggering problems in our national healthcare system"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/e7/politics-post-crisis-national-healthcare-system-e702084a.webp 340w, /joomla/templates/yootheme/cache/19/politics-post-crisis-national-healthcare-system-19c8a8ba.webp 679w, /joomla/templates/yootheme/cache/a8/politics-post-crisis-national-healthcare-system-a8bb9e3c.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/30/politics-post-crisis-national-healthcare-system-300a8f71.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -436,7 +416,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   The current crisis reveals the staggering
@@ -452,17 +432,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="What we have learned 30 years after the fall of the Berlin Wall"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/2b/politics-post-30-years-after-fall-of-berlin-wall-2b269d23.webp 340w, /joomla/templates/yootheme/cache/b4/politics-post-30-years-after-fall-of-berlin-wall-b48df9c9.webp 679w, /joomla/templates/yootheme/cache/05/politics-post-30-years-after-fall-of-berlin-wall-05fecf4f.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/11/politics-post-30-years-after-fall-of-berlin-wall-116dd15a.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -476,7 +456,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   What we have learned 30 years after the fall
@@ -497,7 +477,7 @@ const Header = () => {
               </li>
               <li className="item-109 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -527,7 +507,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Martial Arts
                             </a>
@@ -535,7 +515,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Motorsports
                             </a>
@@ -543,7 +523,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Baseball
                             </a>
@@ -551,7 +531,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Football
                             </a>
@@ -559,7 +539,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Athletics
                             </a>
@@ -567,7 +547,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Soccer
                             </a>
@@ -575,7 +555,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Basketball
                             </a>
@@ -583,7 +563,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Winter Sports
                             </a>
@@ -591,7 +571,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -610,17 +590,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Nicola Aebi is poised to set a new world record again"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/eb/sports-post-nicola-aebli-poised-to-set-new-world-record-eb9b58ad.webp 340w, /joomla/templates/yootheme/cache/21/sports-post-nicola-aebli-poised-to-set-new-world-record-21737c7a.webp 679w, /joomla/templates/yootheme/cache/90/sports-post-nicola-aebli-poised-to-set-new-world-record-90004afc.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/7b/sports-post-nicola-aebli-poised-to-set-new-world-record-7ba9491c.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -634,7 +614,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Nicola Aebi is poised to set a new world
@@ -650,17 +630,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Max Meyer: “I feel better prepared than ever”"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/44/sports-post-interview-with-pole-vaulter-max-meyer-44771fe8.webp 340w, /joomla/templates/yootheme/cache/c4/sports-post-interview-with-pole-vaulter-max-meyer-c41afe85.webp 679w, /joomla/templates/yootheme/cache/75/sports-post-interview-with-pole-vaulter-max-meyer-7569c803.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/b4/sports-post-interview-with-pole-vaulter-max-meyer-b43fa9cc.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -674,7 +654,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Max Meyer: “I feel better prepared than ever”
@@ -689,17 +669,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Western Europe Road Tour reaching the last stage today"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/0e/sports-post-western-europe-road-tour-reaching-last-stage-today-0e122f13.webp 340w, /joomla/templates/yootheme/cache/14/sports-post-western-europe-road-tour-reaching-last-stage-today-14b52176.webp 679w, /joomla/templates/yootheme/cache/a5/sports-post-western-europe-road-tour-reaching-last-stage-today-a5c617f0.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/46/sports-post-western-europe-road-tour-reaching-last-stage-today-4697cbef.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -713,7 +693,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Western Europe Road Tour reaching the last
@@ -729,17 +709,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Impressive duel concluded the fencing championship"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/3f/sports-post-impressive-duel-concludes-fencing-championship-3f3922b8.webp 340w, /joomla/templates/yootheme/cache/1f/sports-post-impressive-duel-concludes-fencing-championship-1f175cfa.webp 679w, /joomla/templates/yootheme/cache/ae/sports-post-impressive-duel-concludes-fencing-championship-ae646a7c.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/2b/sports-post-impressive-duel-concludes-fencing-championship-2b1cd244.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -753,7 +733,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Impressive duel concluded the fencing
@@ -774,7 +754,7 @@ const Header = () => {
               </li>
               <li className="item-110 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -804,7 +784,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Multimedia
                             </a>
@@ -812,7 +792,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Transportation
                             </a>
@@ -820,7 +800,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Electronics
                             </a>
@@ -828,7 +808,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Innovation
                             </a>
@@ -836,7 +816,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Reviews
                             </a>
@@ -844,7 +824,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Security
                             </a>
@@ -852,7 +832,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Gaming
                             </a>
@@ -860,7 +840,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -879,17 +859,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Presenting the most prominent features of the new mobile OS"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/f9/technology-post-most-prominent-features-of-the-new-mobile-os-f958fed9.webp 340w, /joomla/templates/yootheme/cache/ed/technology-post-most-prominent-features-of-the-new-mobile-os-ed2d7226.webp 679w, /joomla/templates/yootheme/cache/5c/technology-post-most-prominent-features-of-the-new-mobile-os-5c5e44a0.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/57/technology-post-most-prominent-features-of-the-new-mobile-os-574b97f5.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -903,7 +883,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Presenting the most prominent features of the
@@ -919,17 +899,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="The new tablet manages to inspire with unique features"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/6b/technology-post-new-tablet-inspires-with-unique-features-6be7101d.webp 340w, /joomla/templates/yootheme/cache/41/technology-post-new-tablet-inspires-with-unique-features-415dacee.webp 679w, /joomla/templates/yootheme/cache/f0/technology-post-new-tablet-inspires-with-unique-features-f02e9a68.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/95/technology-post-new-tablet-inspires-with-unique-features-9562fca3.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -943,7 +923,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   The new tablet manages to inspire with unique
@@ -959,17 +939,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="The 16-inch MacBook Pro considerably improves performance"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/d2/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-d2a21b50.webp 340w, /joomla/templates/yootheme/cache/2b/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-2bc24839.webp 679w, /joomla/templates/yootheme/cache/9a/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-9ab17ebf.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/aa/technology-post-the-16-inch-macbook-pro-shows-stunning-performance-improvements-with-new-gpu-aac3f81d.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -983,7 +963,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   The 16-inch MacBook Pro considerably improves
@@ -999,17 +979,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="What can we expect from the updated Home Smart Speaker"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/5b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-5b716f72.webp 340w, /joomla/templates/yootheme/cache/2a/technology-post-what-can-we-expect-from-updated-home-smart-speaker-2a35783b.webp 679w, /joomla/templates/yootheme/cache/9b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-9b464ebd.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/3b/technology-post-what-can-we-expect-from-updated-home-smart-speaker-3bb2f9ee.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1023,7 +1003,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   What can we expect from the updated Home Smart
@@ -1044,7 +1024,7 @@ const Header = () => {
               </li>
               <li className="item-111 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1074,7 +1054,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Space &amp; Cosmos
                             </a>
@@ -1082,7 +1062,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Animal World
                             </a>
@@ -1090,7 +1070,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Our Climate
                             </a>
@@ -1098,7 +1078,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Human &amp; Health
                             </a>
@@ -1106,7 +1086,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Physics &amp; Tech
                             </a>
@@ -1114,7 +1094,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Environment
                             </a>
@@ -1122,7 +1102,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Humanities
                             </a>
@@ -1130,7 +1110,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -1149,17 +1129,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="More than 2218 satellites orbit our planet, each with its own purpose"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/1b/science-post-more-than-2218-satellites-orbit-our-planet-1bec1982.webp 340w, /joomla/templates/yootheme/cache/0a/science-post-more-than-2218-satellites-orbit-our-planet-0afcb843.webp 679w, /joomla/templates/yootheme/cache/bb/science-post-more-than-2218-satellites-orbit-our-planet-bb8f8ec5.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/8a/science-post-more-than-2218-satellites-orbit-our-planet-8a100c9a.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1173,7 +1153,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   More than 2218 satellites orbit our planet,
@@ -1189,17 +1169,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Exploring hidden marine species with Steve Vernon"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/32/science-post-exploring-hidden-marine-species-with-steve-vernon-32f7f3ba.webp 340w, /joomla/templates/yootheme/cache/01/science-post-exploring-hidden-marine-species-with-steve-vernon-01916f06.webp 679w, /joomla/templates/yootheme/cache/b0/science-post-exploring-hidden-marine-species-with-steve-vernon-b0e25980.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/86/science-post-exploring-hidden-marine-species-with-steve-vernon-86cc1a97.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1213,7 +1193,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Exploring hidden marine species with Steve
@@ -1229,17 +1209,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="The next ISS crew is planned to launch this weekend"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/73/science-post-next-iss-crew-planned-to-launch-this-weekend-73b610d2.webp 340w, /joomla/templates/yootheme/cache/a8/science-post-next-iss-crew-planned-to-launch-this-weekend-a8ebc5fa.webp 679w, /joomla/templates/yootheme/cache/19/science-post-next-iss-crew-planned-to-launch-this-weekend-1998f37c.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/54/science-post-next-iss-crew-planned-to-launch-this-weekend-54685319.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1253,7 +1233,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   The next ISS crew is planned to launch this
@@ -1269,17 +1249,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Some coral reefs seem to be recovering miraculously, marine biologists find"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/0a/science-post-some-coral-reefs-recovering-0a5e58dc.webp 340w, /joomla/templates/yootheme/cache/52/science-post-some-coral-reefs-recovering-52a5218b.webp 679w, /joomla/templates/yootheme/cache/e3/science-post-some-coral-reefs-recovering-e3d6170d.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/b8/science-post-some-coral-reefs-recovering-b8765316.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1293,7 +1273,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Some coral reefs seem to be recovering
@@ -1314,7 +1294,7 @@ const Header = () => {
               </li>
               <li className="item-112 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1344,7 +1324,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Movies
                             </a>
@@ -1352,7 +1332,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               TV Shows
                             </a>
@@ -1360,7 +1340,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Podcasts
                             </a>
@@ -1368,7 +1348,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Festivals
                             </a>
@@ -1376,7 +1356,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Art &amp; Culture
                             </a>
@@ -1384,7 +1364,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Music
                             </a>
@@ -1392,7 +1372,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Celebrities
                             </a>
@@ -1400,7 +1380,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Books
                             </a>
@@ -1408,7 +1388,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -1427,17 +1407,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="In Zack Schreiber’s new comedy a Dad goes through the motions"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/ea/entertainment-post-zack-schreiber-s-new-comedy-eae49303.webp 340w, /joomla/templates/yootheme/cache/17/entertainment-post-zack-schreiber-s-new-comedy-17d0278a.webp 679w, /joomla/templates/yootheme/cache/a6/entertainment-post-zack-schreiber-s-new-comedy-a6a3110c.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/c4/entertainment-post-zack-schreiber-s-new-comedy-c47c3618.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1451,7 +1431,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   In Zack Schreiber’s new comedy a Dad goes
@@ -1467,17 +1447,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Looking Glass was picked up for two more seasons"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/ae/entertainment-post-looking-glass-picked-up-for-two-more-seasons-ae0cf467.webp 340w, /joomla/templates/yootheme/cache/7b/entertainment-post-looking-glass-picked-up-for-two-more-seasons-7bbf0bc5.webp 679w, /joomla/templates/yootheme/cache/ca/entertainment-post-looking-glass-picked-up-for-two-more-seasons-cacc3d43.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/5e/entertainment-post-looking-glass-picked-up-for-two-more-seasons-5ee72eec.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1491,7 +1471,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Looking Glass was picked up for two more
@@ -1507,17 +1487,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Allie Holiday confirms: New album coming soon"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/f4/entertainment-post-allie-holiday-new-album-coming-soon-f435a2d9.webp 340w, /joomla/templates/yootheme/cache/64/entertainment-post-allie-holiday-new-album-coming-soon-64b8a02d.webp 679w, /joomla/templates/yootheme/cache/d5/entertainment-post-allie-holiday-new-album-coming-soon-d5cb96ab.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/ef/entertainment-post-allie-holiday-new-album-coming-soon-efe61e24.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1531,7 +1511,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Allie Holiday confirms: New album coming soon
@@ -1546,17 +1526,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Podcast: Relationships in times of crisis"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/5c/entertainment-post-podcast-relationships-in-times-of-crisis-5c2702c4.webp 340w, /joomla/templates/yootheme/cache/68/entertainment-post-podcast-relationships-in-times-of-crisis-68797a65.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/7d/entertainment-post-podcast-relationships-in-times-of-crisis-7d71dbd6.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={198}
                                     className="el-image"
@@ -1570,7 +1550,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Podcast: Relationships in times of crisis
@@ -1590,7 +1570,7 @@ const Header = () => {
               </li>
               <li className="item-113 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1620,7 +1600,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Economy
                             </a>
@@ -1628,7 +1608,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Markets
                             </a>
@@ -1636,7 +1616,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Companies
                             </a>
@@ -1644,7 +1624,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Real Estate
                             </a>
@@ -1652,7 +1632,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Banks &amp; Finance
                             </a>
@@ -1660,7 +1640,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Energy
                             </a>
@@ -1668,7 +1648,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Consumer &amp; Service
                             </a>
@@ -1676,7 +1656,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -1695,17 +1675,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Experts predict the markets won’t be out of recession before next year"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/7e/business-post-markets-not-out-of-recession-before-next-year-7e70e3ab.webp 340w, /joomla/templates/yootheme/cache/46/business-post-markets-not-out-of-recession-before-next-year-46281791.webp 679w, /joomla/templates/yootheme/cache/f7/business-post-markets-not-out-of-recession-before-next-year-f75b2117.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/23/business-post-markets-not-out-of-recession-before-next-year-2333d9ba.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1719,7 +1699,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Experts predict the markets won’t be out of
@@ -1735,17 +1715,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Is this the best or the worst time to invest in real estate?"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/5a/business-post-best-or-worst-time-to-invest-in-real-estate-5ab282f9.webp 340w, /joomla/templates/yootheme/cache/5b/business-post-best-or-worst-time-to-invest-in-real-estate-5bad15c9.webp 679w, /joomla/templates/yootheme/cache/ea/business-post-best-or-worst-time-to-invest-in-real-estate-eade234f.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/1e/business-post-best-or-worst-time-to-invest-in-real-estate-1eb85004.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1759,7 +1739,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Is this the best or the worst time to invest
@@ -1775,17 +1755,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="More concerns about possible deflation are rising"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/bb/business-post-more-concerns-about-possible-deflation-rising-bb13e00a.webp 340w, /joomla/templates/yootheme/cache/19/business-post-more-concerns-about-possible-deflation-rising-1959e885.webp 679w, /joomla/templates/yootheme/cache/a8/business-post-more-concerns-about-possible-deflation-rising-a82ade03.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/36/business-post-more-concerns-about-possible-deflation-rising-36914c60.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1799,7 +1779,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   More concerns about possible deflation are
@@ -1815,17 +1795,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="After deep plunge stocks are starting to recover"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/df/business-post-after-deep-plunge-stocks-starting-to-recover-dfe8afe1.webp 340w, /joomla/templates/yootheme/cache/9e/business-post-after-deep-plunge-stocks-starting-to-recover-9e035f10.webp 679w, /joomla/templates/yootheme/cache/2f/business-post-after-deep-plunge-stocks-starting-to-recover-2f706996.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/8d/business-post-after-deep-plunge-stocks-starting-to-recover-8db669c6.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1839,7 +1819,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   After deep plunge stocks are starting to
@@ -1860,7 +1840,7 @@ const Header = () => {
               </li>
               <li className="item-117 uk-parent">
                 <a
-                  href="/sezioni/politica"
+                  href="/sezioni/demo"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
@@ -1890,7 +1870,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Destinations
                             </a>
@@ -1898,7 +1878,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Travel Report
                             </a>
@@ -1906,7 +1886,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               City Guide
                             </a>
@@ -1914,7 +1894,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Sustainability
                             </a>
@@ -1922,7 +1902,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Travel Advice
                             </a>
@@ -1930,7 +1910,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Weather
                             </a>
@@ -1938,7 +1918,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Route Planner
                             </a>
@@ -1946,7 +1926,7 @@ const Header = () => {
                           <li className="el-item ">
                             <a
                               className="el-link"
-                              href="/sezioni/politica"
+                              href="/sezioni/demo"
                             >
                               Archive
                             </a>
@@ -1965,17 +1945,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Visiting some of the most popular destinations in Central Europe"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/16/travel-post-most-popular-destinations-in-central-europe-1657b17a.webp 340w, /joomla/templates/yootheme/cache/4d/travel-post-most-popular-destinations-in-central-europe-4da88324.webp 679w, /joomla/templates/yootheme/cache/fc/travel-post-most-popular-destinations-in-central-europe-fcdbb5a2.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/13/travel-post-most-popular-destinations-in-central-europe-136df68c.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -1989,7 +1969,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Visiting some of the most popular destinations
@@ -2005,17 +1985,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Backpacking Indonesia: Adventure, friendly locals and, of course, white beaches"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/09/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-0900e378.webp 340w, /joomla/templates/yootheme/cache/b0/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-b02d436c.webp 679w, /joomla/templates/yootheme/cache/01/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-015e75ea.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/83/travel-post-backpacking-indonesia-adventure-friendly-locals-white-beaches-8345c5b8.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -2029,7 +2009,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Backpacking Indonesia: Adventure, friendly
@@ -2045,17 +2025,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Between canals and dams – Out and about in Amsterdam"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/c0/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-c0097ab7.webp 340w, /joomla/templates/yootheme/cache/95/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-9589dccd.webp 679w, /joomla/templates/yootheme/cache/24/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-24faea4b.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/2f/travel-post-between-canals-and-dams-out-and-about-in-amsterdam-2ffc62c9.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -2069,7 +2049,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Between canals and dams – Out and about in
@@ -2085,17 +2065,17 @@ const Header = () => {
                           <div>
                             <div className="el-item uk-panel uk-margin-remove-first-child">
                               <a
-                                href="/sezioni/politica"
+                                href="/sezioni/demo"
                                 aria-label="Consequences of the rising heat for desert life"
                               >
                                 <picture>
                                   <source
                                     type="image/webp"
-                                    srcSet="/joomla/templates/yootheme/cache/d6/travel-post-consequences-of-rising-heat-for-desert-life-d6fe5d6c.webp 340w, /joomla/templates/yootheme/cache/ad/travel-post-consequences-of-rising-heat-for-desert-life-adc794eb.webp 679w, /joomla/templates/yootheme/cache/1c/travel-post-consequences-of-rising-heat-for-desert-life-1cb4a26d.webp 680w"
+                                    srcSet="https://via.placeholder.com/800x533"
                                     sizes="(min-width: 340px) 340px"
                                   />
                                   <img
-                                    src="/joomla/templates/yootheme/cache/0e/travel-post-consequences-of-rising-heat-for-desert-life-0eac6b02.jpeg"
+                                    src="https://via.placeholder.com/800x533"
                                     width={340}
                                     height={213}
                                     className="el-image"
@@ -2109,7 +2089,7 @@ const Header = () => {
                               <div className="el-title uk-h4 uk-margin-small-top uk-margin-remove-bottom">
                                 {" "}
                                 <a
-                                  href="/sezioni/politica"
+                                  href="/sezioni/demo"
                                   className="uk-link-heading"
                                 >
                                   Consequences of the rising heat for desert
@@ -2129,13 +2109,13 @@ const Header = () => {
                 </div>
               </li>
               <li className="item-118">
-                <a href="/sezioni/politica"> Archive</a>
+                <a href="/sezioni/demo"> Archive</a>
               </li>
             </ul>
             <a
               uk-toggle=""
               aria-label="Open Menu"
-              href="/sezioni/politica"
+              href="/sezioni/demo"
               className="uk-navbar-toggle"
               aria-expanded="false"
             >
@@ -2269,7 +2249,7 @@ const Header = () => {
                 uk-nav="targets: > .js-accordion"
               >
                 <li className="item-170 uk-active">
-                  <a href="/sezioni/politica"> Home</a>
+                  <a href="/sezioni/demo"> Home</a>
                 </li>
                 <li className="item-171 js-accordion uk-parent">
                   <a href="">
@@ -2296,61 +2276,61 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-260">
-                      <a href="/sezioni/politica"> Politics</a>
+                      <a href="/sezioni/demo"> Politics</a>
                     </li>
                     <li className="item-172">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Environment
                       </a>
                     </li>
                     <li className="item-173">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Health
                       </a>
                     </li>
                     <li className="item-174">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Education
                       </a>
                     </li>
                     <li className="item-175">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Economy
                       </a>
                     </li>
                     <li className="item-176">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         United States
                       </a>
                     </li>
                     <li className="item-177">
-                      <a href="/sezioni/politica"> World</a>
+                      <a href="/sezioni/demo"> World</a>
                     </li>
                     <li className="item-178">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Brexit
                       </a>
                     </li>
                     <li className="item-179">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         State &amp; Justice
                       </a>
                     </li>
                     <li className="item-180">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Elections
                       </a>
                     </li>
                     <li className="item-274">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2382,55 +2362,55 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-261">
-                      <a href="/sezioni/politica"> Sports</a>
+                      <a href="/sezioni/demo"> Sports</a>
                     </li>
                     <li className="item-182">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Martial Arts
                       </a>
                     </li>
                     <li className="item-183">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Motorsports
                       </a>
                     </li>
                     <li className="item-184">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Baseball
                       </a>
                     </li>
                     <li className="item-185">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Football
                       </a>
                     </li>
                     <li className="item-186">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Athletics
                       </a>
                     </li>
                     <li className="item-187">
-                      <a href="/sezioni/politica"> Soccer</a>
+                      <a href="/sezioni/demo"> Soccer</a>
                     </li>
                     <li className="item-188">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Basketball
                       </a>
                     </li>
                     <li className="item-189">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Winter Sports
                       </a>
                     </li>
                     <li className="item-275">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2462,55 +2442,55 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-262">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Technology
                       </a>
                     </li>
                     <li className="item-191">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Multimedia
                       </a>
                     </li>
                     <li className="item-192">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Transportation
                       </a>
                     </li>
                     <li className="item-193">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Electronics
                       </a>
                     </li>
                     <li className="item-195">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Innovation
                       </a>
                     </li>
                     <li className="item-196">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Reviews
                       </a>
                     </li>
                     <li className="item-197">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Security
                       </a>
                     </li>
                     <li className="item-198">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Gaming
                       </a>
                     </li>
                     <li className="item-276">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2542,52 +2522,52 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-263">
-                      <a href="/sezioni/politica"> Science</a>
+                      <a href="/sezioni/demo"> Science</a>
                     </li>
                     <li className="item-199">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Space &amp; Cosmos
                       </a>
                     </li>
                     <li className="item-200">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Animal World
                       </a>
                     </li>
                     <li className="item-201">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Our Climate
                       </a>
                     </li>
                     <li className="item-202">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Human &amp; Health
                       </a>
                     </li>
                     <li className="item-203">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Physics &amp; Tech
                       </a>
                     </li>
                     <li className="item-204">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Environment
                       </a>
                     </li>
                     <li className="item-205">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Humanities
                       </a>
                     </li>
                     <li className="item-277">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2619,61 +2599,61 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-264">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Entertainment
                       </a>
                     </li>
                     <li className="item-207">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Movies
                       </a>
                     </li>
                     <li className="item-208">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         TV Shows
                       </a>
                     </li>
                     <li className="item-209">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Podcasts
                       </a>
                     </li>
                     <li className="item-210">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Festivals
                       </a>
                     </li>
                     <li className="item-211">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Art &amp; Culture
                       </a>
                     </li>
                     <li className="item-212">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Music
                       </a>
                     </li>
                     <li className="item-213">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Celebrities
                       </a>
                     </li>
                     <li className="item-214">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Books
                       </a>
                     </li>
                     <li className="item-278">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2705,49 +2685,49 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-232">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Economy
                       </a>
                     </li>
                     <li className="item-233">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Markets
                       </a>
                     </li>
                     <li className="item-234">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Companies
                       </a>
                     </li>
                     <li className="item-235">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Real Estate
                       </a>
                     </li>
                     <li className="item-236">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Banks &amp; Finance
                       </a>
                     </li>
                     <li className="item-237">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Energy
                       </a>
                     </li>
                     <li className="item-238">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Consumer &amp; Service
                       </a>
                     </li>
                     <li className="item-279">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2779,49 +2759,49 @@ const Header = () => {
                   </a>
                   <ul className="uk-nav-sub" hidden="">
                     <li className="item-239">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Destinations
                       </a>
                     </li>
                     <li className="item-240">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Travel Report
                       </a>
                     </li>
                     <li className="item-241">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         City Guide
                       </a>
                     </li>
                     <li className="item-242">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Sustainability
                       </a>
                     </li>
                     <li className="item-243">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Travel Advice
                       </a>
                     </li>
                     <li className="item-244">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Weather
                       </a>
                     </li>
                     <li className="item-245">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Route Planner
                       </a>
                     </li>
                     <li className="item-280">
-                      <a href="/sezioni/politica">
+                      <a href="/sezioni/demo">
                         {" "}
                         Archive
                       </a>
@@ -2829,7 +2809,7 @@ const Header = () => {
                   </ul>
                 </li>
                 <li className="item-231">
-                  <a href="/sezioni/politica"> Archive</a>
+                  <a href="/sezioni/demo"> Archive</a>
                 </li>
               </ul>
             </div>
@@ -2844,21 +2824,10 @@ const Header = () => {
                   <div className="uk-margin-large">
                     <a
                       className="el-content uk-width-1-1 uk-button uk-button-default"
-                      href="/sezioni/politica"
+                      href="/sezioni/demo"
                       uk-scroll=""
                     >
-                      Subscribe
-                    </a>
-                  </div>
-                </div>
-                <div className="uk-width-1-2">
-                  <div className="uk-margin-large">
-                    <a
-                      className="el-content uk-width-1-1 uk-button uk-button-default"
-                      href="/sezioni/politica"
-                      uk-scroll=""
-                    >
-                      Sign Up
+                     Accedi
                     </a>
                   </div>
                 </div>
@@ -2872,9 +2841,9 @@ const Header = () => {
                     className="uk-margin"
                     uk-scrollspy="target: [uk-scrollspy-class];"
                   >
-                    <a className="el-link" href="/sezioni/politica">
+                    <a className="el-link" href="/sezioni/demo">
                       <img
-                        src="https://gardatoday.it/assets/images/logo.svg"
+                        src="https://via.placeholder.com/800x533"
                         width={140}
                         height={23}
                         className="el-image uk-text-emphasis"
@@ -2888,22 +2857,22 @@ const Header = () => {
                     <ul className="uk-margin-remove-bottom uk-nav uk-nav-default">
                       {" "}
                       <li className="el-item ">
-                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
+                        <a className="el-link" href="/sezioni/demo" uk-scroll="">
                           Terms &amp; Conditions
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
+                        <a className="el-link" href="/sezioni/demo" uk-scroll="">
                           Privacy
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
+                        <a className="el-link" href="/sezioni/demo" uk-scroll="">
                           Imprint
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="/sezioni/politica" uk-scroll="">
+                        <a className="el-link" href="/sezioni/demo" uk-scroll="">
                           Sitemap
                         </a>
                       </li>
@@ -2916,7 +2885,7 @@ const Header = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="/sezioni/politica"
+                          href="/sezioni/demo"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2937,7 +2906,7 @@ const Header = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="/sezioni/politica"
+                          href="/sezioni/demo"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2958,7 +2927,7 @@ const Header = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="/sezioni/politica"
+                          href="/sezioni/demo"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -2979,7 +2948,7 @@ const Header = () => {
                       <li className="el-item ">
                         <a
                           className="el-link"
-                          href="/sezioni/politica"
+                          href="/sezioni/demo"
                         >
                           <span
                             className="el-image uk-margin-small-right uk-icon"
@@ -3000,7 +2969,7 @@ const Header = () => {
                         </a>
                       </li>
                       <li className="el-item ">
-                        <a className="el-link" href="/sezioni/politica">
+                        <a className="el-link" href="/sezioni/demo">
                           <span
                             className="el-image uk-margin-small-right uk-icon"
                             uk-icon="icon: reddit;"

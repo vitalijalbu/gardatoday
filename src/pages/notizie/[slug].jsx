@@ -29,7 +29,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
           <div className="uk-panel uk-text-meta uk-margin uk-text-center">
             <time dateTime="2020-06-06T21:20:09+00:00">Jun 6, 2020</time>  | 
             Adrian Phelps  | {" "}
-            <a href="/joomla/themes/paladin/science/humanities">Humanities</a>
+            <a href="/notizie/demo">Humanities</a>
           </div>
         </div>
       </div>
@@ -43,11 +43,11 @@ import RelatedArticles from '@/shared/sections/related-articles';
           <picture>
             <source
               type="image/webp"
-              srcSet="/joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D768%2C480&hash=2b4b61be 768w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D1024%2C640&hash=1096e8af 1024w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D1200%2C&hash=adfaaa9f 1200w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D1366%2C854&hash=cd98f5a2 1366w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D1600%2C1000&hash=9cec1912 1600w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D1920%2C1200&hash=c3fd4060 1920w, /joomla/themes/paladin/component/ajax/?p=image&src=file%3D..%252Fdemo%252Fpaladin%252Fimages%252Fscience-post-speculation-around-news-york-s-famous-landmark.jpg%26type%3Dwebp%2C85%26thumbnail%3D2400%2C1500&hash=36218c1b 2400w"
+              srcSet="https://via.placeholder.com/800x533"
               sizes="(min-width: 1200px) 1200px"
             />
             <img
-              src="https://via.placeholder.com/1920x1080"
+              src="https://via.placeholder.com/800x533"
               width={1200}
               height={750}
               className="el-image"
@@ -96,7 +96,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
             </p>
             <figure className="uk-margin-large">
               <img
-                src="https://via.placeholder.com/1920x1080"
+                src="https://via.placeholder.com/800x533"
                 width={1500}
                 height={1000}
                 alt=""
@@ -113,7 +113,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
               amet{" "}
-              <a href="/joomla/themes/paladin">consectetur adipiscing elit</a>{" "}
+              <a href="/notizie/demo">consectetur adipiscing elit</a>{" "}
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris.
@@ -159,7 +159,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
             </p>
             <figure className="uk-margin-large">
               <img
-                src="https://via.placeholder.com/1920x1080"
+                src="https://via.placeholder.com/800x533"
                 width={1500}
                 height={1000}
                 alt=""
@@ -178,7 +178,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
               aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in <a href="/joomla/themes/paladin">culpa qui officia</a>{" "}
+              sunt in <a href="/notizie/demo">culpa qui officia</a>{" "}
               deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </p>
