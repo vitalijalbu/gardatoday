@@ -1,9 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
-
+import graphQLClient from "@/lib/graphql/client";
+import { GET_BY_CATEGORY } from "@/lib/graphql/articles/";
+import ArticleCard from "@/shared/snippets/article-card";
 
 const SectionFull = () => {
-  const [expanded, setExpanded] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  //console.log('✅ received-entries', entries)
+  console.log('✅ received-listings', data)
+  //if (!data.length) return (<Text strong>Nessun dato</Text>);
+
+/* params API here */
+
+  const getUserDetailByGraphQLRequestAPICall = async () => {
+    try {
+      setLoading(true);
+      const response = await graphQLClient.request(GET_BY_CATEGORY);
+      console.log('RESPONSE FROM GRAPHQL-REQUEST API CALL', response);
+      if (response?.data) {
+        setData(response.data || []);
+      }
+    }
+    catch (err) {
+      console.log('ERROR FROM GRAPHQL-REQUEST API CALL', err);
+    }
+    finally {
+      setLoading(false);
+    }
+  };
+useEffect(() => { 
+  getUserDetailByGraphQLRequestAPICall();
+}, []);
+ 
 
   return(
 <div className="uk-section-default uk-section uk-padding-remove-bottom">

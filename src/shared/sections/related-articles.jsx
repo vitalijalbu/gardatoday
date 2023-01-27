@@ -12,7 +12,7 @@ const RelatedArticles = () => {
       /* Query API here */
       useEffect(() => {
         //const { query, order_by } = params;
-        request('https://beta.resthotels.it/api/v1/', FEED_QUERY)
+        request('https://gardatoday.it/api/v1api/v1/', FEED_QUERY)
           .then(({ data }) => {
             //setData(data);
             console.log('res---->', data);

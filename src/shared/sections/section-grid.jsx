@@ -1,9 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { getEntries } from "@/lib/graphql/articles/";
+import { request, gql } from 'graphql-request'
+import { GET_BY_CATEGORY } from "@/lib/graphql/articles/";
+import ArticleCard from "@/shared/snippets/article-card";
+import graphQLClient from "@/lib/graphql/client";
 
 
 const SectionGrid = () => {
-  const [expanded, setExpanded] = useState(true);
+
+  const [loading, setLoading] = useState(false);
+  const [data, setData] = useState([]);
+  //console.log('✅ received-entries', entries)
+  console.log('✅ received-articles', data)
+
+useEffect(() => { 
+  getEntries().then((data) => setData(data?.entries || []));
+}, []);
 
   return(
 <section className="uk-section uk-section-default uk-section-small">
@@ -16,12 +29,11 @@ const SectionGrid = () => {
       <div className="uk-width-1-1@m uk-first-column">
         <hr />
         <h2 className="section-title">
-          {" "}
           <a
             className="el-link uk-link-heading"
             href="/notizie/demo-notizia"
           >
-            Politics
+            Grid heere
           </a>{" "}
         </h2>
         <div className="uk-hidden@l uk-margin">

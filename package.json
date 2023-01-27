@@ -2,7 +2,7 @@
   "name": "gardatoday",
   "version": "1.0.0",
   "private": true,
-  "proxy": "https://francescos85.sg-host.com/api/v1",
+  "proxy": "https://gardatoday.it/api/v1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -13,8 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tabler/icons": "^2.0.0",
-    "graphql": "^16.6.0",
+    "@tabler/icons-react": "^2.0.0",
     "graphql-request": "^5.1.0",
     "next": "13.1.5",
     "react": "18.2.0",
