@@ -1,6 +1,8 @@
 {
   "name": "gardatoday",
   "version": "1.0.0",
+  "private": true,
+  "proxy": "https://francescos85.sg-host.com/api/v1",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
