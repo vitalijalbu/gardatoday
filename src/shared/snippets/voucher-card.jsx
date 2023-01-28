@@ -2,7 +2,7 @@ import { data } from "@/assets/js/uikit";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 
-const ArticleCard = ({data}) => {
+const VoucherCard = ({data}) => {
   return (
     <div className="el-item uk-panel uk-margin-remove-first-child">
   <Link
@@ -41,4 +41,4 @@ const ArticleCard = ({data}) => {
             );
 };
 
-export default ArticleCard;
+export default VoucherCard;

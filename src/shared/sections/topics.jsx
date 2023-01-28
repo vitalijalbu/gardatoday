@@ -1,96 +1,112 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
+//import { getCategories } from "@/lib/graphql/articles/";
+import { request, gql } from 'graphql-request'
+import { INDEX_QUERY } from "@/lib/graphql/articles/categories";
+import TopicCard from "@/shared/snippets/topic-card";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 
-const Section1 = () => {
-  const [expanded, setExpanded] = useState(true);
+// import required modules
+import { Pagination } from "swiper";
 
-  return(
-<div className="uk-section-default uk-light">
-  <div
-    data-src="https://via.placeholder.com/1920x1080"
-    data-sources='[{"type":"image\/webp","srcset":"\/joomla\/themes\/paladin\/component\/ajax\/?p=image&src=WyIuLi9kZW1vL3BhbGFkaW4vaW1hZ2VzL3BvbGl0aWNzLXBvc3QtZW50ZXJpbmctbmV4dC1yb3VuZC1icmV4aXQtbmVnb3RpYXRpb25zLXRlYXNlci1iZy1jZW50ZXIuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbNzY4LDI3MCw3NjgsMjcwXV0sWyJkb0Nyb3AiLFs3NjgsMjcwLDAsMF1dXSwxNjY5NzM1Njg4XQ%3D%3D&file=9b%2Fpolitics-post-entering-next-round-brexit-negotiations-teaser-bg-center-9b4533df.webp&hash=bf0d7a27 768w, \/joomla\/themes\/paladin\/component\/ajax\/?p=image&src=WyIuLi9kZW1vL3BhbGFkaW4vaW1hZ2VzL3BvbGl0aWNzLXBvc3QtZW50ZXJpbmctbmV4dC1yb3VuZC1icmV4aXQtbmVnb3RpYXRpb25zLXRlYXNlci1iZy1jZW50ZXIuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTAyNCwzNjAsMTAyNCwzNjBdXSxbImRvQ3JvcCIsWzEwMjQsMzYwLDAsMF1dXSwxNjY5NzM1Njg4XQ%3D%3D&file=ee%2Fpolitics-post-entering-next-round-brexit-negotiations-teaser-bg-center-eed2512e.webp&hash=48e54989 1024w, \/joomla\/themes\/paladin\/component\/ajax\/?p=image&src=WyIuLi9kZW1vL3BhbGFkaW4vaW1hZ2VzL3BvbGl0aWNzLXBvc3QtZW50ZXJpbmctbmV4dC1yb3VuZC1icmV4aXQtbmVnb3RpYXRpb25zLXRlYXNlci1iZy1jZW50ZXIuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTM2NSw0ODAsMTM2NSw0ODBdXSxbImRvQ3JvcCIsWzEzNjYsNDgwLDAsMF1dXSwxNjY5NzM1Njg4XQ%3D%3D&file=8c%2Fpolitics-post-entering-next-round-brexit-negotiations-teaser-bg-center-8cdad67d.webp&hash=536ee08f 1366w, \/joomla\/templates\/yootheme\/cache\/af\/politics-post-entering-next-round-brexit-negotiations-teaser-bg-center-af7eb6e1.webp 1600w, \/joomla\/themes\/paladin\/component\/ajax\/?p=image&src=WyIuLi9kZW1vL3BhbGFkaW4vaW1hZ2VzL3BvbGl0aWNzLXBvc3QtZW50ZXJpbmctbmV4dC1yb3VuZC1icmV4aXQtbmVnb3RpYXRpb25zLXRlYXNlci1iZy1jZW50ZXIuanBnIixbWyJ0eXBlIixbIndlYnAiLCI4NSJdXSxbImRvUmVzaXplIixbMTkyMCw2NzUsMTkyMCw2NzVdXSxbImRvQ3JvcCIsWzE5MjAsNjc1LDAsMF1dXSwxNjY5NzM1Njg4XQ%3D%3D&file=5e%2Fpolitics-post-entering-next-round-brexit-negotiations-teaser-bg-center-5e2481bf.webp&hash=528c4cd7 1920w, \/joomla\/templates\/yootheme\/cache\/d7\/politics-post-entering-next-round-brexit-negotiations-teaser-bg-center-d736acbc.webp 2560w","sizes":"(max-aspect-ratio: 2560\/900) 284vh"}]'
-    uk-img=""
-    className="uk-background-norepeat uk-background-cover uk-background-center-center uk-section uk-section-large"
-    style={{
-      backgroundImage:
-        'url("https://via.placeholder.com/1920x1080")'
-    }}
-  >
-    <div className="uk-container uk-container-xlarge">
-      <div
-        className="tm-grid-expand uk-grid-large uk-grid-margin-large uk-grid"
-        uk-grid=""
+
+const Topics = () => {
+  const [loading, setLoading] = useState(false);
+  const [categories, setCategories] = useState([]);
+  console.log('✅ received-articles', categories)
+
+useEffect(() => {
+  request('https://gardatoday.it/api/v1', INDEX_QUERY).then((data) => setCategories(data?.categories || []))
+}, [])
+
+  return(<div className="uk-section-default uk-section uk-padding-remove-bottom">
+  <div className="uk-container uk-container-xlarge">
+    <div
+      className="tm-grid-expand uk-grid-column-small uk-grid-divider uk-grid-margin uk-grid"
+      uk-grid=""
+    >
+      <div className="uk-width-1-5@m uk-first-column">
+        <div className="uk-divider-small uk-margin-large uk-margin-remove-bottom" />
+        <h2 className="uk-margin">Sezioni</h2>
+      </div>
+      <div className="uk-width-4-5@m" id="page#1">
+        <div
+          uk-slider=""
+          className="uk-margin uk-text-center uk-slider uk-slider-container"
+        >
+          <div className="uk-position-relative uk-visible-toggle" tabIndex={-1}>
+          <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        centeredSlides={false}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
       >
-        <div className="uk-width-3-5@m uk-first-column">
-          <div className="uk-h6"> Brexit negotiations </div>
-          <h2 className="uk-heading-small uk-margin-small uk-width-xlarge">
-            {" "}
-            <a
-              className="el-link uk-link-heading"
-              href="/notizie/demo-notizia"
-            >
-              Entering the next round of Brexit negotations one thing is for
-              sure: There will be no more postponement
-            </a>{" "}
-          </h2>
-          <div className="uk-panel uk-text-lead uk-margin-medium uk-width-large">
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-            officia deserunt mollit anim id est laborum. Quo eros nominati
-            temporibus ex.
+         {categories.map((category, i) => (<SwiperSlide key={i}><TopicCard data={category}/></SwiperSlide>))}
+
+      </Swiper>
+          
+            <div className="uk-visible@s uk-hidden-hover uk-hidden-touch uk-light">
+              
+              <a
+                className="el-slidenav uk-position-small uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav"
+                href="#"
+                uk-slidenav-previous=""
+                uk-slider-item="previous"
+                aria-label="Previous slide"
+              >
+                <svg
+                  width={8}
+                  height={11}
+                  viewBox="0 0 8 11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="1.5"
+                    points="6,0.5 1,5.5 6,10.5"
+                  />
+                </svg>
+              </a>
+              <a
+                className="el-slidenav uk-position-small uk-position-center-right uk-icon uk-slidenav-next uk-slidenav"
+                href="#"
+                uk-slidenav-next=""
+                uk-slider-item="next"
+                aria-label="Next slide"
+              >
+                <svg
+                  width={8}
+                  height={11}
+                  viewBox="0 0 8 11"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polyline
+                    fill="none"
+                    stroke="#000"
+                    strokeWidth="1.5"
+                    points="2,10.5 7,5.5 2,0.5"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
-        <div className="uk-width-2-5@m">
-          <h3 className="uk-h6"> More Coverage </h3>
-          <ul className="uk-list uk-list-divider uk-list-large uk-margin">
-            <li className="el-item">
-              <div className="el-content uk-panel uk-h3">
-                <a
-                  href="/notizie/demo-notizia"
-                  className="el-link uk-link-heading uk-margin-remove-last-child"
-                >
-                  Prime Minister to present new Brexit deal to parliament
-                </a>
-              </div>{" "}
-            </li>
-            <li className="el-item">
-              <div className="el-content uk-panel uk-h3">
-                <a
-                  href="/notizie/demo-notizia"
-                  className="el-link uk-link-heading uk-margin-remove-last-child"
-                >
-                  A new chapter of EU history started after last week’s
-                  elections
-                </a>
-              </div>{" "}
-            </li>
-            <li className="el-item">
-              <div className="el-content uk-panel uk-h3">
-                <a
-                  href="/notizie/demo-notizia"
-                  className="el-link uk-link-heading uk-margin-remove-last-child"
-                >
-                  I always took living in the European Union for granted
-                </a>
-              </div>{" "}
-            </li>
-            <li className="el-item">
-              <div className="el-content uk-panel uk-h3">
-                <a
-                  href="/notizie/demo-notizia"
-                  className="el-link uk-link-heading uk-margin-remove-last-child"
-                >
-                  What the outcome of the Brexit negotations says about the new
-                  Prime Minister
-                </a>
-              </div>{" "}
-            </li>
-          </ul>
         </div>
       </div>
     </div>
   </div>
 </div>
+
 );
 }
-export default Section1;
+export default Topics;

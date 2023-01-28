@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="site-brand-wrapper">
               <a href="/" className="site-logo" data-focus-mouse="false">
                 <img
-                  src="https://gardatoday.it/assets/images/logo.svg"
+                  src="https://gardatoday.it/assets/images/logo-white-100.svg"
                   alt="Logo gardatoday"
                 />
               </a>

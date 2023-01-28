@@ -1,26 +1,28 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { getEntries } from "@/lib/graphql/articles/";
+import { request, gql } from "graphql-request";
+import { FEED_QUERY } from "@/lib/graphql/articles/";
 import ArticleCard from "@/shared/snippets/article-card";
-import { request, gql } from 'graphql-request'
-import { FEED_QUERY } from "@/lib/graphql/queries/news";
 
 const RelatedArticles = () => {
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState([]);
-  
+  const [entries, setEntries] = useState([]);
+  const firstArticle = entries[0];
 
-      /* Query API here */
-      useEffect(() => {
-        //const { query, order_by } = params;
-        request('https://gardatoday.it/api/v1api/v1/', FEED_QUERY)
-          .then(({ data }) => {
-            //setData(data);
-            console.log('res---->', data);
-          })
-          .finally(() => {
-            setLoading(false);
-          });
-        },[]);
+  console.log("✅ received-articles", entries);
+  console.log("✅ firstArticle", firstArticle);
+
+  useEffect(() => {
+    request("https://gardatoday.it/api/v1", FEED_QUERY)
+      .then((data) => {
+        setEntries(data?.entries || []);
+        //setfirstArticle(data?.entries);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  }, []);
 
       
 
@@ -36,7 +38,7 @@ const RelatedArticles = () => {
    <div className="row">
      <div className="tm-ignore-container">
         <div className="uk-grid uk-child-width-1-3 uk-child-width-1-4@m  uk-grid" uk-grid="">
-        <ArticleCard/>
+        {entries.map((article, i) => (<ArticleCard data={article} key={i}/>))}
         </div>
      </div>
   </div>
