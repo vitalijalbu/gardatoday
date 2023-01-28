@@ -71,7 +71,7 @@ const MastheadHeroLg = () => {
               <h2 className="uk-heading-small uk-margin-small uk-width-xlarge">
                 <Link
                   className="el-link uk-link-heading"
-                  href={`/notizie/${firstArticle.slug}`}
+                  href={`/notizie/${firstArticle?.slug}`}
                 >
                   {firstArticle?.title}
                 </Link>
