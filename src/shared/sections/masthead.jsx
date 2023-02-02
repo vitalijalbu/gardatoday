@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const MastHead = ({ title, topics, limit }) => {
   const FOCUS_QUERY = `query{
-      entries(section: "news", limit: 10) {
+      query entries(section: "news", limit: 10) {
         id
         title
         slug
@@ -37,6 +37,7 @@ const MastHead = ({ title, topics, limit }) => {
 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(false);
+
   const firstArticle = data?.entries?.[0];
   const articles = data?.entries?.slice(1);
 
