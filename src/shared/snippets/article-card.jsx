@@ -9,21 +9,21 @@ const ArticleCard = ({data}) => {
      href={`/notizie/${data.slug}`}
     aria-label={data.title}
   >
-    <picture>
+    <div className="img-responsive-wrapper">
+  <div className="img-responsive">
+    <figure className="img-wrapper">
       <source
-        type="image/webp"
         srcSet={data.cover_image[0]?.url}
-        sizes="(min-width: 2400px) 2400px"
+        media="(min-width: 62.5em)"
       />
       <img
-        src={data.cover_image[0]?.url}
-        width={2400}
-        height={1500}
-        className="el-image"
-        alt=""
-        loading="lazy"
+        srcSet={data.cover_image[0]?.url}
+        className="p-card__image"
+        alt=" CanevaWorld Resort alla ricerca di oltre 200 lavoratori stagionali﻿ "
       />
-    </picture>
+    </figure>
+  </div>
+</div>
   </Link>
   <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                   

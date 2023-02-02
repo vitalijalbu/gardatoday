@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 
-const MastheadSmall = () => {
+const MastheadSmall = ({articles, title}) => {
     return(
         <div className="uk-section-default uk-section uk-padding-remove-top">
         <div className="uk-container uk-container-xlarge">

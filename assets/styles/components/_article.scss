@@ -1,0 +1,50 @@
+.img-responsive-wrapper {
+  overflow: hidden
+}
+
+.img-responsive-wrapper .img-responsive {
+  padding-bottom: 61.29%;
+  position: relative;
+  height: 0;
+}
+.img-responsive-wrapper .img-responsive .img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%
+}
+
+.img-responsive-wrapper .img-responsive .img-wrapper.custom-object-fit {
+  background-size: cover;
+  background-position: center;
+  background-color: #ebeced
+}
+
+.img-responsive-wrapper .img-responsive .img-wrapper.custom-object-fit img {
+  visibility: hidden
+}
+
+.img-responsive-wrapper .img-responsive .img-wrapper img {
+  width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: all .2s ease-in-out;
+}
+
+.overlay-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden
+}
+.article-item:after {
+  content: '';
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var($border-color);
+}

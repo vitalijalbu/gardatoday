@@ -1,10 +1,38 @@
 import React from 'react';
 import RelatedArticles from '@/shared/sections/related-articles';
+import graphQLClient from "@/lib/graphql/client";
+import { VIEW_INDEX, VIEW_QUERY } from '@/lib/graphql/entries';
 
-  const View = () => {
+
+export async function getStaticPaths() {
+  const data = await graphQLClient.request(VIEW_INDEX);
+
+  return {
+    paths: data.entries.map((post) => `/notizie/${post.slug}`),
+    fallback: false,
+  };
+}
+
+
+
+export async function getStaticProps({ params }) {
+  const data = await graphQLClient.request({
+    VIEW_QUERY,     
+    variables: {
+    slug: params.slug,
+  }});
+
+  return {
+    props: { data },
+  };
+}
+
+  const View = ({ data }) => {
+console.log('view-entry', data);
+
     return (
-      <div className='page'>
-      <div className='page-content'>
+      <div className="page">
+      <div className="page-content">
 <div className="uk-section-default uk-section uk-padding-remove-bottom">
   <div className="uk-container">
     <div className="uk-grid-margin uk-container uk-container-xsmall">
@@ -14,12 +42,11 @@ import RelatedArticles from '@/shared/sections/related-articles';
       >
         <div className="uk-width-1-1@m uk-first-column">
           <div className="uk-h6 uk-text-primary uk-margin-remove-vertical uk-text-center">
-            {" "}
-            Statue of Liberty{" "}
+            Statue of Liberty
           </div>
           <h1 className="uk-heading-small uk-margin uk-text-center">
-            {" "}
-            Speculation around New York’s famous landmark turned out false{" "}
+            
+            Speculation around New York’s famous landmark turned out false
           </h1>
           <div className="uk-panel uk-text-lead uk-margin-medium uk-text-center">
             Tempor integre sit cu, alia iuvaret atomorum his cu, error omnium at
@@ -28,7 +55,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
           </div>
           <div className="uk-panel uk-text-meta uk-margin uk-text-center">
             <time dateTime="2020-06-06T21:20:09+00:00">Jun 6, 2020</time>  | 
-            Adrian Phelps  | {" "}
+            Adrian Phelps  | 
             <a href="/notizie/demo">Humanities</a>
           </div>
         </div>
@@ -112,8 +139,8 @@ import RelatedArticles from '@/shared/sections/related-articles';
             <p>
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
               officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet{" "}
-              <a href="/notizie/demo">consectetur adipiscing elit</a>{" "}
+              amet
+              <a href="/notizie/demo">consectetur adipiscing elit</a>
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad minim veniam, quis nostrud exercitation ullamco
               laboris.
@@ -178,7 +205,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
               aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in <a href="/notizie/demo">culpa qui officia</a>{" "}
+              sunt in <a href="/notizie/demo">culpa qui officia</a>
               deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
               consectetur adipiscing elit, sed do eiusmod tempor incididunt.
             </p>
@@ -200,7 +227,7 @@ import RelatedArticles from '@/shared/sections/related-articles';
 <RelatedArticles/>
 
 </div>
-    );
-};
+    )
+}
 
 export default View;

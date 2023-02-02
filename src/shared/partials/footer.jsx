@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { IconBrandInstagram, IconBrandFacebook, IconBrandLinkedin, IconBrandTwitter } from '@tabler/icons-react';
 
 const Footer = () => {
   const [expanded, setExpanded] = useState(true);
@@ -29,8 +30,8 @@ const Footer = () => {
                 Link utili
               </a>
             </h4>
-            <div className="link-list-wrapper">
-              <ul className="footer-list uk-list">
+            <div className="list">
+              <ul className="footer-list list-unstyled">
                 <li>
                   <a className="list-item" href="/">
                     Home
@@ -71,7 +72,7 @@ const Footer = () => {
               </a>
             </h4>
             <div className="link-list-wrapper">
-              <ul className="footer-list uk-list">
+              <ul className="footer-list list-unstyled">
                 <li>
                   <a
                     className="list-item"
@@ -202,7 +203,7 @@ const Footer = () => {
               </a>
             </h4>
             <div className="link-list-wrapper">
-              <ul className="footer-list uk-list">
+              <ul className="footer-list list-unstyled">
                 <li>
                   <a className="list-item" href="/eventi">
                     Arte e cultura
@@ -288,7 +289,7 @@ const Footer = () => {
               </a>
             </h4>
             <div className="link-list-wrapper">
-              <ul className="footer-list uk-list">
+              <ul className="footer-list list-unstyled">
                 <li>
                   <a
                     className="list-item"
@@ -478,9 +479,6 @@ const Footer = () => {
                   </div>
                 </div>
                 <button className="btn btn-primary btn-icon" type="submit">
-                  <svg className="icon icon-white">
-                    <use xlinkHref="/assets//svg/sprite.svg#site-mail" />
-                  </svg>
                   <span>Iscriviti</span>
                 </button>
               </form>
@@ -489,47 +487,13 @@ const Footer = () => {
           <div className="col-lg-3 col-md-3 pb-2">
             <h4>
               <a href="#" title="Vai alla pagina: Seguici su">
-                Seguici su
+                Social
               </a>
             </h4>
-            <ul className="list-inline text-left social">
-              <li className="list-inline-item">
-                <a
-                  className="p-2 text-white"
-                  href="https://www.facebook.com/gardatoday"
-                  target="_blank"
-                >
-                  <svg className="icon icon-sm icon-white align-top">
-                    <use xlinkHref="/assets//svg/sprite.svg#site-facebook" />
-                  </svg>
-                  <span className="sr-only">Facebook</span>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="p-2 text-white"
-                  href="https://www.youtube.com/channel/UC0kbuxE8TIrAlVVKGVxDjfQ"
-                  target="_blank"
-                >
-                  <svg className="icon icon-sm icon-white align-top">
-                    <use xlinkHref="/assets//svg/sprite.svg#site-youtube" />
-                  </svg>
-                  <span className="sr-only">YouTube</span>
-                </a>
-              </li>
-              <li className="list-inline-item">
-                <a
-                  className="p-2 text-white"
-                  aria-label="Youtube"
-                  href="/rss"
-                  target="_blank"
-                >
-                  <svg className="icon icon-sm icon-white align-top">
-                    <use xlinkHref="/assets/svg/sprite.svg#site-rss" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
+              <Link href="#"><IconBrandInstagram/></Link>
+              <Link href="#"><IconBrandFacebook/></Link>
+              <Link href="#"><IconBrandLinkedin/></Link>
+              <Link href="#"><IconBrandTwitter/></Link>
           </div>
         </div>
       </section>

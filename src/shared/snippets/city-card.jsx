@@ -4,20 +4,33 @@ import React, { useState, useEffect } from "react";
 
 const CityCard = ({data}) => {
   return (
-    <div>
+
       <Link href={`/hosts/${data.id}`}>
-    <div class="uk-card uk-card-default">
-        <div class="uk-card-media-top">
-            <img src="https://via.placeholder.com/800" width="1800" height="1200" alt=""/>
+      <div className="card-wrapper card-space">
+
+    <div className="card card-img no-after">
+      <div className="img-responsive-wrapper">
+        <div className="img-responsive">
+          <figure className="img-wrapper">
+            <source
+              srcSet="https://gardatoday.it/web/uploads/static/IMG_5485.jpg"
+              media="(min-width: 62.5em)"
+            />
+            <img
+              srcSet="https://gardatoday.it/web/uploads/static/IMG_5485.jpg"
+              alt=" Castel Goffredo"
+            />
+          </figure>
         </div>
-        <div class="uk-card-body">
-            <h3 class="uk-card-title">{data.title}</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-        </div>
+      </div>
+      <div className="card-body">
+        <h5 className="card-title underline">{data.title}</h5>
+      </div>
     </div>
-    </Link>
 </div>
-            );
-};
+
+    </Link>
+            )
+}
 
 export default CityCard;

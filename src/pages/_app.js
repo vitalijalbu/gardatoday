@@ -1,5 +1,4 @@
 import React from 'react';
-import 'uikit/dist/css/uikit.css'
 import '@/assets/styles/index.scss';
 
 import Header from '@/shared/partials/header';

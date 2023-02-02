@@ -5,9 +5,9 @@ import graphQLClient from "@/lib/graphql/client";
 
 import { Container, Row, Col } from "reactstrap";
 
-const MastHead = ({ title, topics, limit }) => {
+const FocusHalf = ({ title, topics, limit }) => {
   const FOCUS_QUERY = `query{
-      entries(section: "news", limit: 10) {
+      entries(section: "news", limit:${limit}, category: [${topics}]) {
         id
         title
         slug
@@ -79,4 +79,4 @@ const MastHead = ({ title, topics, limit }) => {
     </Container>
   )
 }
-export default MastHead;
+export default FocusHalf;

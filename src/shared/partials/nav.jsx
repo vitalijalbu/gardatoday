@@ -15,7 +15,7 @@ const Nav = () => {
         <div className="uk-position-center-left tm-position-z-index-high">
           <div
             className="uk-grid-medium uk-child-width-auto uk-flex-middle uk-grid"
-            uk-grid=""
+            data-uk-grid=""
           >
             <div className="uk-first-column">
               <div className="uk-panel" id="module-106">
@@ -104,7 +104,6 @@ const Nav = () => {
                           aria-label="Search"
                           type="search"
                           className="uk-search-input uk-text-center"
-                          autofocus=""
                         />
                         <input
                           type="hidden"

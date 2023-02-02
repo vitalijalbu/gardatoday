@@ -1,8 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import graphQLClient from "@/lib/graphql/client";
+import { request, gql } from 'graphql-request';
 
+export async function getStaticProps() {
+  const data = await graphQLClient.request(gql`
+  query {
+    entries(section: "news", limit: 30) {
+      id
+      title
+      slug
+      dateCreated
+      ... on news_default_Entry {
+        excerpt
+        cover_image {
+          id,
+          url
+        }
+        author {
+          id,
+          fullName
+        }
+        area {
+          id,
+          title
+        }
+         category {
+          id,
+          title
+        }
+      }
+    }
+  }
+  `);
 
-  const Index = () => {
-    return (
+  return {
+    props: { data },
+  };
+}
+
+const Index = ({data}) => {
+  const [loading, setLoading] = useState(false);
+
+  if (!data) return <h1 strong>Nessun dato</h1>;
+
+  return (
+    
     <div className='page'>
     <div
         className="tm-grid-expand uk-child-width-1-1 uk-grid-margin uk-grid uk-grid-stack"
@@ -55,13 +97,13 @@ import React from 'react';
                     Innovations for designers
                   </div>
                   <h2 className="el-title uk-heading-small uk-margin-small-top uk-margin-remove-bottom">
-                    {" "}
+                    
                     <a
                       href="/sezioni/politica"
                       className="uk-link-heading"
                     >
                       The new tablet manages to inspire with unique features
-                    </a>{" "}
+                    </a>
                   </h2>
                   <div className="el-content uk-panel uk-text-lead uk-margin-medium-top">
                     Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do
@@ -85,14 +127,14 @@ import React from 'react';
         className="uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-4@l uk-grid-column-medium uk-grid-row-small uk-grid-divider uk-grid-match uk-grid"
         uk-grid=""
       >
-        {" "}
+        
         <div className="uk-first-column">
           <div className="el-item uk-panel uk-margin-remove-first-child">
             <div
               className="uk-child-width-expand uk-grid-column-small uk-grid"
               uk-grid=""
             >
-              {" "}
+              
               <div className="uk-width-auto uk-first-column">
                 <a
                   href="/sezioni/politica"
@@ -114,22 +156,22 @@ import React from 'react';
                     />
                   </picture>
                 </a>
-              </div>{" "}
+              </div>
               <div className="uk-margin-remove-first-child">
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
-                  {" "}
+                  
                   <a
                     href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     This is why you need a wireless stylus even if you don’t
                     draw
-                  </a>{" "}
+                  </a>
                 </h3>
                 <div className="el-meta uk-text-meta uk-margin-small-top">
                   11:00 am
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>
@@ -139,7 +181,7 @@ import React from 'react';
               className="uk-child-width-expand uk-grid-column-small uk-grid"
               uk-grid=""
             >
-              {" "}
+              
               <div className="uk-width-auto uk-first-column">
                 <a
                   href="/sezioni/politica"
@@ -161,21 +203,21 @@ import React from 'react';
                     />
                   </picture>
                 </a>
-              </div>{" "}
+              </div>
               <div className="uk-margin-remove-first-child">
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
-                  {" "}
+                  
                   <a
                     href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     Apple Watch: New software updates are in the starting blocks
-                  </a>{" "}
+                  </a>
                 </h3>
                 <div className="el-meta uk-text-meta uk-margin-small-top">
                   11:00 am
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>
@@ -185,7 +227,7 @@ import React from 'react';
               className="uk-child-width-expand uk-grid-column-small uk-grid"
               uk-grid=""
             >
-              {" "}
+              
               <div className="uk-width-auto uk-first-column">
                 <a
                   href="/sezioni/politica"
@@ -207,21 +249,21 @@ import React from 'react';
                     />
                   </picture>
                 </a>
-              </div>{" "}
+              </div>
               <div className="uk-margin-remove-first-child">
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
-                  {" "}
+                  
                   <a
                     href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     It’s official: E3 2020 has been cancelled
-                  </a>{" "}
+                  </a>
                 </h3>
                 <div className="el-meta uk-text-meta uk-margin-small-top">
                   11:00 am
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>
@@ -231,7 +273,7 @@ import React from 'react';
               className="uk-child-width-expand uk-grid-column-small uk-grid"
               uk-grid=""
             >
-              {" "}
+              
               <div className="uk-width-auto uk-first-column">
                 <a
                   href="/sezioni/politica"
@@ -253,22 +295,22 @@ import React from 'react';
                     />
                   </picture>
                 </a>
-              </div>{" "}
+              </div>
               <div className="uk-margin-remove-first-child">
                 <h3 className="el-title uk-h5 uk-margin-top uk-margin-remove-bottom">
-                  {" "}
+                  
                   <a
                     href="/sezioni/politica"
                     className="uk-link-heading"
                   >
                     Porsche launches its first pure electric car with 670
                     horsepower
-                  </a>{" "}
+                  </a>
                 </h3>
                 <div className="el-meta uk-text-meta uk-margin-small-top">
                   10:30 am
                 </div>
-              </div>{" "}
+              </div>
             </div>
           </div>
         </div>
@@ -276,10 +318,15 @@ import React from 'react';
     </div>
     <hr className="uk-margin-medium" />
   </div>
+  {data.entries.map((article, i) => (
+    <div>
+            {article.title}
+    </div>
+   ))}
 </div>
 </div>
-      
-    );
-};
+
+  )
+}
 
 export default Index;

@@ -5,9 +5,9 @@ import graphQLClient from "@/lib/graphql/client";
 
 import { Container, Row, Col } from "reactstrap";
 
-const MastHead = ({ title, topics, limit }) => {
+const FocusHead = ({ title, topics, limit }) => {
   const FOCUS_QUERY = `query{
-      entries(section: "news", limit: 10) {
+      entries(section: "news", limit:${limit}, category: [${topics}]) {
         id
         title
         slug
@@ -37,8 +37,6 @@ const MastHead = ({ title, topics, limit }) => {
 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(false);
-  const firstArticle = data?.entries?.[0];
-  const articles = data?.entries?.slice(1);
 
   async function getData() {
     try {
@@ -62,21 +60,16 @@ const MastHead = ({ title, topics, limit }) => {
   return (
     <Container>
       <Row>
-        <Col>
-        <h1 className="section-title">{title}</h1>
-        </Col>
+        <Col>{title}</Col>
       </Row>
-      <Row className="list-unstyled">
-        <Col md={6} lg={6} xs={12}>
-            <ArticleCard data={firstArticle} key={0} />
-          </Col>
-        {articles.map((article, i) => (
+      <Row>
+        {data.entries.map((article, i) => (
           <Col md={6} lg={3} xs={6}>
             <ArticleCard data={article} key={i} />
           </Col>
         ))}
       </Row>
     </Container>
-  )
-}
-export default MastHead;
+  );
+};
+export default FocusHead;

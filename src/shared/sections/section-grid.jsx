@@ -7,7 +7,7 @@ import ArticleCard from "@/shared/snippets/article-card";
 
 
 
-const SectionGrid = () => {
+const SectionGrid = ({title, query}) => {
   const [loading, setLoading] = useState(false);
   const [entries, setEntries] = useState([]);
   console.log('✅ received-articles', entries)
@@ -31,7 +31,7 @@ useEffect(() => {
             className="el-link uk-link-heading"
             href="/notizie/demo-notizia"
           >
-            Section grid
+            {title}
           </Link>
         </h2>
         <div className="row">
@@ -41,42 +41,8 @@ useEffect(() => {
           >
             {entries.map((article, i) => (
            
-            <div key={i}>
-              <div className="el-item">
-                <Link
-                  href={`/notizie/${article.slug}`}
-                  aria-label={article.title}
-                >
-                  <picture>
-                    <source
-                      type="image/webp"
-                      srcSet={article.cover_image[0]?.url}
-                      sizes="(min-width: 610px) 610px"
-                    />
-                    <img
-                      src={article.cover_image[0]?.url}
-                      width={610}
-                      height={381}
-                      className="el-image"
-                      alt=""
-                      loading="lazy"
-                    />
-                  </picture>
-                </Link>
-                <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
-                  
-                <Link
-                  href={`/notizie/${article.slug}`}
-                    className="uk-link-heading"
-                  >
-                   {article.title}
-                  </Link>
-                </h3>
-                <div className="el-content uk-panel uk-margin-top">
-                  {article.excerpt}
-                </div>
-              </div>
-            </div>
+           <ArticleCard data={article} key={i}/>
+
 
             ))}
 
