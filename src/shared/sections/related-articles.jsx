@@ -1,49 +1,75 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { getEntries } from "@/lib/graphql/articles/";
-import { request, gql } from "graphql-request";
-import { FEED_QUERY } from "@/lib/graphql/articles/";
 import ArticleCard from "@/shared/snippets/article-card";
+import graphQLClient from "@/lib/graphql/client";
 
-const RelatedArticles = () => {
+import { Container, Row, Col } from "reactstrap";
+
+const RelatedArticles = ({ topics, limit }) => {
+  const FOCUS_QUERY = `query{
+      entries(section: "news", limit:${limit}, category:"${topics}") {
+        id
+        title
+        slug
+        dateCreated
+        ... on news_default_Entry {
+          excerpt
+          cover_image {
+            id,
+            url
+          }
+          author {
+            id,
+            fullName
+          }
+          area {
+            id,
+            title
+          }
+           category {
+            id,
+            title
+          }
+        }
+      }
+    }
+  `;
+
   const [loading, setLoading] = useState(false);
-  const [entries, setEntries] = useState([]);
-  const firstArticle = entries[0];
+  const [data, setData] = useState(false);
 
-  console.log("✅ received-articles", entries);
-  console.log("✅ firstArticle", firstArticle);
+  async function getData() {
+    try {
+      const response = await graphQLClient.request(FOCUS_QUERY);
+      if (response) {
+        setData(response);
+      }
+    } catch (err) {
+      console.log("ERROR FROM GRAPHQL-REQUEST API CALL", err);
+    } finally {
+      setLoading(false);
+    }
+  }
 
   useEffect(() => {
-    request("https://gardatoday.it/api/v1", FEED_QUERY)
-      .then((data) => {
-        setEntries(data?.entries || []);
-        //setfirstArticle(data?.entries);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
+    getData();
   }, []);
 
-      
+  if (!data) return <h1>Nessun dato</h1>;
 
-  
-  return(
-  <section className="uk-section uk-section-small">
-  <div className="container">
-  <div className="row">
-  <div className="page-head uk-grid-small uk-flex-middle uk-margin-bottom">
-     <h2 className="section-title">Articoli correlati</h2>
-   </div>
-   </div>
-   <div className="row">
-     <div className="tm-ignore-container">
-        <div className="uk-grid uk-child-width-1-3 uk-child-width-1-4@m  uk-grid" uk-grid="">
-        {entries.map((article, i) => (<ArticleCard data={article} key={i}/>))}
-        </div>
-     </div>
-  </div>
-  </div>
-</section>
-);
-}
+  return (
+    <Container>
+       <Col>
+        <h1 className="section-title">Articoli simili</h1>
+        </Col>
+      <Row>
+        {data.entries.map((article, i) => (
+          <Col md={6} lg={3} xs={6}>
+            <ArticleCard data={article} key={i} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
+  );
+};
 export default RelatedArticles;

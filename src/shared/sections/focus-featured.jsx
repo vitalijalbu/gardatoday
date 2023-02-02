@@ -33,7 +33,7 @@ const FocusFeatured = ({ title, topics, limit }) => {
         }
       }
     }
-    `;
+  `;
 
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(false);

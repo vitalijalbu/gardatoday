@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="it">
+    <Html lang="it" locale="it">
       <Head>
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <title> GardaToday - Le ultime notizie dal Lago di Garda</title>

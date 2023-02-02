@@ -1,6 +1,10 @@
+import dayjs from 'dayjs';
+
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
+  var locale = require('dayjs/locale/it');
+
   return (
     <Html lang="it">
       <Head>
@@ -13,7 +17,7 @@ export default function Document() {
       </Head>
       <body>
         <Main />
-        <NextScript />
+        <NextScript locale={locale}/>
       </body>
     </Html>
   )

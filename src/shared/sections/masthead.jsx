@@ -62,11 +62,6 @@ const MastHead = ({ title, topics, limit }) => {
 
   return (
     <Container>
-      <Row>
-        <Col>
-        <h1 className="section-title">{title}</h1>
-        </Col>
-      </Row>
       <Row className="list-unstyled">
         <Col md={6} lg={6} xs={12}>
             <ArticleCard data={firstArticle} key={0} />
