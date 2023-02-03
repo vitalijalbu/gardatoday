@@ -12,11 +12,11 @@ const ArticleCard = ({ data }) => {
             <div className="img-responsive">
               <figure className="img-wrapper">
                 <source
-                  srcSet={data.cover_image[0]?.url}
+                  srcSet={data.cover_image[0]?.url ?? 'https://gardatoday.it/web/assets/images/placeholder.png'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={data.cover_image[0]?.url}
+                  srcSet={data.cover_image[0]?.url ?? 'https://gardatoday.it/web/assets/images/placeholder.png'}
                   className="p-card__image"
                   alt=" CanevaWorld Resort alla ricerca di oltre 200 lavoratori stagionali﻿ "
                 />

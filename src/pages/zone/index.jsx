@@ -1,48 +1,48 @@
 import React, { useState, useEffect } from "react";
-import { request, gql } from 'graphql-request'
+import { Container, Row, Col } from "reactstrap";
 import CityCard from "@/shared/snippets/city-card";
+import { GET_AREAS } from "@/lib/graphql/entries/areas";
+import graphQLClient from "@/lib/graphql/client";
 
+export async function getStaticProps() {
+  const data = await graphQLClient.request(GET_AREAS);
 
-const Index = () => {
-  const[data, setData] = useState([]);
+  return {
+    props: { data },
+  };
+}
 
-
-
-  const query = gql`
-  query MyQuery {
-    entries(section: "areas") {
-      id
-      title
-    }
-  }  
-`
-
-useEffect(() => {
-  request('https://francescos85.sg-host.com/api/v1/', query).then((data) => setData(data))
-}, [])
+const Index = ({data}) => {
 
 
 
   return (
    <div className="page">
+   <div className="page-content">
     <section className="uk-section uk-section-small">
-  <div className="uk-container">
-    <div className="page-head uk-grid-small uk-flex-middle uk-margin-bottom">
-      <h2 className="page-title">Comuni</h2>
-    </div>
+  <Container>
+  <Row>
+    <Col>
+      <h1 className="page-title">Comuni</h1>
+    </Col>
+    </Row>
+
     {Array.isArray(data.entries) ? (
-         <div className="uk-grid"> 
+         <Row> 
           {data.entries.map((item, i) => (
+            <Col lg={4} xs={6} sm={6} className="mb-3">
             <CityCard data={item} key={i}/>
+            </Col>
           ))}
-        </div>
+        </Row>
       ) : (
         <p strong>Nessun dato</p>
       )}
-  </div>
+  </Container>
 </section>
 
    
+    </div>
     </div>
     
   );

@@ -10,6 +10,7 @@ import FastHeader from "@/shared/sections/fast-header";
 import FocusHalf from "@/shared/sections/focus-half";
 import MastHead from "@/shared/sections/masthead";
 import Areas from "@/shared/sections/areas";
+import Topics from "@/shared/sections/topics";
 import Newsletter from "@/shared/sections/newsletter";
 /*
 import Topics from "@/shared/sections/topics";
@@ -29,6 +30,7 @@ const Home = () => {
       <FocusFeatured title="In evidenza" limit={8} topics={[25, 29]}/>
       <Areas/>
       <Newsletter/>
+      <Topics/>
     </div>
     </div>
   );
