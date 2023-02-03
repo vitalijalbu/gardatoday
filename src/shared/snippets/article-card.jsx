@@ -1,4 +1,3 @@
-import { data } from "@/assets/js/uikit";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";

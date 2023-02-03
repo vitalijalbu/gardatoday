@@ -7,10 +7,11 @@ const Newsletter = ({ title, topics, limit }) => {
 
 
   return (
+    <section className="py-4">
 <div className="site-newsletter">
   <div className="container">
     <div className="text-center">
-      <h3 className="h4 mb-2">Subscribe to our newsletter</h3>
+      <h3 className="h4 mb-2">Iscirviti alla newsletter</h3>
       <p className="text-muted">
         Join our monthly newsletter and never miss out on new stories and
         promotions.
@@ -26,7 +27,7 @@ const Newsletter = ({ title, topics, limit }) => {
             />
             <span className="input-group-btn">
               <button className="btn btn-secondary" type="button">
-                Subscribe
+                Iscirviti
               </button>
             </span>
           </div>
@@ -35,6 +36,7 @@ const Newsletter = ({ title, topics, limit }) => {
     </div>
   </div>
 </div>
+</section>
   )
 }
 export default Newsletter;

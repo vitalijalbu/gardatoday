@@ -3,7 +3,7 @@ import Link from 'next/link';
 import SideNav from '@/shared/account/side-nav';
 import { Container, Ro, Col } from 'reactstrap';
 
-  const Index = () => {
+  const Commenti = () => {
  
     return (
    
@@ -18,15 +18,9 @@ import { Container, Ro, Col } from 'reactstrap';
     </div>
   </div>
   <div className="col-md-8">
-    <h3 className="pb-4 mb-4  border-bottom">Ciao User</h3>
+    <h2 className="ssection-title border-bottom">I miei commenti</h2>
     <article className="blog-post">
-      <h2 className="blog-post-title mb-1"> I tuoi interessi</h2>
-      <p>
-Da oggi puoi seguire i tuoi interessi direttamente da qui.
 
-Scegli un autore, un argomento o una sezione su ilGiornale.it, clicca sul tasto 
-Segui e troverai qui gli aggiornamenti per te.
-      </p>
       <ul>
         <li>First list item</li>
         <li>Second list item with a longer description</li>
@@ -115,4 +109,4 @@ Segui e troverai qui gli aggiornamenti per te.
     );
 };
 
-export default Index;
+export default Commenti;

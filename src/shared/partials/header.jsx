@@ -1,28 +1,33 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { Collapse, Button } from "reactstrap";
+import { UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu, Button } from "reactstrap";
 import SideMenu from "./side-menu";
+import SearchOverlay from "./search-overlay";
 import {
   IconHaze,
   IconMenu,
-  IconUserCircle,
+  IconMessageCircle, IconBookmark, IconSettings, IconUserCircle,
   IconSearch,
 } from "@tabler/icons-react";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const openSideNav = () => setIsOpen(!isOpen);
+  const [navOpen, setNavOpen] = useState(false);
+  const [searchOpen, setsearchOpen] = useState(false);
+   /* actions */ 
+  const openSideNav = () => setNavOpen(!navOpen);
+  const openSearch = () => setsearchOpen(!searchOpen);
 
   return (
     <>
-      {isOpen && <SideMenu opened={isOpen} toggle={openSideNav} />}
+      {navOpen && <SideMenu opened={navOpen} toggle={openSideNav} />}
+      {searchOpen && <SearchOverlay opened={searchOpen} toggle={openSearch} />}
       <div id="site-header">
         <nav className="py-1 bg-light border-bottom">
           <div className="container d-flex flex-wrap">
             <ul className="nav me-auto">
               <li className="nav-item">
                 <Link
-                  href="#"
+                  href="/meteo"
                   className="nav-link link-dark px-2 active"
                   aria-current="page"
                 >
@@ -88,14 +93,41 @@ const Header = () => {
               <img src="https://gardatoday.it/assets/images/logo.svg" />
             </Link>
             <div className="col-md-3 text-end">
-              <Link href="/login" className="px-2">
+            <ul className="nav">
+              <li className="nav-item">
+           <UncontrolledDropdown>
+              <DropdownToggle nav caret>
+                Account
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem tag="a">
+                <Link href="/account"><IconUserCircle/>Il mio acount</Link>
+              </DropdownItem>
+              <DropdownItem tag="a">
+                <Link href="/account/preferiti"><IconBookmark/> Preferiti</Link>
+              </DropdownItem>
+              <DropdownItem tag="a">
+                <Link href="/account/commenti"><IconMessageCircle/> Commenti</Link>
+              </DropdownItem>
+              <DropdownItem tag="a" className="mt-2">
+                <Link href="/account/impostazioni"><IconSettings/> Impostazioni</Link>
+              </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Esci</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            </li>
+            <li className="nav-item"><Link href="/login" className="px-2">
                 <Button color="primary" outline>
                   <IconUserCircle /> Accedi
                 </Button>
               </Link>
-              <Button variant="link">
+              </li>
+              <li className="nav-item"><Button variant="link"  onClick={openSearch}>
                 <IconSearch />
               </Button>
+              </li>
+            </ul>
             </div>
           </header>
         </div>

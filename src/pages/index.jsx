@@ -12,6 +12,7 @@ import MastHead from "@/shared/sections/masthead";
 import Areas from "@/shared/sections/areas";
 import Topics from "@/shared/sections/topics";
 import Newsletter from "@/shared/sections/newsletter";
+
 /*
 import Topics from "@/shared/sections/topics";
 import Masthead from "@/shared/sections/masthead";
@@ -22,6 +23,7 @@ import { Button } from 'reactstrap';
 const Home = () => {
   return (
     <div className="page">
+      
       <div className="page-content">
       <FastHeader/>
       <MastHead/>
@@ -32,6 +34,7 @@ const Home = () => {
       <Newsletter/>
       <Topics/>
     </div>
+
     </div>
   );
 };

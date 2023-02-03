@@ -2,12 +2,17 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import ArticleCard from "@/shared/snippets/article-card";
 import graphQLClient from "@/lib/graphql/client";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Container, Row, Col, Dropdown , DropdownMenu, DropdownItem, DropdownToggle, UncontrolledDropdown } from "reactstrap";
+// import required modules
+import { Pagination } from "swiper";
 
-import { Container, Row, Col } from "reactstrap";
+
 
 const MastHead = ({ title, topics, limit }) => {
   const FOCUS_QUERY = `query{
-      query entries(section: "news", limit: 10) {
+      query entries(section: "news", limit: 3) {
         id
         title
         slug
@@ -38,8 +43,6 @@ const MastHead = ({ title, topics, limit }) => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState(false);
 
-  const firstArticle = data?.entries?.[0];
-  const articles = data?.entries?.slice(1);
 
   async function getData() {
     try {
@@ -62,15 +65,47 @@ const MastHead = ({ title, topics, limit }) => {
 
   return (
     <Container>
-      <Row className="list-unstyled">
-        <Col md={6} lg={6} xs={12}>
-            <ArticleCard data={firstArticle} key={0} />
-          </Col>
-        {articles.map((article, i) => (
-          <Col md={6} lg={3} xs={6}>
+      <Row>
+      <Col md={3} lg={3} xs={12}>
+      <h2 className="section-title">Ieri</h2>
+      { data?.entries.map((article, i) => (
+          <Col md={12}>
             <ArticleCard data={article} key={i} />
           </Col>
         ))}
+          </Col>
+        <Col md={6} lg={6} xs={12}>
+        <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              centeredSlides={false}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Pagination]}
+              className="mySwiper"
+            >
+               { data?.entries.map((article, i) => (
+                <SwiperSlide key={i}>
+                 <ArticleCard data={article} key={i} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Col>
+          <Col md={3} lg={3} xs={12}>
+          <Row className="list-unstyled">
+        { data?.entries.map((article, i) => (
+          <Col md={12}>
+            <ArticleCard data={article} key={i} />
+          </Col>
+        ))}
+        </Row>
+        </Col>
       </Row>
     </Container>
   )

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import SideNav from '@/shared/account/side-nav';
 import { Container, Ro, Col } from 'reactstrap';
 
-  const Index = () => {
+  const Preferiti = () => {
  
     return (
    
@@ -18,7 +18,7 @@ import { Container, Ro, Col } from 'reactstrap';
     </div>
   </div>
   <div className="col-md-8">
-    <h3 className="pb-4 mb-4  border-bottom">Ciao User</h3>
+    <h3 className="pb-4 mb-4  border-bottom">I miei preferiti</h3>
     <article className="blog-post">
       <h2 className="blog-post-title mb-1"> I tuoi interessi</h2>
       <p>
@@ -115,4 +115,4 @@ Segui e troverai qui gli aggiornamenti per te.
     );
 };
 
-export default Index;
+export default Preferiti;

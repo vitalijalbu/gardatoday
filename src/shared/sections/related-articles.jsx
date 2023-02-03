@@ -7,7 +7,7 @@ import { Container, Row, Col } from "reactstrap";
 
 const RelatedArticles = ({ topics, limit }) => {
   const FOCUS_QUERY = `query{
-      entries(section: "news", limit:${limit}, category:"${topics}") {
+      entries(section: "news", limit:${limit}, category:"[2, 23]") {
         id
         title
         slug

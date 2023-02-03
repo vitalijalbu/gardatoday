@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CategoryCard = ({data}) => {
   return (
-    <Link href={`/comuni/${data.id}`}>
+    <Link href={`/sezioni/${data.slug}`}>
     <div className="card-wrapper card-topic">
 
   <div className="card card-img no-after">
