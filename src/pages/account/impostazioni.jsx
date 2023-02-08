@@ -13,9 +13,6 @@ import SideNav from '@/shared/account/side-nav';
 <div className="row g-5">
 <div className="col-md-4">
     <div className="position-sticky" style={{ top: "2rem" }}>
-      <div className="p-4 mb-3 bg-light rounded">
-        <h4 className="">Il mio account</h4>
-      </div>
       <div className="p-4">
       <SideNav/>
       </div>
