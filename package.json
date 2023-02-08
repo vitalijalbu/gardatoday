@@ -13,7 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@tabler/icons-react": "^2.1.2",
+    "@tabler/icons-react": "^2.2.0",
     "bootstrap": "^5.2.3",
     "dayjs": "^1.11.7",
     "graphql-request": "^5.1.0",
@@ -21,8 +21,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "reactstrap": "^9.1.5",
-    "sass": "^1.57.1",
-    "swiper": "^8.4.6"
+    "sass": "^1.58.0",
+    "swiper": "^9.0.3"
   },
   "license": "MIT",
   "keywords": [],

@@ -44,7 +44,7 @@ const ArticleCard = ({ data }) => {
         <p className="card-text d-md-block d-none">{data.excerpt}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default ArticleCard;

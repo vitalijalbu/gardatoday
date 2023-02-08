@@ -1,38 +1,37 @@
-import React from 'react';
-import RelatedArticles from '@/shared/sections/related-articles';
-import graphQLClient from "@/lib/graphql/client";
-//import { VIEW_INDEX } from '@/lib/graphql/entries';
-import { Container, Row, Col } from 'reactstrap';
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import {
+  Container,
+  Row,
+  Col,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardBody,
+  Button,
+  CardHeader,
+} from "reactstrap";
+import { viewArea } from "@/lib/graphql/queries/areas";
 import MastheadHero from '@/shared/sections/masthead-hero';
-
-export async function getStaticPaths(context) {
-  console.log('context', context)
-  return {
-    paths: ['/zone/brescia'],
-    fallback: false
-  };
-}
+import WidgetMeteo from "@/shared/widgets/meteo";
 
 
-
-export async function getStaticProps({ params }) {
-  console.log('params2', params)
-  const VIEW_QUERY = `query{
-    entry(slug:"${params.slug}") {
-      id
-      title
-    }
-  }
-`;
-  const data = await graphQLClient.request(VIEW_QUERY);
-
-  return {
-    props: { data },
-  };
-}
-
-  const View = ({ data }) => {
-console.log('view-entry', data);
+  const Page = () => {
+    const router = useRouter();
+    const { slug } = router.query;
+    const [entry, setEntry] = useState(null);
+    const [articles, setArticles] = useState([]);
+  
+    useEffect(() => {
+      viewArea(slug).then((data) => {
+        setEntry(data?.entry);
+        setArticles(data?.articles);
+        console.log('🐝 API response', data)
+      }).catch((error) => {
+        console.log(error);
+      });
+    }, []);
 
     return (
       <div className="page">
@@ -40,9 +39,17 @@ console.log('view-entry', data);
       <div className="page-content">
       <Container>
       <Row>
-        <Col><h1 className="blog-post-title mb-1">{`Ultime notizie da ${data.entry.title}`}</h1></Col>
+        <Col><h1 className="page-title">{`Ultime notizie da ${entry?.title}`}</h1></Col>
       </Row>
-      <MastheadHero title={`Ultime notizie da ${data.entry.title}`}/>
+      <MastheadHero entries={articles}/>
+      <Row>
+        <Col md={8}>
+          <h1 className="page-title">{`Ultime notizie da ${entry?.title}`}</h1>
+          </Col> 
+          <Col md={4}>
+          <WidgetMeteo title={entry?.title}/>
+          </Col>
+      </Row>
   </Container>
 
 </div>
@@ -52,4 +59,4 @@ console.log('view-entry', data);
     )
 }
 
-export default View;
+export default Page;

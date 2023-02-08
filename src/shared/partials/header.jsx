@@ -1,19 +1,31 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { UncontrolledDropdown, DropdownToggle, DropdownItem, DropdownMenu, Button } from "reactstrap";
+import {
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownItem,
+  DropdownMenu,
+  Button,
+} from "reactstrap";
 import SideMenu from "./side-menu";
 import SearchOverlay from "./search-overlay";
 import {
   IconHaze,
   IconMenu,
-  IconMessageCircle, IconBookmark, IconSettings, IconUserCircle,
+  IconMessageCircle,
+  IconBookmark,
+  IconSettings,
+  IconUserCircle,
   IconSearch,
+  IconBrandInstagram,
+  IconBrandFacebook,
+  IconBrandYoutube
 } from "@tabler/icons-react";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
   const [searchOpen, setsearchOpen] = useState(false);
-   /* actions */ 
+  /* actions */
   const openSideNav = () => setNavOpen(!navOpen);
   const openSearch = () => setsearchOpen(!searchOpen);
 
@@ -54,6 +66,21 @@ const Header = () => {
                   Pubblicità
                 </Link>
               </li>
+              <li className="nav-item">
+                  <Link href="#">
+                    <IconBrandInstagram />
+                  </Link>
+                  </li>
+              <li className="nav-item">
+                  <Link href="#">
+                    <IconBrandFacebook />
+                  </Link>
+                  </li>
+              <li className="nav-item">
+                  <Link href="#">
+                    <IconBrandYoutube />
+                  </Link>
+              </li>
             </ul>
           </div>
         </nav>
@@ -93,47 +120,58 @@ const Header = () => {
               <img src="https://gardatoday.it/assets/images/logo.svg" />
             </Link>
             <div className="col-md-3 text-end">
-            <ul className="nav">
-              <li className="nav-item">
-           <UncontrolledDropdown>
-              <DropdownToggle nav caret>
-                Account
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem tag="a">
-                <Link href="/account"><IconUserCircle/>Il mio acount</Link>
-              </DropdownItem>
-              <DropdownItem tag="a">
-                <Link href="/account/preferiti"><IconBookmark/> Preferiti</Link>
-              </DropdownItem>
-              <DropdownItem tag="a">
-                <Link href="/account/commenti"><IconMessageCircle/> Commenti</Link>
-              </DropdownItem>
-              <DropdownItem tag="a" className="mt-2">
-                <Link href="/account/impostazioni"><IconSettings/> Impostazioni</Link>
-              </DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Esci</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            </li>
-            <li className="nav-item"><Link href="/login" className="px-2">
-                <Button color="primary" outline>
-                  <IconUserCircle /> Accedi
-                </Button>
-              </Link>
-              </li>
-              <li className="nav-item"><Button variant="link"  onClick={openSearch}>
-                <IconSearch />
-              </Button>
-              </li>
-            </ul>
+              <ul className="nav">
+                <li className="nav-item">
+                  <UncontrolledDropdown>
+                    <DropdownToggle nav caret>
+                      Account
+                    </DropdownToggle>
+                    <DropdownMenu end>
+                      <DropdownItem tag="a">
+                        <Link href="/account">
+                          <IconUserCircle />
+                          Il mio acount
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem tag="a">
+                        <Link href="/account/preferiti">
+                          <IconBookmark /> Preferiti
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem tag="a">
+                        <Link href="/account/commenti">
+                          <IconMessageCircle /> Commenti
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem tag="a" className="mt-2">
+                        <Link href="/account/impostazioni">
+                          <IconSettings /> Impostazioni
+                        </Link>
+                      </DropdownItem>
+                      <DropdownItem divider />
+                      <DropdownItem>Esci</DropdownItem>
+                    </DropdownMenu>
+                  </UncontrolledDropdown>
+                </li>
+                <li className="nav-item">
+                  <Link href="/login" className="px-2">
+                    <Button color="primary" outline>
+                      <IconUserCircle /> Accedi
+                    </Button>
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Button variant="link" onClick={openSearch}>
+                    <IconSearch />
+                  </Button>
+                </li>
+              </ul>
             </div>
           </header>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Header;

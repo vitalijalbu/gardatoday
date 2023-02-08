@@ -1,7 +1,18 @@
 // Font Variable
 $font-sans-serif: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+$font-serif: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+$body-font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1000px,
+  xxl: 1180px
+);
 
+$card-border-radius: 0;
+$card-border-width: 0;
 // Font Size
 $body-font-size: 14px;
 
@@ -29,3 +40,14 @@ $accent-color6: #ff9500; //Orange /
 $accent-color7: #5856d6; //Indigo
 $accent-color8: #af52de; //Purple
 // #af52de; //Purple
+
+
+// Avatar
+
+$avatar-size-base: 3rem;
+$avatar-size-xs: 2.1875rem;
+$avatar-size-sm: 2.5rem;
+$avatar-size-lg: 4rem;
+$avatar-size-xl: 5.125rem;
+$avatar-size-xxl: 8rem;
+$avatar-size-xxxl: 11rem;

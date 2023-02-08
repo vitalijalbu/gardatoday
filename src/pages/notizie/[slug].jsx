@@ -4,7 +4,7 @@ import graphQLClient from "@/lib/graphql/client";
 //import { VIEW_INDEX } from '@/lib/graphql/entries';
 import { Container, Row, Col } from 'reactstrap';
 import { useRouter } from 'next/router';
-
+import ShareButtons from '@/shared/widgets/share-btn';
 
 
   const View = () => {
@@ -66,22 +66,17 @@ import { useRouter } from 'next/router';
   <div className="col-md-8">
   <h3 className="pb-4 mb-4  border-bottom">{data.title}</h3>
     <h3 className="pb-4 mb-4  border-bottom">{data.excerpt}</h3>
-    <article className="blog-post">
-    {data.body}
-    </article>
+    <section className="section-content">
+              <div dangerouslySetInnerHTML={{ __html: data?.body }}></div>
+              </section>
   
 
   </div>
   <div className="col-md-4">
-    <div className="position-sticky" style={{ top: "2rem" }}>
-      <div className="p-4 mb-3 bg-light rounded">
-        <h4 className="">Condividi</h4>
-        <p className="mb-0">
-          Customize this section to tell your visitors a little bit about your
-          publication, writers, content, or something else entirely. Totally up
-          to you.
-        </p>
+  <div className="p-4">
+      <ShareButtons/>
       </div>
+    <div className="position-sticky" style={{ top: "2rem" }}>
       <div className="p-4">
         <h4 className="">Archives</h4>
         <ol className="list-unstyled mb-0">
@@ -123,20 +118,7 @@ import { useRouter } from 'next/router';
           </li>
         </ol>
       </div>
-      <div className="p-4">
-        <h4>Condividi</h4>
-        <ol className="list-unstyled">
-          <li>
-            <a href="#">GitHub</a>
-          </li>
-          <li>
-            <a href="#">Twitter</a>
-          </li>
-          <li>
-            <a href="#">Facebook</a>
-          </li>
-        </ol>
-      </div>
+
     </div>
   </div>
 </div>
