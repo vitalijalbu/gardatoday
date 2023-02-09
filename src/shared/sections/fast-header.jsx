@@ -53,7 +53,7 @@ const FastHeader = ({ title }) => {
     getData();
   }, []);
 
-  if (!data) return <h1>Nessun dato</h1>;
+  if (!data) return <p>Nessun dato</p>;
 
   return (
     <section id="fast-header">

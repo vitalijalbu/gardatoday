@@ -5,9 +5,9 @@ import graphQLClient from "@/lib/graphql/client";
 
 import { Container, Row, Col } from "reactstrap";
 
-const FocusFeatured = ({ title, topics, limit }) => {
+const WeeklySpotlight = ({ title, topics, limit }) => {
   const FOCUS_QUERY = `query{
-      entries(section: "news", limit:${limit}, category: [${topics}]) {
+      entries(section: "news", limit:6) {
         id
         title
         slug
@@ -62,7 +62,7 @@ const FocusFeatured = ({ title, topics, limit }) => {
     <Container>
       <Row>
       <Col>
-        <h1 className="section-title">{title}</h1>
+        <h1 className="section-title">In tendenza questa settimana</h1>
         </Col>
       </Row>
       <Row className="list-unstyled">
@@ -75,4 +75,4 @@ const FocusFeatured = ({ title, topics, limit }) => {
     </Container>
   );
 };
-export default FocusFeatured;
+export default WeeklySpotlight;

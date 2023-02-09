@@ -15,7 +15,7 @@ import {
 import { viewArea } from "@/lib/graphql/queries/areas";
 import MastheadHero from '@/shared/sections/masthead-hero';
 import WidgetMeteo from "@/shared/widgets/meteo";
-
+import ArticleList from "@/shared/snippets/article-list";
 
   const Page = () => {
     const router = useRouter();
@@ -31,7 +31,7 @@ import WidgetMeteo from "@/shared/widgets/meteo";
       }).catch((error) => {
         console.log(error);
       });
-    }, []);
+    }, [slug]);
 
     return (
       <div className="page">
@@ -45,6 +45,11 @@ import WidgetMeteo from "@/shared/widgets/meteo";
       <Row>
         <Col md={8}>
           <h1 className="page-title">{`Ultime notizie da ${entry?.title}`}</h1>
+          <ul className="list-unstyled">
+              {articles.map((entry, i) => (
+    <ArticleList data={entry} key={i} excerpt={true}/>
+   ))}
+   </ul>
           </Col> 
           <Col md={4}>
           <WidgetMeteo title={entry?.title}/>

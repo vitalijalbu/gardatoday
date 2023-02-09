@@ -12,11 +12,11 @@ const VoucherCard = ({data}) => {
     <picture>
       <source
         type="image/webp"
-        srcSet={data.cover_image[0]?.url}
+        srcSet={data?.cover_image?.[0].url}
         sizes="(min-width: 2400px) 2400px"
       />
       <img
-        src={data.cover_image[0]?.url}
+        src={data?.cover_image?.[0].url}
         width={2400}
         height={1500}
         className="el-image"

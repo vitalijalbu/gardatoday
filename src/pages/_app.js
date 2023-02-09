@@ -5,12 +5,10 @@ import Footer from '@/shared/partials/footer';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <main className='layout d-flex justify-space-between'>
-      <div id="main-site">
+    <main id="main-site">
       <Header/>
     <Component {...pageProps} />
     <Footer/>
-    </div>
     </main>
   )
 }

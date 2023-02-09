@@ -15,11 +15,14 @@ import {
 import ArticleListSM from "../snippets/article-list-sm";
 
 const MastheadHero = ({ entries }) => {
-  const first_article = entries[0];
-  const top_articles = entries.slice(1,4);
-  const bottom_articles = entries.slice(4);
 
-  console.log('bottom_articles', bottom_articles);
+  if (!entries) return <p>Nessun dato</p>;
+
+  const first_article = entries[0];
+  const top_articles = entries.slice(1,5);
+  const bottom_articles = entries.slice(5);
+
+  
 
   return(
     <Container>
@@ -32,13 +35,13 @@ const MastheadHero = ({ entries }) => {
             <div className="img-responsive">
               <figure className="img-wrapper">
                 <source
-                  srcSet={first_article?.cover_image[0]?.url ?? 'https://gardatoday.it/web/assets/images/placeholder.png'}
+                  srcSet={first_article?.cover_image ? first_article.cover_image[0]?.url : '/images/placeholder.png'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={first_article?.cover_image[0]?.url ?? 'https://gardatoday.it/web/assets/images/placeholder.png'}
+                   srcSet={first_article?.cover_image ? first_article.cover_image[0]?.url : '/images/placeholder.png'}
                   className="p-card__image"
-                  alt=" CanevaWorld Resort alla ricerca di oltre 200 lavoratori stagionali﻿ "
+                  alt={first_article?.title}
                 />
               </figure>
             </div>
@@ -59,7 +62,7 @@ const MastheadHero = ({ entries }) => {
           <span className="data">{first_article?.postDate}</span>
         </div>
         <Link href={`/notizie/${first_article?.slug}`} className="uk-link-heading">
-          <h5 className="card-title underline">{first_article?.title}</h5>
+          <h5 className="card-title serif underline">{first_article?.title}</h5>
         </Link>
 
         <p className="card-text d-md-block d-none">{first_article?.excerpt}</p>

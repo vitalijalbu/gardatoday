@@ -57,7 +57,7 @@ const FocusHalf = ({ title, topics, limit }) => {
     getData();
   }, []);
 
-  if (!data) return <h1>Nessun dato</h1>;
+  if (!data) return <p>Nessun dato</p>;
 
   return (
     <Container>
@@ -71,8 +71,8 @@ const FocusHalf = ({ title, topics, limit }) => {
             <ArticleCard data={firstArticle} key={0} />
           </Col>
         {articles.map((article, i) => (
-          <Col md={6} lg={3} xs={6}>
-            <ArticleCard data={article} key={i} />
+          <Col md={6} lg={3} xs={6} key={i}>
+            <ArticleCard data={article} />
           </Col>
         ))}
       </Row>

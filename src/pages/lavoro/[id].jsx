@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { viewJob } from "@/lib/graphql/queries/jobs";
 import RelatedJobs from "@/shared/sections/related-jobs";
 import {
   Container,
@@ -13,10 +14,9 @@ import {
   Button,
   CardHeader,
 } from "reactstrap";
-import { viewJob } from "@/lib/graphql/queries/jobs";
 import ShareButtons from "@/shared/widgets/share-btn";
 
-const View = () => {
+const Page = () => {
   const router = useRouter();
   const { id } = router.query;
   const [entry, setEntry] = useState(null);
@@ -26,14 +26,15 @@ const View = () => {
    const openSideNav = () => setNavOpen(!navOpen);
 
   useEffect(() => {
-    viewJob(id).then((data) => {
+    viewJob(id)
+    .then((data) => {
       setEntry(data?.entry);
       setRelatedEntries(data?.related_entries);
       console.log('🐝 API response', data)
     }).catch((error) => {
       console.log(error);
     });
-  }, []);
+  }, [id]);
 
   return (
     <div className="page">
@@ -64,21 +65,21 @@ const View = () => {
                   Dettagli offerta
                 </CardHeader>
                 <CardBody>
-                <dl class="grid">
+                <dl className="grid">
                      <dt>Inserzionista:</dt>
                      <dd>Carro Luigi</dd>
                      <dt>Sito web:</dt>
-                     <dd><a href="https://carroluigi.it/" class="text-primary" target="_blank">Candidati ora</a></dd>
+                     <dd><a href="https://carroluigi.it/" className="text-primary" target="_blank">Candidati ora</a></dd>
                      <dt>Data pubblicazione:</dt>
                      <dd><time datetime="10/03/2022">10/03/2022</time></dd>
                      <dt>Cntratto di lavoro:</dt>
-                     <dd class="l-cluster with-link">
-                        <ul class="list-inline">
+                     <dd className="l-cluster with-link">
+                        <ul className="list-inline">
                                                    </ul>
                      </dd>
                      <dt>Comune:</dt>
-                     <dd class="l-cluster with-link">
-                        <ul class="list-inline">
+                     <dd className="l-cluster with-link">
+                        <ul className="list-inline">
                                                    </ul>
                      </dd>
                   </dl>
@@ -93,4 +94,4 @@ const View = () => {
   )
 }
 
-export default View;
+export default Page;

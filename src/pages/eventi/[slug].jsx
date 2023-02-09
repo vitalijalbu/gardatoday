@@ -1,206 +1,97 @@
-import React from 'react';
-import RelatedArticles from '@/shared/sections/related-articles';
+import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import RelatedEvents from "@/shared/sections/related-events";
+import {
+  Container,
+  Row,
+  Col,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardBody,
+  Button,
+  CardHeader,
+} from "reactstrap";
+import { viewEvent } from "@/lib/graphql/queries/events";
+import ShareButtons from "@/shared/widgets/share-btn";
 
-  const View = () => {
-    return (
-      <div className='page'>
-      <div className='page-content'>
-<div className="uk-section-default uk-section uk-padding-remove-bottom">
-  <div className="uk-container">
-    <div className="uk-grid-margin uk-container uk-container-xsmall">
-      <div
-        className="tm-grid-expand uk-child-width-1-1 uk-grid uk-grid-stack"
-        uk-grid=""
-      >
-        <div className="uk-width-1-1@m uk-first-column">
-          <div className="uk-h6 uk-text-primary uk-margin-remove-vertical uk-text-center">
-            {" "}
-            Statue of Liberty{" "}
-          </div>
-          <h1 className="uk-heading-small uk-margin uk-text-center">
-            {" "}
-            Speculation around New York’s famous landmark turned out false{" "}
-          </h1>
-          <div className="uk-panel uk-text-lead uk-margin-medium uk-text-center">
-            Tempor integre sit cu, alia iuvaret atomorum his cu, error omnium at
-            nam. Ei decore labitur pro. Mea decore audire signiferumque in
-            reprehenderit.
-          </div>
-          <div className="uk-panel uk-text-meta uk-margin uk-text-center">
-            <time dateTime="2020-06-06T21:20:09+00:00">Jun 6, 2020</time>  | 
-            Adrian Phelps  | {" "}
-            <a href="/notizie/demo">Humanities</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div
-      className="tm-grid-expand uk-child-width-1-1 uk-margin-large uk-grid uk-grid-stack"
-      uk-grid=""
-    >
-      <div className="uk-width-1-1@m uk-first-column">
-        <div className="uk-margin-small">
-          <picture>
-            <source
-              type="image/webp"
-              srcSet="https://via.placeholder.com/800x533"
-              sizes="(min-width: 1200px) 1200px"
-            />
-            <img
-              src="https://via.placeholder.com/800x533"
-              width={1200}
-              height={750}
-              className="el-image"
-              alt=""
-              loading="eager"
-            />
-          </picture>
-        </div>
-      </div>
-    </div>
-    <div className="uk-grid-margin uk-container uk-container-xsmall">
-      <div
-        className="tm-grid-expand uk-child-width-1-1 uk-grid uk-grid-stack"
-        uk-grid=""
-      >
-        <div className="uk-width-1-1@m uk-first-column">
-          <div className="uk-panel uk-text-large uk-dropcap uk-margin">
-            <p className="uk-text-meta tm-page-break tm-page-break-first-page">
-              Page 1 of 2
-            </p>
-            <div className="pagenavcounter">Page 1 of 2</div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor. In
-              reprehenderit in voluptate velit esse. Cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <p>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
-            </p>
-            <p>
-              Ei pro erant populo consulatu, ea usu ludus suscipit. Laudem
-              feugiat percipit id sed, aliquam habemus te sed, case ullum
-              saperet eu per. Est causae commune senserit ea, pro reprimique
-              dissentias id! Eu usu numquam legimus, dicant regione consequat id
-              eam. Qui odio integre ne? Ut eam feugait fastidii consequat, et
-              quo aliquip accumsan?
-            </p>
-            <figure className="uk-margin-large">
-              <img
-                src="https://via.placeholder.com/800x533"
-                width={1500}
-                height={1000}
-                alt=""
-                loading="lazy"
-              />
-              <figcaption className="uk-text-meta uk-margin-small-top">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </figcaption>
-            </figure>
-            <h2>Scientists are re-evaluating their assessment practices</h2>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet{" "}
-              <a href="/notizie/demo">consectetur adipiscing elit</a>{" "}
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim.
-            </p>
-            <blockquote className="uk-width-5-6@s uk-margin-large">
-              <p>
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore."
-              </p>
-              <footer className="el-footer">
-                <cite className="el-author">John Doe</cite>
-              </footer>
-            </blockquote>
-            <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-              exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-              occaecat cupidatat non proident.
-            </p>
-            <p>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-              officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-              voluptate velit esse cillum.
-            </p>
-            <figure className="uk-margin-large">
-              <img
-                src="https://via.placeholder.com/800x533"
-                width={1500}
-                height={1000}
-                alt=""
-                loading="lazy"
-              />
-              <figcaption className="uk-text-meta uk-margin-small-top">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore.
-              </figcaption>
-            </figure>
-            <h2>New evidence</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magn aliqua. Ut enim
-              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in <a href="/notizie/demo">culpa qui officia</a>{" "}
-              deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
-              consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-            </p>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim.
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<RelatedArticles/>
+const Page = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+  const [entry, setEntry] = useState(null);
+  const [related_entries, setRelatedEntries] = useState([]);
+  const [navOpen, setNavOpen] = useState(false);
+   /* actions */ 
+   const openSideNav = () => setNavOpen(!navOpen);
 
-</div>
-    );
-};
+  useEffect(() => {
+    viewEvent(slug)
+    .then((data) => {
+      setEntry(data?.entry);
+      setRelatedEntries(data?.related_entries);
+      //console.log('🐝 API response', data)
+    }).catch((error) => {
+      console.log(error);
+    });
+  }, [slug]);
 
-export default View;
+  return (
+    <div className="page">
+      <div className="page-content">
+        <Container>
+          <Row>
+            <Col md={7} xs={12}>
+              <Breadcrumb>
+                <BreadcrumbItem>
+                  <Link href="/">Home</Link>
+                </BreadcrumbItem>
+                <BreadcrumbItem>
+                  <Link href="/lavoro">Offerte di lavoro</Link>
+                </BreadcrumbItem>
+                <BreadcrumbItem active>{entry?.title}</BreadcrumbItem>
+              </Breadcrumb>
+              <div className="section-head">
+                <h1 className="section-title">{entry?.title}</h1>
+              </div>
+              <section className="section-content">
+              <div dangerouslySetInnerHTML={{ __html: entry?.body }}></div>
+              </section>
+            </Col>
+            <Col md={5} xs={12}>
+            <ShareButtons url="ciao"/>
+            <Card>
+                <CardHeader>
+                  Dettagli offerta
+                </CardHeader>
+                <CardBody>
+                <dl className="grid">
+                     <dt>Inserzionista:</dt>
+                     <dd>Carro Luigi</dd>
+                     <dt>Sito web:</dt>
+                     <dd><a href="https://carroluigi.it/" className="text-primary" target="_blank">Candidati ora</a></dd>
+                     <dt>Data pubblicazione:</dt>
+                     <dd><time datetime="10/03/2022">10/03/2022</time></dd>
+                     <dt>Cntratto di lavoro:</dt>
+                     <dd className="l-cluster with-link">
+                        <ul className="list-inline">
+                                                   </ul>
+                     </dd>
+                     <dt>Comune:</dt>
+                     <dd className="l-cluster with-link">
+                        <ul className="list-inline">
+                                                   </ul>
+                     </dd>
+                  </dl>
+                </CardBody>
+              </Card>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      <RelatedEvents entries={related_entries}/>
+    </div>
+  )
+}
+
+export default Page;

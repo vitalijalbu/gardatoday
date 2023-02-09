@@ -1,70 +1,71 @@
 import React, { useState, useEffect } from "react";
-import graphQLClient from "@/lib/graphql/client";
-import { request, gql } from 'graphql-request';
-import MastheadSmall from "@/shared/sections/masthead-small";
+import Link from "next/link";
+import { getAllArticles } from "@/lib/graphql/queries/articles";
+import {
+  Container,
+  Row,
+  Col,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  CardBody,
+  Button,
+  CardHeader,
+} from "reactstrap";
+import MastheadSmall from "@/shared/sections/masthead-hero-lg";
 import ArticleList from "@/shared/snippets/article-list";
+import ArticleListSM from "@/shared/snippets/article-list-sm";
 
-export async function getStaticProps() {
-  const data = await graphQLClient.request(gql`
-  query {
-    entries(section: "news", limit: 30) {
-      id
-      title
-      slug
-      dateCreated
-      ... on news_default_Entry {
-        excerpt
-        cover_image {
-          id,
-          url
-        }
-        author {
-          id,
-          fullName
-        }
-        area {
-          id,
-          title
-        }
-         category {
-          id,
-          title
-        }
-      }
-    }
-  }
-  `);
-
-  return {
-    props: { data },
-  };
-}
-
-const Index = ({data}) => {
+const Index = () => {
   const [loading, setLoading] = useState(false);
-  console.log('🗞️ news-here', data);
-  //const head_entries = data.entries.splice(0,10);
+  const [articles, setArticles] = useState([]);
+  const [spotlight, setSpotlight] = useState([]);
+  const head_articles = articles.slice(0,8);
+
+  useEffect(() => {
+    getAllArticles()
+    .then((data) => {
+      setArticles(data?.entries);
+      setSpotlight(data?.spotlight);
+      console.log('🐝 API response JOBS RELATED', data)
+  }).catch((error) => {
+    console.log(error);
+  });
+}, []);
   
 
 
-  if (!data) return <h1 strong>Nessun dato</h1>;
+
 
   return (
     
     <div className="page">
-      <MastheadSmall articles={data?.entries}/>
-      <div className="container">
+    <div className="page-content">
+      
+      
+      <MastheadSmall articles={head_articles}/>
+      <Container>
       <div className="row">
   <div className="col-8">
-  {data.entries.map((entry, i) => (
-    <ArticleList data={entry} key={i}/>
+  <h1 className="page-title">Ultime notizie</h1>
+  <ul className="list-unstyled">
+              {articles.map((entry, i) => (
+    <ArticleList data={entry} key={i} excerpt={true}/>
    ))}
+   </ul>
    </div>
-     <div className="col-4">
-    sidebar
-
+   <Col md={4}>
+              <h1 className="page-title">I più letti</h1>
+              <ul className="list-unstyled">
+                {spotlight.map((article) => (
+                  
+                    <ArticleListSM data={article} key={article.id} />
+                  
+                ))}
+              </ul>
+            </Col>
 </div>
-</div>
+</Container>
 </div>
 </div>
 

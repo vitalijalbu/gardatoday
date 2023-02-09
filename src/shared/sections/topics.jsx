@@ -1,24 +1,25 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import graphQLClient from "@/lib/graphql/client";
-import { GET_CATEGORIES } from "@/lib/graphql/categories/";
+import { getAllCategories } from "@/lib/graphql/queries/categories";
 import TopicCard from "@/shared/snippets/topic-card";
 import { Container, Row, Col } from "reactstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // import required modules
 import { Pagination } from "swiper";
 
 const Topics = () => {
   const [loading, setLoading] = useState(false);
   const [categories, setCategories] = useState([]);
-
-
   useEffect(() => {
-    graphQLClient
-      .request(GET_CATEGORIES)
-      .then((data) => setCategories(data?.categories || []));
+    getAllCategories()
+      .then((data) => {
+        setCategories(data?.categories);
+        //console.log("🐝 API response CATEGORIES", data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }, []);
 
   return (
@@ -40,8 +41,8 @@ const Topics = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {categories.map((category, i) => (
-                <SwiperSlide key={i}>
+              {categories.map((category) => (
+                <SwiperSlide key={category.id}>
                   <TopicCard data={category} />
                 </SwiperSlide>
               ))}

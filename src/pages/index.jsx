@@ -12,6 +12,7 @@ import MastHead from "@/shared/sections/masthead";
 import Areas from "@/shared/sections/areas";
 import Topics from "@/shared/sections/topics";
 import Newsletter from "@/shared/sections/newsletter";
+import UpcomingEvents from "@/shared/sections/upcoming-events";
 
 /*
 import Topics from "@/shared/sections/topics";
@@ -23,7 +24,6 @@ import { Button } from 'reactstrap';
 const Home = () => {
   return (
     <div className="page">
-      
       <div className="page-content">
       <FastHeader/>
       <MastHead/>
@@ -31,10 +31,10 @@ const Home = () => {
       <FocusHalf title="Attualità e Cronaca" limit={7} topics={[25, 29]}/>
       <FocusFeatured title="In evidenza" limit={8} topics={[25, 29]}/>
       <Areas/>
+      <UpcomingEvents/>
       <Newsletter/>
       <Topics/>
     </div>
-
     </div>
   );
 };

@@ -1,18 +1,16 @@
 
 #main-site {
-	max-width: 1560px;
+	max-width: 1640px;
 	margin: auto;
 	background: #fff;
 }
 
-@media (min-width: 1281px) {
-	#main-site {
-		max-width: 1280px;
-	}
-}
+
 
 @media (min-width: 1560px) {
 	#main-site {
-		max-width: 1560px;
+		max-width: 1640px;
 	}
 }
+
+

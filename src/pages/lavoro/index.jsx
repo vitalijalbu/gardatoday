@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { getAllJobs } from "@/lib/graphql/queries/jobs";
-import { request, gql } from "graphql-request";
 import { Container, Row, Col, Card, CardBody, Button } from "reactstrap";
 import { IconBriefcase, IconArrowRight } from "@tabler/icons-react";
 
@@ -28,19 +27,19 @@ const Index = ({ data }) => {
                 <h1>Offerte di lavoro</h1>
               </div>
 
-              <table class="table">
+              <table className="table">
                 <tbody>
                   {entries.map((entry) => (
                     <tr key={entry.id}>
                       <th scope="row">
-                        <div class="d-flex align-items-center">
-                          <div class="icon-lg bg-light rounded-circle flex-shrink-0">
+                        <div className="d-flex align-items-center">
+                          <div className="icon-lg bg-light rounded-circle flex-shrink-0">
                             <IconBriefcase />
                           </div>
-                          <div class="ms-2">
-                            <h5 class="card-title mb-0">
+                          <div className="ms-2">
+                            <h5 className="card-title serif mb-0">
                               <Link
-                                class="text-primary"
+                                className="text-primary"
                                 href={`/lavoro/${entry.id}`}
                                 data-focus-mouse="false"
                               >
@@ -51,7 +50,7 @@ const Index = ({ data }) => {
                         </div>
                       </th>
                       <td>
-                        <Link class="text-primary" href={`/lavoro/${entry.id}`}>
+                        <Link className="text-primary" href={`/lavoro/${entry.id}`}>
                           <h5>{entry.careerCompany}</h5>
                         </Link>
                       </td>
@@ -60,7 +59,7 @@ const Index = ({ data }) => {
                       </td>
                       <td>
                         <Link
-                          class="btn btn-outline-primary"
+                          className="btn btn-outline-primary"
                           href={`/lavoro/${entry.id}`}
                         >
                           Vedi l'offerta <IconArrowRight/>

@@ -61,7 +61,7 @@ const MastHead = ({ title, topics, limit }) => {
     getData();
   }, []);
 
-  if (!data) return <h1>Nessun dato</h1>;
+  if (!data) return <p>Nessun dato</p>;
 
   return (
     <Container>

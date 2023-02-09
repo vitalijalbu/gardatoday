@@ -11,8 +11,8 @@ const SideNav = () => {
     <img src="https://via.placeholder.com/80" alt="..." className="rounded-circle"/>
   </div>
   <div className="flex-grow-1 ms-3">
-      <h5 class="profile__name d-block">vity31</h5>
-				<span class="profile__email d-block">v.jalbu31@gmail.com</span>
+      <h5 className="profile__name d-block">vity31</h5>
+				<span className="profile__email d-block">v.jalbu31@gmail.com</span>
   </div>
 </div>
 

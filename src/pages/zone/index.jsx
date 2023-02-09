@@ -19,11 +19,12 @@ const Index = ({data}) => {
   return (
    <div className="page">
    <div className="page-content">
-    <section className="uk-section uk-section-small">
+
   <Container>
   <Row>
     <Col>
-      <h1 className="page-title">Comuni</h1>
+      <h1 className="page-title">Comuni del Lago di Garda</h1>
+      <p>Sfoglia le ultime notizie del tuo comune</p>
     </Col>
     </Row>
 
@@ -39,9 +40,6 @@ const Index = ({data}) => {
         <p strong>Nessun dato</p>
       )}
   </Container>
-</section>
-
-   
     </div>
     </div>
     

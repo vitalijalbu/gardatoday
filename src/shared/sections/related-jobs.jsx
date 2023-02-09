@@ -7,7 +7,7 @@ import { Container, Row, Col, Card, CardBody, Button } from "reactstrap";
 import { IconBriefcase } from "@tabler/icons-react";
 
 const RelatedJobs = ({ entries }) => {
-  if (!entries) return <h1>Nessun dato</h1>;
+  if (!entries) return <p>Nessun dato</p>;
 
   return (
     <Container>
@@ -32,7 +32,7 @@ const RelatedJobs = ({ entries }) => {
                   <span>{entry?.area?.title}</span>
                 
 
-                <h5 className="card-title">{entry?.title}</h5>
+                <h5 className="card-title serif">{entry?.title}</h5>
                 </Link>
               </CardBody>
             </Card>

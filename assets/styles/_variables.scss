@@ -1,14 +1,16 @@
 // Font Variable
-$font-sans-serif: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+$font-sans-serif: 'Inter', sans-serif;
 $font-serif: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-$body-font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+$body-font-family: 'Inter', sans-serif;
+$font-family-sans-serif: 'Inter', sans-serif;
 
+$primary: #009;
 $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1000px,
-  xxl: 1180px
+  xl: 1140px,
+  xxl: 1320px
 );
 
 $card-border-radius: 0;
@@ -42,6 +44,14 @@ $accent-color8: #af52de; //Purple
 // #af52de; //Purple
 
 
+$swiper-navigation-size: 20px;
+$swiper-theme-color: #121212;
+$link-color: #121212;
+// Font Size
+$body-font-size: 14px;
+$link-color: #121212;
+$nav-link-color: #121212;
+$btn-border-radius: 999px;
 // Avatar
 
 $avatar-size-base: 3rem;

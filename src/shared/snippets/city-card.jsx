@@ -11,15 +11,15 @@ const CityCard = ({ data }) => {
               <figure className="img-wrapper">
                 <source
                   srcSet={
-                    data.cover_image[0]?.url ??
-                    "https://gardatoday.it/web/assets/images/placeholder.png"
+                    data.cover_image ? data.cover_image[0].url :
+                    "/images/placeholder.png"
                   }
                   media="(min-width: 62.5em)"
                 />
                 <img
                   srcSet={
-                    data.cover_image[0]?.url ??
-                    "https://gardatoday.it/web/assets/images/placeholder.png"
+                    data.cover_image ? data.cover_image[0].url :
+                    "/images/placeholder.png"
                   }
                   alt={data.title}
                 />
@@ -27,7 +27,7 @@ const CityCard = ({ data }) => {
             </div>
           </div>
           <div className="card-body">
-            <h5 className="card-title underline">{data.title}</h5>
+            <h5 className="card-title serif underline">{data.title}</h5>
           </div>
         </div>
       </div>

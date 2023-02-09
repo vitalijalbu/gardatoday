@@ -62,7 +62,7 @@ useEffect(() => {
       <Offcanvas isOpen={opened} toggle={toggle}>
         <OffcanvasHeader toggle={toggle}>Menu</OffcanvasHeader>
         <OffcanvasBody>
-        <span class="MainMenuVertical_mainTitle__n5xMf">Sezioni</span>
+        <span className="MainMenuVertical_mainTitle__n5xMf">Sezioni</span>
           <Accordion flush open={open} toggle={toggleMenu}>
           {data?.categories?.map((topic, i) => (
             <AccordionItem key={i}>
