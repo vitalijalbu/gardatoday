@@ -1,3 +1,10 @@
 .serif{
   font-family: $font-serif;
 }
+img, figure{
+  width: 100%;
+  height: auto;
+}
+.underline:hover{
+  text-decoration: underline;
+}

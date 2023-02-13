@@ -63,7 +63,7 @@ useEffect(() => {
                       
                     <Link
                     href={`/notizie/${article.slug}`}
-                    className="uk-link-heading"
+                    
                   >
                    {article.title}
                   </Link>

@@ -11,11 +11,11 @@ const ArticleCard = ({ data, excerpt }) => {
             <div className="img-responsive">
               <figure className="img-wrapper">
                 <source
-                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   className="p-card__image"
                   alt={data.title}
                 />
@@ -26,17 +26,24 @@ const ArticleCard = ({ data, excerpt }) => {
       </div>
 
       <div className="card-body">
-        <a href="https://gardatoday.it/notizie/tremosine-morto-agricoltore-ribaltatosi-con-trattore"></a>
-        <div className="category-top">
-          <a href="https://gardatoday.it/notizie/tremosine-morto-agricoltore-ribaltatosi-con-trattore"></a>
-          <Link href={`/zone/${data?.area?.slug}`} aria-label={data.title} className="category">
-            {data?.area?.title}
-            </Link>
-          <span className="data">{dayjs(data?.postDate).format('dddd')}</span>
-        </div>
-        <Link href={`/notizie/${data.slug}`} className="uk-link-heading">
-          <h5 className="card-title serif underline">{data.title}</h5>
-        </Link>
+      <div className="category-top m-0">
+            {data?.area.lenght > 0 ? (<Link
+              className="category"
+              href={`/zone/${data?.area[0]?.slug}`}
+            >
+              {data?.area[0]?.title}
+            </Link>) : 
+            (<Link
+              className="category"
+              href={`/sezioni/${data?.category[0]?.slug}`}
+            >
+              {data?.category[0]?.title}
+            </Link>)}
+            <span className="data">{data.postDate}</span>
+          </div>
+        
+          <h5 className="card-title serif underline"><Link href={`/notizie/${data.slug}`}>{data.title}</Link></h5>
+        
 
         {excerpt === true && <p className="card-text d-md-block d-none">{data.excerpt}</p>}
       </div>

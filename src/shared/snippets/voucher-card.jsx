@@ -29,7 +29,7 @@ const VoucherCard = ({data}) => {
                   
                   <Link
                     href={`/notizie/${data.slug}`}
-                      className="uk-link-heading"
+                      
                     >
                      {data.title}
                     </Link>

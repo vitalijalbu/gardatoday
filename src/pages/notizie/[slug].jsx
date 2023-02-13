@@ -3,9 +3,10 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import { viewArticle } from "@/lib/graphql/queries/articles";
 import RelatedArticles from "@/shared/sections/related-articles";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, BreadcrumbItem, Breadcrumb } from "reactstrap";
 import ShareButtons from "@/shared/widgets/share-btn";
 import WeeklySpotlight from "@/shared/sections/weekly-spotlight";
+import ArticleListSM from "@/shared/snippets/article-list-sm";
 
 const Page = () => {
   const router = useRouter();
@@ -31,28 +32,96 @@ const Page = () => {
 
   return (
     <div className="page">
-      <div className="page-content">
+      <div className="page-content pt-5">
         <Container>
           <Row className="g4">
-            <div className="col-md-8">
-              <h3 className="pb-4 mb-4 border-bottom">{entry?.title}</h3>
-              <p className="pb-4 mb-4 border-bottom">{entry?.excerpt}</p>
-              <section className="section-content">
-                <div dangerouslySetInnerHTML={{ __html: entry?.body }}></div>
-              </section>
-            </div>
-            <Col md={4}>
-              <div className="p-4">
+            <Col md={2}>
+            <div className="text-center widgets-aside position-sticky" style={{ top: "2rem" }}>
+  {/* Author info */}
+  <div className="position-relative">
+    <div className="avatar avatar-xl">
+      <img
+        className="avatar-img rounded-circle"
+        src={'/images/placeholder.svg'}
+        alt="avatar"
+      />
+    </div>
+    <a href="#" className="h5 stretched-link mt-2 mb-0 d-block">
+      {entry?.author?.fullName}
+    </a>
+  </div>
+  <hr className="d-none d-lg-block" />
+  {/* Card info */}
+  <ul className="list-inline list-unstyled">
+    <li className="list-inline-item d-lg-block my-lg-2">Nov 15, 2022</li>
+    <li className="list-inline-item d-lg-block my-lg-2">5 min read</li>
+  </ul>
+  {/* Tags */}
+  <ul className="list-inline text-primary-hover mt-0 mt-lg-3">
+    <li className="list-inline-item">
+      <a className="text-body" href="#">
+        #agency
+      </a>
+    </li>
+    <li className="list-inline-item">
+      <a className="text-body" href="#">
+        #business
+      </a>
+    </li>
+    <li className="list-inline-item">
+      <a className="text-body" href="#">
+        #theme
+      </a>
+    </li>
+    <li className="list-inline-item">
+      <a className="text-body" href="#">
+        #bootstrap
+      </a>
+    </li>
+    <li className="list-inline-item">
+      <a className="text-body" href="#">
+        #marketing
+      </a>
+    </li>
+  </ul>
+
+<div className="py-2">
                 <ShareButtons />
               </div>
-              <div className="position-sticky" style={{ top: "2rem" }}>
-                <div className="p-4">
-                  <h4 className="">Archives</h4>
+              <hr/>
+              </div>
+              </Col>
+            <Col md={7}>
+              <h1 className="pb-4 serif mb-4 border-bottom">{entry?.title}</h1>
+              <p className="pb-4 mb-4 border-bottom">{entry?.excerpt}</p>
+              <section className="section-content article-body">
+              <figure class="figure">
+  <img src="/images/placeholder.svg" class="figure-img img-fluid"/>
+  <figcaption class="figure-caption">Una didascalia per l'immagine sopra.</figcaption>
+</figure>
+
+                <div dangerouslySetInnerHTML={{ __html: entry?.body }}></div>
+              </section>
+            </Col>
+            <Col md={3}>
+              <div className="widgets-aside position-sticky" style={{ top: "2rem" }}>
+  
+
+                <div className="widget">
+                <h3 className="widget-title">Leggi anche</h3>
+              <ul className="list-unstyled">
+                {related_articles.map((article) => (
+                  
+                    <ArticleListSM data={article} key={article.id} />
+                  
+                ))}
+              </ul>
                 </div>
               </div>
             </Col>
           </Row>
         </Container>
+        
       </div>
       <RelatedArticles entries={related_articles} />
       <WeeklySpotlight />

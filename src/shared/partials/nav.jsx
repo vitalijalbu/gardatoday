@@ -369,7 +369,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   The voter turnout shows the importance of this
                                   year’s election
@@ -409,7 +409,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Opposing camps clashed in heated dispute
                                   during today’s rally
@@ -449,7 +449,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   The current crisis reveals the staggering
                                   problems in our national healthcare system
@@ -489,7 +489,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   What we have learned 30 years after the fall
                                   of the Berlin Wall
@@ -647,7 +647,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Nicola Aebi is poised to set a new world
                                   record again
@@ -687,7 +687,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Max Meyer: “I feel better prepared than ever”
                                 </a>{" "}
@@ -726,7 +726,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Western Europe Road Tour reaching the last
                                   stage today
@@ -766,7 +766,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Impressive duel concluded the fencing
                                   championship
@@ -916,7 +916,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Presenting the most prominent features of the
                                   new mobile OS
@@ -956,7 +956,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   The new tablet manages to inspire with unique
                                   features
@@ -996,7 +996,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   The 16-inch MacBook Pro considerably improves
                                   performance
@@ -1036,7 +1036,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   What can we expect from the updated Home Smart
                                   Speaker
@@ -1186,7 +1186,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   More than 2218 satellites orbit our planet,
                                   each with its own purpose
@@ -1226,7 +1226,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Exploring hidden marine species with Steve
                                   Vernon
@@ -1266,7 +1266,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   The next ISS crew is planned to launch this
                                   weekend
@@ -1306,7 +1306,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Some coral reefs seem to be recovering
                                   miraculously, marine biologists find
@@ -1464,7 +1464,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   In Zack Schreiber’s new comedy a Dad goes
                                   through the motions
@@ -1504,7 +1504,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Looking Glass was picked up for two more
                                   seasons
@@ -1544,7 +1544,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Allie Holiday confirms: New album coming soon
                                 </a>{" "}
@@ -1583,7 +1583,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Podcast: Relationships in times of crisis
                                 </a>{" "}
@@ -1732,7 +1732,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Experts predict the markets won’t be out of
                                   recession before next year
@@ -1772,7 +1772,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Is this the best or the worst time to invest
                                   in real estate?
@@ -1812,7 +1812,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   More concerns about possible deflation are
                                   rising
@@ -1852,7 +1852,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   After deep plunge stocks are starting to
                                   recover
@@ -2002,7 +2002,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Visiting some of the most popular destinations
                                   in Central Europe
@@ -2042,7 +2042,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Backpacking Indonesia: Adventure, friendly
                                   locals and, of course, white beaches
@@ -2082,7 +2082,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Between canals and dams – Out and about in
                                   Amsterdam
@@ -2122,7 +2122,7 @@ const Nav = () => {
                                 {" "}
                                 <a
                                   href="/sezioni/politica"
-                                  className="uk-link-heading"
+                                  
                                 >
                                   Consequences of the rising heat for desert
                                   life

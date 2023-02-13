@@ -12,14 +12,14 @@ const CityCard = ({ data }) => {
                 <source
                   srcSet={
                     data.cover_image ? data.cover_image[0].url :
-                    "/images/placeholder.png"
+                    "/images/placeholder.svg"
                   }
                   media="(min-width: 62.5em)"
                 />
                 <img
                   srcSet={
                     data.cover_image ? data.cover_image[0].url :
-                    "/images/placeholder.png"
+                    "/images/placeholder.svg"
                   }
                   alt={data.title}
                 />

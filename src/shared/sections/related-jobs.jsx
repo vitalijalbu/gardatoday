@@ -27,7 +27,7 @@ const RelatedJobs = ({ entries }) => {
               <CardBody>
                 <Link
                   href={`/lavoro/${entry?.id}`}
-                  className="uk-link-heading"
+                  
                 >
                   <span>{entry?.area?.title}</span>
                 

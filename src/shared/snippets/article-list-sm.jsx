@@ -14,11 +14,11 @@ const ArticleListSM = ({ data }) => {
         >
           <picture>
             <source
-              srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+              srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
               media="(min-width: 62.5em)"
             />
             <img
-              srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+              srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
               alt="Elezioni Provinciali: Emanuele Moraschini è il nuovo Presidente"
             />
           </picture>
@@ -27,17 +27,21 @@ const ArticleListSM = ({ data }) => {
       <div className="ps-2 media-body">
         <div className="story-item__body sm">
           <div className="category-top m-0">
-            <Link
+            {data?.area.lenght > 0 ? (<Link
               className="category"
-              href="https://gardatoday.it/sezioni/politica"
+              href={`/zone/${data?.area[0]?.slug}`}
             >
-              Politica
-            </Link>
+              {data?.area[0]?.title}
+            </Link>) : 
+            (<Link
+              className="category"
+              href={`/sezioni/${data?.category[0]?.slug}`}
+            >
+              {data?.category[0]?.title}
+            </Link>)}
             <span className="data">{data.postDate}</span>
           </div>
-          <Link href={`/notizie/${data.slug}`} aria-label={data.title}>
-            <h5 className="card-title serif underline">{data.title}</h5>
-          </Link>
+          <h6 className="card-title serif underline"><Link href={`/notizie/${data.slug}`}>{data.title}</Link></h6>
         </div>
       </div>
     </li>

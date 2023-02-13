@@ -1,13 +1,25 @@
+.card-body {
+    padding: 0.5rem 0;
+}
 .card-text{
     color: $gray-600;
 }
 .card-title {
     font-family: $font-serif;
 }
+.category-top {
+    color: #435a70;
+    margin-bottom: 10px;
+    font-size: 12px;
+    display: block;
+}
 .category-top a.category {
     color: $primary;
     text-transform: uppercase;
-    display: block;
-    font-size: 12px;
     font-weight: 500;
+}
+.category-top .data:before {
+    content: "—";
+    display: inline-block;
+    margin: 0 8px;
 }

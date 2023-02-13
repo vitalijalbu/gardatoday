@@ -34,7 +34,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Environ&shy;ment
                         </a>{" "}
@@ -47,7 +47,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Health
                         </a>{" "}
@@ -60,7 +60,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Education
                         </a>{" "}
@@ -73,7 +73,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Economy
                         </a>{" "}
@@ -86,7 +86,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           United States
                         </a>{" "}
@@ -99,7 +99,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           World
                         </a>{" "}
@@ -112,7 +112,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Brexit
                         </a>{" "}
@@ -125,7 +125,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           State &amp; Justice
                         </a>{" "}
@@ -138,7 +138,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Elections
                         </a>{" "}
@@ -172,7 +172,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Martial Arts
                         </a>{" "}
@@ -185,7 +185,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Motorsports
                         </a>{" "}
@@ -198,7 +198,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Baseball
                         </a>{" "}
@@ -211,7 +211,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Football
                         </a>{" "}
@@ -224,7 +224,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Athletics
                         </a>{" "}
@@ -237,7 +237,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Soccer
                         </a>{" "}
@@ -250,7 +250,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Basketball
                         </a>{" "}
@@ -263,7 +263,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Winter Sports
                         </a>{" "}
@@ -297,7 +297,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Multimedia
                         </a>{" "}
@@ -310,7 +310,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Transportation
                         </a>{" "}
@@ -323,7 +323,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Electronics
                         </a>{" "}
@@ -336,7 +336,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Innovation
                         </a>{" "}
@@ -349,7 +349,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Reviews
                         </a>{" "}
@@ -362,7 +362,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Security
                         </a>{" "}
@@ -375,7 +375,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Gaming
                         </a>{" "}
@@ -409,7 +409,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Space &amp; Cosmos
                         </a>{" "}
@@ -422,7 +422,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Animal World
                         </a>{" "}
@@ -435,7 +435,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Our Climate
                         </a>{" "}
@@ -448,7 +448,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Human &amp; Health
                         </a>{" "}
@@ -461,7 +461,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Physics &amp; Tech
                         </a>{" "}
@@ -474,7 +474,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Environment
                         </a>{" "}
@@ -487,7 +487,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Humanities
                         </a>{" "}
@@ -569,7 +569,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Movies
                         </a>{" "}
@@ -582,7 +582,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           TV Shows
                         </a>{" "}
@@ -595,7 +595,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Podcasts
                         </a>{" "}
@@ -608,7 +608,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Festivals
                         </a>{" "}
@@ -621,7 +621,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Art &amp; Culture
                         </a>{" "}
@@ -634,7 +634,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Music
                         </a>{" "}
@@ -647,7 +647,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Celebrities
                         </a>{" "}
@@ -660,7 +660,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Books
                         </a>{" "}
@@ -694,7 +694,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Economy
                         </a>{" "}
@@ -707,7 +707,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Markets
                         </a>{" "}
@@ -720,7 +720,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Companies
                         </a>{" "}
@@ -733,7 +733,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Real Estate
                         </a>{" "}
@@ -746,7 +746,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Banks &amp; Finance
                         </a>{" "}
@@ -759,7 +759,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Energy
                         </a>{" "}
@@ -772,7 +772,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Consumer &amp; Service
                         </a>{" "}
@@ -806,7 +806,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Destinations
                         </a>{" "}
@@ -819,7 +819,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Travel Report
                         </a>{" "}
@@ -832,7 +832,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           City Guide
                         </a>{" "}
@@ -845,7 +845,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Sustainability
                         </a>{" "}
@@ -858,7 +858,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Travel Advice
                         </a>{" "}
@@ -871,7 +871,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Weather
                         </a>{" "}
@@ -884,7 +884,7 @@ const Footer = () => {
                         {" "}
                         <a
                           href="/sezioni/politica"
-                          className="uk-link-heading"
+                          
                         >
                           Route Planner
                         </a>{" "}
@@ -908,7 +908,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           Opinion
                         </a>{" "}
                       </div>
@@ -918,7 +918,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           Daily Brief
                         </a>{" "}
                       </div>
@@ -928,7 +928,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           In the News
                         </a>{" "}
                       </div>
@@ -938,7 +938,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           Video
                         </a>{" "}
                       </div>
@@ -948,7 +948,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           Gallery
                         </a>{" "}
                       </div>
@@ -958,7 +958,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <div className="el-title uk-margin-top uk-margin-remove-bottom">
                         {" "}
-                        <a href="/sezioni/politica" uk-scroll="" className="uk-link-heading">
+                        <a href="/sezioni/politica" uk-scroll="" >
                           Review
                         </a>{" "}
                       </div>

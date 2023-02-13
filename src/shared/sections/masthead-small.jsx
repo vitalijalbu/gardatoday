@@ -54,7 +54,7 @@ uk-grid=""
           
           <a
             href="/joomla/themes/paladin/politics/state-justice/22-over-30-000-participants-in-protests-for-more-safety-in-schools-this-friday"
-            className="uk-link-heading"
+            
           >
             Over 30,000 participants in protests for more safety in
             schools this Friday
@@ -85,7 +85,7 @@ uk-grid=""
             
             <a
               href="/joomla/themes/paladin/entertainment/celebrities/78-actress-emilia-moreno-is-the-new-talent-on-the-horizon"
-              className="uk-link-heading"
+              
             >
               Actress Emilia Moreno is the new talent on the horizon
             </a>
@@ -106,7 +106,7 @@ uk-grid=""
             
             <a
               href="/joomla/themes/paladin/science/environment/155-iucn-updates-red-list-of-endangered-species"
-              className="uk-link-heading"
+              
             >
               IUCN updates red list of endangered species
             </a>
@@ -137,7 +137,7 @@ uk-grid=""
             
             <a
               href="/joomla/themes/paladin/business/economy/291-vietnam-is-still-attempting-to-restructure-its-economy"
-              className="uk-link-heading"
+              
             >
               Vietnam is still attempting to restructure its economy
             </a>
@@ -158,7 +158,7 @@ uk-grid=""
             
             <a
               href="/joomla/themes/paladin/science/animal-world/72-exploring-hidden-marine-species-with-steve-vernon"
-              className="uk-link-heading"
+              
             >
               Exploring hidden marine species with Steve Vernon
             </a>

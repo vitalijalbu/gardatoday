@@ -1,0 +1,30 @@
+.widget-title{
+    font-family: $font-serif;
+    margin-bottom: 1.5rem;
+}
+.btn-social{
+    padding: 0;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    margin-right: 0.5rem;
+    & svg{
+        height: 32px;
+    }
+}
+.social-whatsapp{
+    border-color: #25D366;
+    background-color: #25D366;
+}
+.social-facebook{
+    border-color: #3b5998;
+    background-color: #3b5998;
+}
+.social-twitter{
+    border-color: #00acee;
+    background-color: #00acee;
+}
+.social-linkedin{
+    border-color: #0072b1;
+    background-color: #0072b1;
+}
