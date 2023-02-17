@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import { getSession, removeSession } from "@/lib/graphql/client";
+import confirm from '@/shared/components/confirm/';
 import {
   UncontrolledDropdown,
   DropdownToggle,
@@ -23,11 +25,29 @@ import {
 } from "@tabler/icons-react";
 
 const Header = () => {
+  const session = getSession();
+  const user = session.user;
   const [navOpen, setNavOpen] = useState(false);
   const [searchOpen, setsearchOpen] = useState(false);
   /* actions */
   const openSideNav = () => setNavOpen(!navOpen);
   const openSearch = () => setsearchOpen(!searchOpen);
+    /* Confirm */
+    const handleLogout = () => {
+      confirm({
+        title: 'Sei sicuro di voler uscire?',
+        message: 'Potrai sempre accedere di nuovo in qualsiasi istante.',
+        cancelText: 'Annulla',
+        confirmText: 'Esci',
+        confirmColor: 'danger',
+      }).then((confirmed) => {
+        if (confirmed) {
+          removeSession();
+          window.location.href="/";
+        }
+      });
+    };
+  
 
   return (
     <>
@@ -119,8 +139,14 @@ const Header = () => {
             >
               <img src="https://gardatoday.it/assets/images/logo.svg" />
             </Link>
-            <div className="col-md-3 text-end">
               <ul className="nav">
+              <li className="nav-item">
+                  <Button color="link" onClick={openSearch}>
+                    <IconSearch />
+                  </Button>
+                </li>
+              {session ? (
+              <>
                 <li className="nav-item">
                   <UncontrolledDropdown>
                     <DropdownToggle nav caret>
@@ -149,24 +175,18 @@ const Header = () => {
                         </Link>
                       </DropdownItem>
                       <DropdownItem divider />
-                      <DropdownItem>Esci</DropdownItem>
+                <DropdownItem onClick={handleLogout}>Esci</DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
-                </li>
-                <li className="nav-item">
+                </li></>): ( <li className="nav-item">
                   <Link href="/login" className="px-2">
                     <Button color="primary" outline>
                       <IconUserCircle /> Accedi
                     </Button>
                   </Link>
-                </li>
-                <li className="nav-item">
-                  <Button variant="link" onClick={openSearch}>
-                    <IconSearch />
-                  </Button>
-                </li>
+                </li>)}
+               
               </ul>
-            </div>
           </header>
         </div>
       </div>

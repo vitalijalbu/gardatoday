@@ -14,6 +14,7 @@ const Page = () => {
   const [loading, setLoading] = useState(false);
   const [entry, setEntry] = useState(null);
   const [related_articles, setRelatedArticles] = useState([]);
+  const [weekly_articles, setWeeklyArticles] = useState([]);
   const [navOpen, setNavOpen] = useState(false);
   /* actions */
   const openSideNav = () => setNavOpen(!navOpen);
@@ -23,6 +24,7 @@ const Page = () => {
       .then((data) => {
         setEntry(data.entry);
         setRelatedArticles(data?.related_articles);
+        setWeeklyArticles(data?.weekly_articles);
         //console.log("🐝 API response", data);
       })
       .catch((error) => {
@@ -96,7 +98,24 @@ const Page = () => {
               <p className="pb-4 mb-4 border-bottom">{entry?.excerpt}</p>
               <section className="section-content article-body">
               <figure class="figure">
-  <img src="/images/placeholder.svg" class="figure-img img-fluid"/>
+              <picture>
+            <source
+              srcSet={
+                entry?.cover_image
+                  ? entry.cover_image[0].url
+                  : "/images/placeholder.svg"
+              }
+              media="(min-width: 62.5em)"
+            />
+            <img
+              srcSet={
+                entry?.cover_image
+                  ? entry.cover_image[0].url
+                  : "/images/placeholder.svg"
+              }
+              alt={entry?.title}
+            />
+          </picture>
   <figcaption class="figure-caption">Una didascalia per l'immagine sopra.</figcaption>
 </figure>
 
@@ -124,7 +143,7 @@ const Page = () => {
         
       </div>
       <RelatedArticles entries={related_articles} />
-      <WeeklySpotlight />
+      <WeeklySpotlight entries={weekly_articles}/>
     </div>
   );
 };

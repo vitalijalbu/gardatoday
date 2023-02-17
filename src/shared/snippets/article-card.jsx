@@ -27,18 +27,11 @@ const ArticleCard = ({ data, excerpt }) => {
 
       <div className="card-body">
       <div className="category-top m-0">
-            {data?.area.lenght > 0 ? (<Link
-              className="category"
-              href={`/zone/${data?.area[0]?.slug}`}
-            >
-              {data?.area[0]?.title}
-            </Link>) : 
-            (<Link
-              className="category"
-              href={`/sezioni/${data?.category[0]?.slug}`}
-            >
-              {data?.category[0]?.title}
-            </Link>)}
+      {data?.category && data?.category.length > 0 ? (
+          <Link className="category" href={`/sezioni/${data?.category[0].slug}`}>
+            {data?.category[0].title}
+          </Link>
+        ) : null}
             <span className="data">{data.postDate}</span>
           </div>
         

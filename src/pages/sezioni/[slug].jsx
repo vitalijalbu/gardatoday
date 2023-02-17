@@ -61,9 +61,9 @@ const Page = () => {
             <Col md={4}>
               <h1 className="page-title">I più letti</h1>
               <ul className="list-unstyled">
-                {spotlight.map((article) => (
+                {spotlight.map((article, i) => (
                   
-                    <ArticleNum data={article} key={article.id} />
+                    <ArticleNum data={article} key={i} />
                   
                 ))}
               </ul>
