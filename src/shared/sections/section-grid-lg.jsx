@@ -80,7 +80,7 @@ const SectionGridLg = () => {
                               </div>
                             ))}
                             <h3 className="el-title uk-h1 uk-margin-small-top uk-margin-remove-bottom">
-                              <span className="uk-link-heading">
+                              <span >
                                 {firstArticle?.title}
                               </span>
                             </h3>
@@ -122,7 +122,7 @@ const SectionGridLg = () => {
                               <h3 className="el-title uk-h3 uk-margin-top uk-margin-remove-bottom">
                                 <Link
                                   href={`/notizie/${article.slug}`}
-                                  className="uk-link-heading"
+                                  
                                 >
                                   {article.title}
                                 </Link>

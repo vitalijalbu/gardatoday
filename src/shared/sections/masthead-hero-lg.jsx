@@ -35,11 +35,11 @@ const MastheadHero = ({ entries }) => {
             <div className="img-responsive">
               <figure className="img-wrapper">
                 <source
-                  srcSet={first_article?.cover_image[0]?.url ?? '/images/placeholder.png'}
+                  srcSet={first_article?.cover_image[0]?.url ?? '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={first_article?.cover_image[0]?.url ?? '/images/placeholder.png'}
+                  srcSet={first_article?.cover_image[0]?.url ?? '/images/placeholder.svg'}
                   className="p-card__image"
                   alt=" CanevaWorld Resort alla ricerca di oltre 200 lavoratori stagionali﻿ "
                 />
@@ -61,7 +61,7 @@ const MastheadHero = ({ entries }) => {
           </a>
           <span className="data">{first_article?.postDate}</span>
         </div>
-        <Link href={`/notizie/${first_article?.slug}`} className="uk-link-heading">
+        <Link href={`/notizie/${first_article?.slug}`} >
           <h5 className="card-title serif underline">{first_article?.title}</h5>
         </Link>
 

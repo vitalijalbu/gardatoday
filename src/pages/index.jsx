@@ -4,7 +4,8 @@ import SectionGrid from "@/shared/sections/section-grid";
 import SectionGridLg from "@/shared/sections/section-grid-lg";
 import Section1 from "@/shared/sections/section-1";
 import SmallGrid from "@/shared/sections/small-grid";
-import FocusVideos from "@/shared/sections/focus-videos";*/
+import SmallGrid from "@/shared/sections/small-grid";*/
+import Stories from "@/shared/sections/stories";
 import FocusFeatured from "@/shared/sections/focus-featured";
 import FastHeader from "@/shared/sections/fast-header";
 import FocusHalf from "@/shared/sections/focus-half";
@@ -31,6 +32,7 @@ const Home = () => {
       <FocusHalf title="Attualità e Cronaca" limit={7} topics={[25, 29]}/>
       <FocusFeatured title="In evidenza" limit={8} topics={[25, 29]}/>
       <Areas/>
+      <Stories/>
       <UpcomingEvents/>
       <Newsletter/>
       <Topics/>

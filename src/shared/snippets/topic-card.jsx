@@ -9,11 +9,11 @@ const TopicCard = ({ data }) => {
             <div className="img-responsive">
             <figure className="img-wrapper">
                 <source
-                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.svg'}
                   className="p-card__image"
                   alt={data.title}
                 />

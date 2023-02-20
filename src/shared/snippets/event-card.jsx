@@ -12,11 +12,11 @@ const EventCard = ({data}) => {
             <div className="img-responsive">
               <figure className="img-wrapper">
                 <source
-                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
                 />
                 <img
-                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.png'}
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   className="p-card__image"
                   alt={data.title}
                 />
@@ -27,18 +27,16 @@ const EventCard = ({data}) => {
       </div>
 
       <div className="card-body">
-        <a href="https://gardatoday.it/eventi/tremosine-morto-agricoltore-ribaltatosi-con-trattore"></a>
-        <div className="category-top">
-          <a href="https://gardatoday.it/eventi/tremosine-morto-agricoltore-ribaltatosi-con-trattore"></a>
-          <a
-            className="category"
-            href="https://gardatoday.it/comuni/tremosine-sul-garda"
-          >
-            Tremosine sul Garda
-          </a>
-          <span className="data">{dayjs(data?.postDate).format('dddd')}</span>
-        </div>
-        <Link href={`/eventi/${data.slug}`} className="uk-link-heading">
+      <div className="category-top m-0">
+      {data?.area && data?.area.length > 0 ? (
+          <Link className="category" href={`/sezioni/${data?.area[0].slug}`}>
+            {data?.area[0].title}
+          </Link>
+        ) : null}
+            <span className="data">{data.postDate}</span>
+          </div>
+        
+        <Link href={`/eventi/${data.slug}`} >
           <h5 className="card-title serif underline">{data.title}</h5>
         </Link>
 

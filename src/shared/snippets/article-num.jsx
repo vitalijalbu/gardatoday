@@ -2,27 +2,32 @@
 import Link from "next/link";
 
 
-const ArticleNum = ({ data }) => {
+const ArticleNum = ({ data, key }) => {
   
   return (
-<li className="media media-item_number">
-  <div className="mr-3 post-num_number text-primary">
+<li className="d-flex align-items-center media-item_number">
+  <div className="post-num_number flex-shrink-0 text-primary">
     <span className="text-points__index">
-      {data.id}
+      {key}
     </span>
   </div>
-  <div className="media-body">
+  <div className="flex-grow-1 ms-3">
    
     <div className="category-top">
       
-      <a className="category" href="{{ entry.area.one().url }}">
-       area
-      </a>
-
-      <a className="category" href="{{ entry.category.one().url }}">
-       categ
-      </a>
-
+    {data.area && (
+              <Link className="category" href={`/zone/${data?.area.slug}`}>
+                {data?.area?.title}
+              </Link>
+            )}
+            {data.category && (
+              <Link
+                className="category"
+                href={`/sezioni/${data?.category.slug}`}
+              >
+                {data?.category.title}
+              </Link>
+            )}
       <span className="data">
        {data.postDate}
       </span>

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { IconBrandInstagram, IconBrandFacebook, IconBrandLinkedin, IconBrandTwitter } from '@tabler/icons-react';
+import { Container } from "reactstrap";
 
 const Footer = () => {
-  const [expanded, setExpanded] = useState(true);
+
   return (
     <footer className="site-footer">
   <div className="site-footer-main">
-    <div className="container">
+    <Container>
       <section>
         <div className="row clearfix">
           <div className="col-sm-12">
@@ -497,10 +498,10 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </div>
+    </Container>
   </div>
   <div className="site-footer-small-prints clearfix">
-    <div className="container">
+    <Container>
       <h3 className="sr-only">Sezione Link Utili</h3>
       <ul className="site-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
         <li className="list-inline-item">
@@ -520,7 +521,7 @@ const Footer = () => {
           <a href="/sitemap">Mappa del sito</a>
         </li>
       </ul>
-    </div>
+    </Container>
   </div>
 </footer>
 

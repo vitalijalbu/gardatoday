@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 import { getUpcomingEvents } from "@/lib/graphql/queries/events";
-import EventCard from "@/shared/snippets/article-card";
+import EventCard from "@/shared/snippets/event-card";
 
 
 import { Container, Row, Col } from "reactstrap";

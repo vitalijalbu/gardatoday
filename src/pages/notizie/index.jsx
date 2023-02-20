@@ -5,6 +5,9 @@ import {
   Container,
   Row,
   Col,
+  Pagination,
+  PaginationItem,
+  PaginationLink,
   Breadcrumb,
   BreadcrumbItem,
   Card,
@@ -43,17 +46,17 @@ const Index = () => {
     <div className="page-content">
       
       
-      <MastheadSmall articles={head_articles}/>
+      <MastheadSmall entries={head_articles}/>
       <Container>
-      <div className="row">
-  <div className="col-8">
+      <Row>
+  <Col lg={8} sm={12}>
   <h1 className="page-title">Ultime notizie</h1>
   <ul className="list-unstyled">
               {articles.map((entry, i) => (
     <ArticleList data={entry} key={i} excerpt={true}/>
    ))}
    </ul>
-   </div>
+   </Col>
    <Col md={4}>
               <h1 className="page-title">I più letti</h1>
               <ul className="list-unstyled">
@@ -64,7 +67,58 @@ const Index = () => {
                 ))}
               </ul>
             </Col>
-</div>
+</Row>
+<Pagination>
+  <PaginationItem>
+    <PaginationLink
+      first
+      href="#"
+    />
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink
+      href="#"
+      previous
+    />
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      1
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      2
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      3
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      4
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink href="#">
+      5
+    </PaginationLink>
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink
+      href="#"
+      next
+    />
+  </PaginationItem>
+  <PaginationItem>
+    <PaginationLink
+      href="#"
+      last
+    />
+  </PaginationItem>
+</Pagination>
 </Container>
 </div>
 </div>

@@ -1,46 +1,48 @@
 import Link from "next/link";
-
+import { IconHistoryToggle } from "@tabler/icons-react";
 
 const StoryCard = ({data}) => {
   return (
-    <div
-    className="el-itemuk-active">
-    <div className="uk-light">
-    <Link
-                  href={`/sezioni/${data.slug}`}
-        className="uk-cover-container uk-display-block uk-link-toggle"
-        aria-label="All Articles"
-      >
-        <picture>
-          <source
-            type="image/webp"
-            srcSet="https://via.placeholder.com/800"
-            sizes="(min-width: 360px) 360px"
-          />
-          <img
-            src="https://via.placeholder.com/800"
-            width={360}
-            height={561}
-            alt=""
-            loading="lazy"
-            className="el-image uk-transition-opaque"
-          />
-        </picture>
-        <div className="uk-position-bottom-center">
-          <div className="uk-panel uk-padding uk-margin-remove-first-child">
-            <h3 className="el-title uk-h2 uk-margin-top uk-margin-remove-bottom">
-              {data.title}
-            </h3>
-            <div className="uk-margin-small-top">
-              <div className="el-link uk-button uk-button-text">
-                LEGGI DI PIù
-              </div>
+    <div className="card card-overlay-bottom card-image-scale">
+      <span className="card-featured" title="Featured post">
+  <IconHistoryToggle/>
+</span>
+
+    {/* Card Image */}
+    <div className="img-responsive-wrapper">
+            <div className="img-responsive story">
+              <figure className="img-wrapper">
+                <source
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
+                  media="(min-width: 62.5em)"
+                />
+                <img
+                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
+                  className="p-card__image"
+                  alt={data.title}
+                />
+              </figure>
             </div>
           </div>
-        </div>
-      </Link>
+    {/* Card Image overlay */}
+    <div className="card-img-overlay d-flex flex-column p-3 p-md-4">
+      <div>
+        {/* Card category */}
+        {data?.category && data?.category.length > 0 ? (
+          <span className="text-white category">
+            {data?.category[0].title}
+          </span>
+        ) : null}
+      </div>
+      <div className="w-100 mt-auto">
+         {/* Card info */}
+         <span className="data text-white-400">{data.postDate}</span>
+        {/* Card title */}
+        <h5 className="card-title text-white"><Link href={'#'}>{data.title}</Link></h5>
+      </div>
     </div>
   </div>
+  
 
             );
 };

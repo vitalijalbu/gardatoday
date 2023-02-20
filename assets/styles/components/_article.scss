@@ -6,7 +6,13 @@
   padding-bottom: 61.29%;
   position: relative;
   height: 0;
+  &.story{
+    padding-bottom: 140%;
+    color: #fff;
+  }
 }
+
+
 .img-responsive-wrapper .img-responsive .img-wrapper {
   position: absolute;
   top: 0;
@@ -65,7 +71,7 @@
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 3rem;
-  /* font-family: var(--font-); */
+  font-family: $font-serif;
 }
 
 .media.story-item:last-of-type {

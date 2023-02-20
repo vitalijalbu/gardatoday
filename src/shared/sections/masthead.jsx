@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Container, Row, Col, Dropdown , DropdownMenu, DropdownItem, DropdownToggle, UncontrolledDropdown } from "reactstrap";
 // import required modules
 import { Pagination } from "swiper";
+import ArticleListSM from "../snippets/article-list-sm";
 
 
 
@@ -67,10 +68,9 @@ const MastHead = ({ title, topics, limit }) => {
     <Container>
       <Row>
       <Col md={3} lg={3} xs={12}>
-      <h2 className="section-title">Ieri</h2>
       { data?.entries.map((article, i) => (
           <Col md={12}>
-            <ArticleCard data={article} key={i} />
+            <ArticleListSM data={article} key={i} />
           </Col>
         ))}
           </Col>
