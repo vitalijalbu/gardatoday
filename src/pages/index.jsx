@@ -12,11 +12,11 @@ import FocusHalf from "@/shared/sections/focus-half";
 import MastHead from "@/shared/sections/masthead";
 import Areas from "@/shared/sections/areas";
 import Topics from "@/shared/sections/topics";
+import TopicsGrid from "@/shared/sections/topics-grid";
 import Newsletter from "@/shared/sections/newsletter";
 import UpcomingEvents from "@/shared/sections/upcoming-events";
 
 /*
-import Topics from "@/shared/sections/topics";
 import Masthead from "@/shared/sections/masthead";
 import MastheadHeroLg from "@/shared/sections/masthead-hero-lg";*/
 import { Button } from 'reactstrap';
@@ -32,6 +32,7 @@ const Home = () => {
       <FocusHalf title="Attualità e Cronaca" limit={7} topics={[25, 29]}/>
       <FocusFeatured title="In evidenza" limit={8} topics={[25, 29]}/>
       <Areas/>
+      <TopicsGrid/>
       <Stories/>
       <UpcomingEvents/>
       <Newsletter/>

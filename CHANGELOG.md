@@ -1,15 +1,15 @@
 
 # Change Log
 
-# [v0.1.0-pre-release-2](https://github.com/duckma/onegoblet-console) (2023-01-13)
+# [v0.1.0-pre-release-2](https://github.com/vitalijalbu/gardatoday) (2023-01-13)
 
 ### Bug Fixes
 
 - **homepage:** update user `password` was required 
 - **graphql query:** fixed `area` query
 - **graphql query:** fixed `article` query, added tags, cover_image & more
-- **activities search filters:** search filter working
-
+- **updated stories section UI:** sections stories now have clean UI
+- **upcoming events:** fixed query upcoming events
 
 ### Core changes
 

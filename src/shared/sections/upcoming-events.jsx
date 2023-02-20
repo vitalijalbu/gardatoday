@@ -11,13 +11,15 @@ const UpcomingEvents = () => {
   const [loading, setLoading] = useState(false);
   const [entries, setEntries] = useState([]);
   useEffect(() => {
-    getUpcomingEvents().then((data) => {
-      setEntries(data?.entries);
-      console.log('🐝 API response EVENTS', data)
-  }).catch((error) => {
-    console.log(error);
-  });
-}, []);
+    getUpcomingEvents()
+      .then((data) => {
+        setEntries(data?.entries);
+        //console.log("🐝 API response CATEGORIES", data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
 
 
@@ -28,7 +30,7 @@ const UpcomingEvents = () => {
         <h1 className="section-title">Eventi in programma</h1>
         </Col>
       </Row>
-      {Array.isArray(entries) ? (
+      {entries && entries.length > 0 ? (
       <Row className="list-unstyled">
         {entries.map((entry, i) => (
           <Col md={6} lg={3} xs={6} key={entry.id}>
@@ -37,7 +39,7 @@ const UpcomingEvents = () => {
         ))}
       </Row> 
       ) : (
-                <Row>Nessun dato</Row>
+        <Row>Nessun evento in programma</Row>
               )}
     </Container>
   );

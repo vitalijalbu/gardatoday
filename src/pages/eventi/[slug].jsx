@@ -20,7 +20,7 @@ const Page = () => {
   const router = useRouter();
   const { slug } = router.query;
   const [entry, setEntry] = useState(null);
-  const [related_entries, setRelatedEntries] = useState([]);
+  const [related_events, setRelatedEntries] = useState([]);
   const [navOpen, setNavOpen] = useState(false);
    /* actions */ 
    const openSideNav = () => setNavOpen(!navOpen);
@@ -29,7 +29,7 @@ const Page = () => {
     viewEvent(slug)
     .then((data) => {
       setEntry(data?.entry);
-      setRelatedEntries(data?.related_entries);
+      setRelatedEntries(data?.related_events);
       //console.log('🐝 API response', data)
     }).catch((error) => {
       console.log(error);
@@ -47,49 +47,84 @@ const Page = () => {
                   <Link href="/">Home</Link>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
-                  <Link href="/lavoro">Offerte di lavoro</Link>
+                  <Link href="/eventi">Eventi</Link>
                 </BreadcrumbItem>
                 <BreadcrumbItem active>{entry?.title}</BreadcrumbItem>
               </Breadcrumb>
-              <div className="section-head">
-                <h1 className="section-title">{entry?.title}</h1>
-              </div>
-              <section className="section-content">
-              <div dangerouslySetInnerHTML={{ __html: entry?.body }}></div>
+              <h1 className="pb-4 serif mb-2">{entry?.title}</h1>
+              <p className="pb-4 mb-4 border-bottom">{entry?.excerpt}</p>
+              <section className="section-content article-body">
+              <figure class="figure">
+              <picture>
+            <source
+              srcSet={
+                entry?.cover_image
+                  ? entry.cover_image[0].url
+                  : "/images/placeholder.svg"
+              }
+              media="(min-width: 62.5em)"
+            />
+            <img
+              srcSet={
+                entry?.cover_image
+                  ? entry.cover_image[0].url
+                  : "/images/placeholder.svg"
+              }
+              alt={entry?.title}
+            />
+          </picture>
+  <figcaption class="figure-caption">Una didascalia per l'immagine sopra.</figcaption>
+</figure>
+
+                <div dangerouslySetInnerHTML={{ __html: entry?.body }}></div>
               </section>
             </Col>
             <Col md={5} xs={12}>
-            <ShareButtons url="ciao"/>
+            <ShareButtons title={true}/>
             <Card>
                 <CardHeader>
-                  Dettagli offerta
+                  Dettagli evento
                 </CardHeader>
                 <CardBody>
                 <dl className="grid">
-                     <dt>Inserzionista:</dt>
-                     <dd>Carro Luigi</dd>
-                     <dt>Sito web:</dt>
-                     <dd><a href="https://carroluigi.it/" className="text-primary" target="_blank">Candidati ora</a></dd>
-                     <dt>Data pubblicazione:</dt>
-                     <dd><time datetime="10/03/2022">10/03/2022</time></dd>
-                     <dt>Cntratto di lavoro:</dt>
-                     <dd className="l-cluster with-link">
-                        <ul className="list-inline">
-                                                   </ul>
-                     </dd>
-                     <dt>Comune:</dt>
-                     <dd className="l-cluster with-link">
-                        <ul className="list-inline">
-                                                   </ul>
-                     </dd>
-                  </dl>
+  <dt>Creato il:</dt>
+  <dd>
+    <time dateTime="14-08-2022">14 agosto 2022</time>
+  </dd>
+  <dt>Data inizio:</dt>
+  <dd>
+    <time dateTime="24-09-2022" className="text-primary">
+      24 settembre 2022
+    </time>
+  </dd>
+  <dt>Data fine:</dt>
+  <dd>
+    <time dateTime="25-09-2022" className="text-primary">
+      25 settembre 2022
+    </time>
+  </dd>
+  <dt className="with-link">Zona:</dt>
+  <dd className="l-cluster with-link">
+    <ul className="list-unstyled">
+      <li>
+        {" "}
+        <a href="https://gardatoday.it/comuni/peschiera-del-garda">
+          <div className="chip chip-simple chip-primary">
+            <span className="chip-label">Peschiera del Garda</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </dd>
+</dl>
+
                 </CardBody>
               </Card>
             </Col>
           </Row>
         </Container>
       </div>
-      <RelatedEvents entries={related_entries}/>
+      <RelatedEvents entries={related_events}/>
     </div>
   )
 }

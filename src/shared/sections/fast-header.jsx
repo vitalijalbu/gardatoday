@@ -79,6 +79,7 @@ const FastHeader = ({ title }) => {
             ))}
           </Swiper>
         </Row>
+        <hr/>
       </Container>
     </section>
   );

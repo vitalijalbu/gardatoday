@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import CityCard from "@/shared/snippets/city-card";
-import { GET_AREAS } from "@/lib/graphql/entries/areas";
-import graphQLClient from "@/lib/graphql/client";
+import { getAllAreas } from "@/lib/graphql/queries/areas";
 
-export async function getStaticProps() {
-  const data = await graphQLClient.request(GET_AREAS);
 
-  return {
-    props: { data },
-  };
-}
-
-const Index = ({data}) => {
-
+const Index = () => {
+  const [loading, setLoading] = useState(false);
+  const [entries, setEntries] = useState([]);
+  useEffect(() => {
+    getAllAreas()
+      .then((data) => {
+        setEntries(data?.entries);
+        //console.log("🐝 API response CATEGORIES", data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
 
   return (
@@ -28,9 +31,9 @@ const Index = ({data}) => {
     </Col>
     </Row>
 
-    {Array.isArray(data.entries) ? (
+    {Array.isArray(entries) ? (
          <Row> 
-          {data.entries.map((item, i) => (
+          {entries.map((item, i) => (
             <Col lg={4} xs={6} sm={6} className="mb-3">
             <CityCard data={item} key={i}/>
             </Col>

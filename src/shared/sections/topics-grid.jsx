@@ -1,21 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { getAllAreas } from "@/lib/graphql/queries/areas";
-import CityCard from "@/shared/snippets/city-card";
+import { getAllCategories } from "@/lib/graphql/queries/categories";
+import TopicCard from "@/shared/snippets/topic-card";
 import { Container, Row, Col } from "reactstrap";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
 // import required modules
 import { Pagination } from "swiper";
 
-const Areas = () => {
+const Topics = () => {
   const [loading, setLoading] = useState(false);
-  const [entries, setEntries] = useState([]);
+  const [categories, setCategories] = useState([]);
   useEffect(() => {
-    getAllAreas()
+    getAllCategories()
       .then((data) => {
-        setEntries(data?.entries);
+        setCategories(data?.categories);
         //console.log("🐝 API response CATEGORIES", data);
       })
       .catch((error) => {
@@ -24,12 +23,12 @@ const Areas = () => {
   }, []);
 
   return (
-    <section className="section-content" id="entries">
+    <section className="section-content" id="categories">
       <Container>
         <Row>
           <Col lg={3}>
-            <h2 className="section-title">Comuni</h2>
-            <Link href="/zone">Vedi tutte le zone</Link>
+            <h2 className="section-title">Sezioni</h2>
+            <Link href="/sezioni">Vedi tutti</Link>
           </Col>
           <Col lg={9}>
             <Swiper
@@ -42,9 +41,9 @@ const Areas = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {entries.map((entry, i) => (
-                <SwiperSlide key={i}>
-                  <CityCard data={entry} />
+              {categories.map((category) => (
+                <SwiperSlide key={category.id}>
+                  <TopicCard data={category} />
                 </SwiperSlide>
               ))}
             </Swiper>
@@ -54,4 +53,4 @@ const Areas = () => {
     </section>
   )
 }
-export default Areas;
+export default Topics;

@@ -4,10 +4,11 @@ import { getAllEvents } from "@/lib/graphql/queries/events";
 import EventCard from "@/shared/snippets/event-card";
 import { Container, Row, Col } from "reactstrap";
 
+
 const Index = () => {
   const [loading, setLoading] = useState(false);
   const [events, setEvents] = useState([]);
-  const [archived_events, setArchivedEvents] = useState([]);
+  const [archived, setArchivedEvents] = useState([]);
 
   useEffect(() => {
     getAllEvents()
@@ -31,7 +32,7 @@ const Index = () => {
               <hr />
             </Col>
 
-            {Array.isArray(events) ? (
+            {events && events.length > 0 ? (
               <Row>
                 {events.map((entry) => (
                   <Col md={6} lg={3} xs={6} key={entry.id}>
@@ -40,7 +41,7 @@ const Index = () => {
                 ))}
               </Row>
             ) : (
-              <Row>Nessun dato</Row>
+              <Row>Nessun evento in programma</Row>
             )}
         </Row>
             <Row className="mt-3">
@@ -50,9 +51,9 @@ const Index = () => {
             </Col>
           
           
-          {Array.isArray(archived_events) ? (
+            {archived && archived.length > 0 ? (
             <Row>
-              {archived_events.map((archived) => (
+              {archived.map((archived) => (
                 <Col md={6} lg={3} xs={6} key={archived.id}>
                   <EventCard data={archived} />
                 </Col>

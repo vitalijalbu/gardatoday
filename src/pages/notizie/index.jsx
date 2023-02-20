@@ -30,7 +30,7 @@ const Index = () => {
     .then((data) => {
       setArticles(data?.entries);
       setSpotlight(data?.spotlight);
-      console.log('🐝 API response JOBS RELATED', data)
+      //console.log('🐝 API response JOBS RELATED', data)
   }).catch((error) => {
     console.log(error);
   });

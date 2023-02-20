@@ -52,7 +52,7 @@ import ArticleList from "@/shared/snippets/article-list";
    </ul>
           </Col> 
           <Col md={4}>
-          <WidgetMeteo title={entry?.title}/>
+          <WidgetMeteo title={entry?.title} slug={entry?.slug}/>
           </Col>
       </Row>
   </Container>
