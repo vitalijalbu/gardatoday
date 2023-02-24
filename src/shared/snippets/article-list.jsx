@@ -7,7 +7,7 @@ const ArticleList = ({ data }) => {
     <div className="row">
       <div className="col-lg-4">
         <div className="img th-200 img-cover">
-          <img src="assets/img/technology/3.png" alt="" />
+          <img src="https://via.placeholder.com/600"ssets/img/technology/3.png" alt="" />
         </div>
       </div>
       <div className="col-lg-8">

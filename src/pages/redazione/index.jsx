@@ -28,7 +28,7 @@ const Index = () => {
   <div className="overflow-hidden" style={{ maxHeight: "30vh" }}>
     <div className="container px-5">
       <img
-        src="https://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-docs.png"
+        src="https://via.placeholder.com/600"ttps://getbootstrap.com/docs/5.3/examples/heroes/bootstrap-docs.png"
         className="img-fluid border rounded-3 shadow-lg mb-4"
         alt="Example image"
         width={700}

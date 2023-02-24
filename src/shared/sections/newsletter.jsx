@@ -8,33 +8,43 @@ const Newsletter = ({ title, topics, limit }) => {
 
   return (
     <section className="py-4">
-<div className="site-newsletter">
-  <div className="container">
-    <div className="text-center">
-      <h3 className="h4 mb-2">Iscirviti alla newsletter</h3>
-      <p className="text-muted">
-        Join our monthly newsletter and never miss out on new stories and
-        promotions.
-      </p>
-      <div className="row">
-        <div className="col-xs-12 col-sm-9 col-md-7 col-lg-5 ms-auto me-auto">
-          <div className="input-group mb-3 mt-3">
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Email address"
-              aria-label="Email address"
-            />
-            <span className="input-group-btn">
-              <button className="btn btn-secondary" type="button">
-                Iscirviti
-              </button>
-            </span>
-          </div>
+      <div className="container">
+<div className="tc-subscribe-style9 mt-50">
+  <div className="row justify-content-around align-items-center">
+    <div className="col-lg-4">
+      <div className="sub-info">
+        <h5 className="mb-10">Our Newsletter</h5>
+        <p className="fsz-13px color-666">
+          Subscribe our newsletter to get latest news &amp; promotion
+        </p>
+      </div>
+    </div>
+    <div className="col-lg-6">
+      <div className="sub-form mt-4 mt-lg-0">
+        <div className="form-group">
+          <span className="icon">
+            <i className="la la-envelope" />
+          </span>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Enter your email"
+          />
+          <button>Iscriviti</button>
         </div>
+        <p className="mt-2 color-666 fsz-13px fst-italic">
+          By subscribing, you accepted the our{" "}
+          <a
+            href="#"
+            className="text-decoration-underline fst-normal color-000"
+          >
+            Policy
+          </a>
+        </p>
       </div>
     </div>
   </div>
+</div>
 </div>
 </section>
   )

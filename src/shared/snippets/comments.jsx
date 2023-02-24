@@ -514,7 +514,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <a href="/sezioni/politica" uk-scroll="">
                         <img
-                          src="/demo/paladin/images/badge-app-store.svg"
+                          src="https://via.placeholder.com/600"demo/paladin/images/badge-app-store.svg"
                           width="120"
                           height="40"
                           className="el-image"
@@ -528,7 +528,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <a href="/sezioni/politica" uk-scroll="">
                         <img
-                          src="/demo/paladin/images/badge-google-play.svg"
+                          src="https://via.placeholder.com/600"demo/paladin/images/badge-google-play.svg"
                           width="135"
                           height="40"
                           className="el-image"
@@ -990,7 +990,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <a href="/sezioni/politica" uk-scroll="">
                         <img
-                          src="/demo/paladin/images/badge-app-store.svg"
+                          src="https://via.placeholder.com/600"demo/paladin/images/badge-app-store.svg"
                           width="120"
                           height="40"
                           className="el-image"
@@ -1004,7 +1004,7 @@ const Footer = () => {
                     <div className="el-item uk-panel uk-margin-remove-first-child">
                       <a href="/sezioni/politica" uk-scroll="">
                         <img
-                          src="/demo/paladin/images/badge-google-play.svg"
+                          src="https://via.placeholder.com/600"demo/paladin/images/badge-google-play.svg"
                           width="135"
                           height="40"
                           className="el-image"

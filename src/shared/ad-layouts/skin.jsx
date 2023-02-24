@@ -5,7 +5,7 @@ import React from 'react';
     return (
 <div className="ad-banner">
   <div className="sheet-modal-inner">
-    <img src="https://via.placeholder.com/300x700"/>
+    <img src="https://via.placeholder.com/600"ttps://via.placeholder.com/300x700"/>
   </div>
 </div>
     );

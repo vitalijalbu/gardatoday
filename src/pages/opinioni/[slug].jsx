@@ -45,7 +45,7 @@ import React from 'react';
               sizes="(min-width: 1200px) 1200px"
             />
             <img
-              src="https://via.placeholder.com/1920x1080"
+              src="https://via.placeholder.com/600"ttps://via.placeholder.com/1920x1080"
               width={1200}
               height={750}
               className="el-image"
@@ -94,7 +94,7 @@ import React from 'react';
             </p>
             <figure className="uk-margin-large">
               <img
-                src="https://via.placeholder.com/1920x1080"
+                src="https://via.placeholder.com/600"ttps://via.placeholder.com/1920x1080"
                 width={1500}
                 height={1000}
                 alt=""
@@ -157,7 +157,7 @@ import React from 'react';
             </p>
             <figure className="uk-margin-large">
               <img
-                src="https://via.placeholder.com/1920x1080"
+                src="https://via.placeholder.com/600"ttps://via.placeholder.com/1920x1080"
                 width={1500}
                 height={1000}
                 alt=""

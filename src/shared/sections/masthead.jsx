@@ -60,7 +60,7 @@ const MastHead = () => {
                 >
                   <div className="tc-post-overlay-style2">
                     <div className="img th-600 img-cover">
-                      <img src="assets/img/trend/10.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                       <div className="tags tags-40">
                         <a href="#">Featured</a>
                         <a href="#">Restaurant</a>
@@ -107,7 +107,7 @@ const MastHead = () => {
                 >
                   <div className="tc-post-overlay-style2">
                     <div className="img th-600 img-cover">
-                      <img src="assets/img/trend/9.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                       <div className="tags tags-40">
                         <a href="#">Featured</a>
                         <a href="#">Restaurant</a>
@@ -154,7 +154,7 @@ const MastHead = () => {
                 >
                   <div className="tc-post-overlay-style2">
                     <div className="img th-600 img-cover">
-                      <img src="assets/img/trend/10.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                       <div className="tags tags-40">
                         <a href="#">Featured</a>
                         <a href="#">Restaurant</a>
@@ -201,7 +201,7 @@ const MastHead = () => {
                 >
                   <div className="tc-post-overlay-style2">
                     <div className="img th-600 img-cover">
-                      <img src="assets/img/trend/9.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                       <div className="tags tags-40">
                         <a href="#">Featured</a>
                         <a href="#">Restaurant</a>
@@ -270,7 +270,7 @@ const MastHead = () => {
             </p>
             <div className="tc-post-overlay-style2">
               <div className="img th-180 img-cover">
-                <img src="assets/img/trend/11.png" alt="" />
+                <img src="https://via.placeholder.com/600" alt="" />
               </div>
               <div className="content ps-20 pe-20 pb-20 text-white">
                 <h6 className="title">

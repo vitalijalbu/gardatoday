@@ -36,8 +36,9 @@ const Home = () => {
       <Areas/>
       <TopicsGrid/>
       <Stories/>
-      <UpcomingEvents/>
       <Newsletter/>
+      <UpcomingEvents/>
+      
       <Topics/>
     </div>
     </div>

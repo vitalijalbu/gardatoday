@@ -21,7 +21,7 @@ const FocusHalf = ({ title, topics, limit }) => {
           <div className="tc-post-grid-default">
             <div className="item">
               <div className="img img-cover th-330">
-                <img src="assets/img/latest/1.png" alt="" />
+                <img src="https://via.placeholder.com/600" alt="" />
                 <a
                   href="https://youtu.be/pGbIOC83-So?t=21"
                   data-lity=""
@@ -76,7 +76,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/3.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -100,7 +100,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/4.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -129,7 +129,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/5.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -153,7 +153,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/6.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -177,7 +177,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/7.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -201,7 +201,7 @@ const FocusHalf = ({ title, topics, limit }) => {
                 <div className="row gx-3 align-items-center">
                   <div className="col-4">
                     <div className="img th-70 img-cover">
-                      <img src="assets/img/latest/8.png" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                   </div>
                   <div className="col-8">
@@ -228,7 +228,7 @@ const FocusHalf = ({ title, topics, limit }) => {
           <div className="tc-post-grid-default border-1 border-bottom brd-gray pb-10">
             <div className="item">
               <div className="img img-cover th-200">
-                <img src="assets/img/latest/2.png" alt="" />
+                <img src="https://via.placeholder.com/600" alt="" />
               </div>
               <div className="content pt-20">
                 <a

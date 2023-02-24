@@ -105,7 +105,8 @@
     }
  
     .logo-brand {
-       width: 180px;
+       width: auto;
+       height: 40px;
        display: block;
        object-fit: contain;
        margin: auto;
@@ -301,7 +302,7 @@
  .nav-search-style1 {
     display: none;
     padding: 20px;
-    background-color: #fdf6f5;
+    background-color: #f5f7fd;
     .info {
        h5 {
           text-transform: capitalize;
@@ -613,7 +614,7 @@
  .nav-search-style2 {
     display: none;
     padding: 20px;
-    background-color: #fdf6f5;
+    background-color: #f5f7fd;
     .info {
        h5 {
           text-transform: capitalize;

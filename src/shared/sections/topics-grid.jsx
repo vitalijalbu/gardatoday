@@ -33,7 +33,7 @@ const TopicsGrid = () => {
                 <div className="tc-post-grid-default">
                   <div className="item">
                     <div className="img img-cover th-250">
-                      <img src="https://via.placeholder.com/800x533" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                     <div className="content pt-20">
                       <a
@@ -77,7 +77,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">
@@ -99,7 +99,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">
@@ -130,7 +130,7 @@ const TopicsGrid = () => {
                 <div className="tc-post-grid-default">
                   <div className="item">
                     <div className="img img-cover th-250">
-                      <img src="https://via.placeholder.com/800x533" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                     <div className="content pt-20">
                       <a
@@ -174,7 +174,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">
@@ -196,7 +196,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">
@@ -227,7 +227,7 @@ const TopicsGrid = () => {
                 <div className="tc-post-grid-default">
                   <div className="item">
                     <div className="img img-cover th-250">
-                      <img src="https://via.placeholder.com/800x533" alt="" />
+                      <img src="https://via.placeholder.com/600" alt="" />
                     </div>
                     <div className="content pt-20">
                       <a
@@ -271,7 +271,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">
@@ -293,7 +293,7 @@ const TopicsGrid = () => {
                       <div className="row gx-3 align-items-center">
                         <div className="col-4">
                           <div className="img th-70 img-cover">
-                            <img src="https://via.placeholder.com/800x533" alt="" />
+                            <img src="https://via.placeholder.com/600" alt="" />
                           </div>
                         </div>
                         <div className="col-8">

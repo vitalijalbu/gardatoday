@@ -91,12 +91,12 @@ const Header = () => {
           <div className="col-lg-4">
             <Link href="#" className="logo-brand d-none d-lg-block">
               <img
-                src="https://gardatoday.it/assets/images/logo.svg"
+                src="/images/logo.svg"
                 alt=""
                 className="dark-none"
               />
               <img
-                src="https://gardatoday.it/assets/images/logo.svg"
+                src="/images/logo.svg"
                 alt=""
                 className="light-none"
               />
@@ -176,12 +176,12 @@ const Header = () => {
           </button>
           <Link href="#" className="logo-brand d-block d-lg-none w-50 my-4">
             <img
-              src="https://gardatoday.it/assets/images/logo.svg"
+              src="/images/logo.svg"
               alt=""
               className="dark-none"
             />
             <img
-              src="https://gardatoday.it/assets/images/logo.svg"
+              src="/images/logo.svg"
               alt=""
               className="light-none"
             />

@@ -8,7 +8,7 @@ const SideNav = () => {
     <div className="user-card-profile">
       <div className="d-flex mb-4">
   <div className="flex-shrink-0">
-    <img src="https://via.placeholder.com/80" alt="..." className="rounded-circle"/>
+    <img src="https://via.placeholder.com/600"ttps://via.placeholder.com/80" alt="..." className="rounded-circle"/>
   </div>
   <div className="flex-grow-1 ms-3">
       <h5 className="profile__name d-block">vity31</h5>

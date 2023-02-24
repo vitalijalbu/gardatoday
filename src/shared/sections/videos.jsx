@@ -65,7 +65,7 @@ const Videos = () => {
                   sizes="(min-width: 950px) 950px"
                 />
                 <img
-                  src="https://via.placeholder.com/800x533"
+                  src="https://via.placeholder.com/600"
                   width={950}
                   height={534}
                   alt=""
@@ -79,7 +79,7 @@ const Videos = () => {
                   <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                     <img
                       className="uk-margin-small-right"
-                      src="https://via.placeholder.com/800x533"
+                      src="https://via.placeholder.com/600"
                       loading="lazy"
                     />
                     1:20
@@ -107,7 +107,7 @@ const Videos = () => {
                 sizes="(min-width: 610px) 610px"
               />
               <img
-                src="https://via.placeholder.com/800x533"
+                src="https://via.placeholder.com/600"
                 width={610}
                 height={343}
                 alt=""
@@ -121,7 +121,7 @@ const Videos = () => {
                 <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                   <img
                     className="uk-margin-small-right"
-                    src="https://via.placeholder.com/800x533"
+                    src="https://via.placeholder.com/600"
                     loading="lazy"
                   />
                   5:34
@@ -154,7 +154,7 @@ const Videos = () => {
                 sizes="(min-width: 610px) 610px"
               />
               <img
-                src="https://via.placeholder.com/800x533"
+                src="https://via.placeholder.com/600"
                 width={610}
                 height={343}
                 alt=""
@@ -168,7 +168,7 @@ const Videos = () => {
                 <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                   <img
                     className="uk-margin-small-right"
-                    src="https://via.placeholder.com/800x533"
+                    src="https://via.placeholder.com/600"
                     loading="lazy"
                   />
                   3:14
@@ -201,7 +201,7 @@ const Videos = () => {
                 sizes="(min-width: 610px) 610px"
               />
               <img
-                src="https://via.placeholder.com/800x533"
+                src="https://via.placeholder.com/600"
                 width={610}
                 height={343}
                 alt=""
@@ -215,7 +215,7 @@ const Videos = () => {
                 <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                   <img
                     className="uk-margin-small-right"
-                    src="https://via.placeholder.com/800x533"
+                    src="https://via.placeholder.com/600"
                     loading="lazy"
                   />
                   4:22
@@ -249,7 +249,7 @@ const Videos = () => {
                 sizes="(min-width: 610px) 610px"
               />
               <img
-                src="https://via.placeholder.com/800x533"
+                src="https://via.placeholder.com/600"
                 width={610}
                 height={343}
                 alt=""
@@ -263,7 +263,7 @@ const Videos = () => {
                 <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                   <img
                     className="uk-margin-small-right"
-                    src="https://via.placeholder.com/800x533"
+                    src="https://via.placeholder.com/600"
                     loading="lazy"
                   />
                   0:44
@@ -296,7 +296,7 @@ const Videos = () => {
                 sizes="(min-width: 610px) 610px"
               />
               <img
-                src="https://via.placeholder.com/800x533"
+                src="https://via.placeholder.com/600"
                 width={610}
                 height={343}
                 alt=""
@@ -310,7 +310,7 @@ const Videos = () => {
                 <div className="el-meta uk-text-meta uk-text-primary uk-margin-top">
                   <img
                     className="uk-margin-small-right"
-                    src="https://via.placeholder.com/800x533"
+                    src="https://via.placeholder.com/600"
                     loading="lazy"
                   />
                   1:59

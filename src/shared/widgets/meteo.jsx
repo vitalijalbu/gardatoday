@@ -57,7 +57,7 @@ const WidgetMeteo = ({ title, slug }) => {
               </div>
               <div>
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
+                  src="https://via.placeholder.com/600"ttps://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu1.webp"
                   width="100px"
                 />
               </div>

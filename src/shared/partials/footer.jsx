@@ -1,23 +1,13 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { IconBrandInstagram, IconBrandFacebook, IconBrandLinkedin, IconBrandTwitter, IconBrandTiktok } from '@tabler/icons-react';
+import { IconBrandInstagram, IconBrandFacebook, IconBrandLinkedin, IconBrandTwitter, IconBrandTiktok, IconChevronUp } from '@tabler/icons-react';
 import { Container } from "reactstrap";
-
+import AdLarge from "../ads/ad-large";
 const Footer = () => {
 
   return (
     <>
-    <section className="banner16 pt-70 pb-70">
-  <div className="container">
-    <div className="row justify-content-center">
-      <div className="col-lg-10">
-        <a href="#" className="img">
-          <img src="https://via.placeholder.com/1024x120" alt="" />
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+<AdLarge/>
 
     <footer className="footer-style1">
   <div className="container">
@@ -39,7 +29,7 @@ const Footer = () => {
                 className="form-control"
                 placeholder="Enter your email"
               />
-              <button>subscribe</button>
+              <button>Iscriviti</button>
             </div>
             <p className="mt-2 color-666 fsz-13px fst-italic">
               By subscribing, you accepted the our{" "}
@@ -60,12 +50,12 @@ const Footer = () => {
           <div className="info">
             <div className="foot-logo">
               <img
-                src="/img/logo.svg"
+                src="/images/logo.svg"
                 alt=""
                 className="dark-none"
               />
               <img
-                src="/img/logo.svg"
+                src="/images/logo.svg"
                 alt=""
                 className="light-none"
               />
@@ -362,7 +352,7 @@ const Footer = () => {
   </div>
   {/* ====== start to top button ====== */}
   <Link href="#" className="to_top show">
-    <i className="la la-angle-up" />
+    <IconChevronUp/>
   </Link>
   {/* ====== end to top button ====== */}
 </footer>
