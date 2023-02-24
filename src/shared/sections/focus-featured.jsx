@@ -62,9 +62,9 @@ const FocusFeatured = ({ title, topics, limit }) => {
        <Col>
         <h1 className="section-title">{title}</h1>
         </Col>
-      <Row>
+        <Row className="tc-post-grid-default">
         {data.entries.map((article, i) => (
-          <Col md={6} lg={3} xs={6}>
+          <Col md={6} lg={3} xs={6} className="border-1 border-end brd-gray">
             <ArticleCard data={article} key={i} />
           </Col>
         ))}

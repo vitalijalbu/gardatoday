@@ -1,19 +1,316 @@
 // 1. Your custom variables and variable overwrites.
 @import '_variables';
 @import "~bootstrap/scss/bootstrap";
+/*
+Theme Name: Iteck     
+Theme URI: https://themeforest.net/
+Author: ThemesCamp 
+Author URI:  http://themeforest.net/user/themescamp/ 
+Description: Iteck is a Modern portfolio and Agency WordPress Theme for agencies to show their creative works.
+Version: 1.4.0     
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html    
+Text Domain: Iteck 
+Domain Path: /lang   
+Tags: one-column, two-columns, right-sidebar,custom-colors,featured-images 
+*/           
+   
+/* -----------------------------------------------------------
+TABLE OF CONTENTS:-                                                                                                      
+--------------------------------------------------------------
+* Helper Section         
+	- text color   
+	- font-weight       
+	- font-size 
+	- line-height
+	- text-transform  
+	- letter-spacing 
+	- Overlay Effect Bg image     
+	- margin-top
+	- margin-bottom 
+	- padding-top
+	- padding-bottom
+	- the spacing
+	- social-media-colors
+* General Section
+	- Typography
+	- To top style
+	- inner page style  
+	- wp post style
+	- Bootstrap Clearfix
+	- Elementor Editor Style
+* Header Section
+* Slider Section
+* Features Section
+* Portfolio Section
+* Team Section
+* Testimonial Section
+* Contact Section
+* Footer Section
+* Blog Section
+	- Sidebar Section
+	- comment section
+* WordPress Style
+* Gutenberg Style
+* Responsive
+
+------------------------------------------------------------*/
+
+/* ===============================================================
+			[ * variable Section ] 
+================================================================*/
+
+@import 'variables';
+
+
+/* ===============================================================
+			[ * global Section ] 
+================================================================*/
+
+@import 'common/global';
 
 
 
-@import 'utilities';
-@import 'theme';
-@import 'custom/_card';
-@import 'components/_avatar';
-@import 'components/_section';
-@import 'components/_widget';
-@import 'components/_header';
-@import 'components/_typography';
-@import 'components/_layout';
-@import 'components/_footer';
-@import 'components/_article';
-@import 'components/_swiper';
+/* ===============================================================
+			[ * buttons Section ] 
+================================================================*/
+
+@import 'common/helper';
+
+
+/* ===============================================================
+			[ * buttons Section ] 
+================================================================*/
+
+@import 'components/buttons'; 
+
+
+/* ===============================================================
+			[ * navbar Section ] 
+================================================================*/
+
+@import 'components/navbar'; 
+
+
+/* ===============================================================
+			[ * navbar Section ] 
+================================================================*/
+
+@import 'components/header'; 
+
+
+
+/* ===============================================================
+			[ * section_title Section ] 
+================================================================*/
+
+@import 'components/section_title'; 
+
+
+/* ===============================================================
+			[ * post_grid Section ] 
+================================================================*/
+
+@import 'components/post_grid'; 
+
+
+/* ===============================================================
+			[ * post_list Section ] 
+================================================================*/
+
+@import 'components/post_list'; 
+
+
+/* ===============================================================
+			[ * post_overlay Section ] 
+================================================================*/
+
+@import 'components/post_overlay'; 
+
+
+/* ===============================================================
+			[ * post_latest Section ] 
+================================================================*/
+
+@import 'components/post_latest'; 
+
+
+
+/* ===============================================================
+			[ * post_featured Section ] 
+================================================================*/
+
+@import 'components/post_featured'; 
+
+
+
+/* ===============================================================
+			[ * post_latest Section ] 
+================================================================*/
+
+@import 'components/post_soon'; 
+
+
+
+/* ===============================================================
+			[ * sliders Section ] 
+================================================================*/
+
+@import 'components/sliders'; 
+
+
+/* ===============================================================
+			[ * trends_news Section ] 
+================================================================*/
+
+@import 'components/trends_news'; 
+
+
+
+/* ===============================================================
+			[ * google_stories Section ] 
+================================================================*/
+
+@import 'components/google_stories'; 
+
+
+/* ===============================================================
+			[ * widget Section ] 
+================================================================*/
+
+@import 'components/widget'; 
+
+
+/* ===============================================================
+			[ * videos Section ] 
+================================================================*/
+
+@import 'components/videos';
+
+
+/* ===============================================================
+			[ * tabs_posts Section ] 
+================================================================*/
+
+@import 'components/tabs_posts';
+
+
+/* ===============================================================
+			[ * subscribe Section ] 
+================================================================*/
+
+@import 'components/subscribe';
+
+
+/* ===============================================================
+			[ * download Section ] 
+================================================================*/
+
+@import 'components/download';
+
+
+/* ===============================================================
+			[ * sidebar_popup Section ] 
+================================================================*/
+
+@import 'components/sidebar_popup';
+
+
+/* ===============================================================
+			[ * breaking_news Section ] 
+================================================================*/
+
+@import 'components/breaking_news';
+
+
+/* ===============================================================
+			[ * categories Section ] 
+================================================================*/
+
+@import 'components/categories';
+
+
+/* ===============================================================
+			[ * banners Section ] 
+================================================================*/
+
+@import 'components/banners';
+
+
+/* ===============================================================
+			[ * footer Section ] 
+================================================================*/
+
+@import 'components/footer';
+
+
+/* ===============================================================
+			[ * blog page Section ] 
+================================================================*/
+
+@import 'components/page_blog';
+
+
+/* ===============================================================
+			[ * single-post-creative-page ] 
+================================================================*/
+
+@import 'components/page-single-post-creative';
+
+
+/* ===============================================================
+			[ * single-post-features-page ] 
+================================================================*/
+
+@import 'components/page-single-post-features';
+
+
+
+/* ===============================================================
+			[ * contact page ] 
+================================================================*/
+
+@import 'components/page_contact';
+
+
+
+/* ===============================================================
+			[ * author page ] 
+================================================================*/
+
+@import 'components/page_author';
+
+
+/* ===============================================================
+			[ * 404 page ] 
+================================================================*/
+
+@import 'components/page_404';
+
+
+/* ===============================================================
+			[ * loaders style ] 
+================================================================*/
+
+@import 'common/loaders'; 
+
+
+
+/* ===============================================================
+			[ * responsive style ] 
+================================================================*/
+
+@import 'common/responsive'; 
+
+
+/* ===============================================================
+			[ * darkStyle style ] 
+================================================================*/
+
+@import 'common/darkStyle'; 
+
+/* ===============================================================
+			[ * swiper style ] 
+================================================================*/
+
 @import "swiper/css";

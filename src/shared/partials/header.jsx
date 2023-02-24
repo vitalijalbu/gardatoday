@@ -19,6 +19,7 @@ import {
   IconSettings,
   IconUserCircle,
   IconSearch,
+  IconSunHigh,
   IconBrandInstagram,
   IconBrandFacebook,
   IconBrandYoutube
@@ -53,143 +54,229 @@ const Header = () => {
     <>
       {navOpen && <SideMenu opened={navOpen} toggle={openSideNav} />}
       {searchOpen && <SearchOverlay opened={searchOpen} toggle={openSearch} />}
-      <div id="site-header">
-        <nav className="py-1 bg-light border-bottom">
-          <div className="container d-flex flex-wrap">
-            <ul className="nav me-auto">
-              <li className="nav-item">
-                <Link
-                  href="/meteo"
-                  className="nav-link link-dark px-2 active"
-                  aria-current="page"
-                >
-                  <IconHaze /> Meteo
-                </Link>
-              </li>
-            </ul>
-            <ul className="nav">
-              <li className="nav-item">
-                <Link href="/lavoro" className="nav-link link-dark px-2">
-                  Offerte di Lavoro
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link
-                  href="/redazione/contatti"
-                  className="nav-link link-dark px-2"
-                >
-                  Contatti
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/advertising" className="nav-link link-dark px-2">
-                  Pubblicità
-                </Link>
-              </li>
-              <li className="nav-item">
-                  <Link href="#">
-                    <IconBrandInstagram />
-                  </Link>
-                  </li>
-              <li className="nav-item">
-                  <Link href="#">
-                    <IconBrandFacebook />
-                  </Link>
-                  </li>
-              <li className="nav-item">
-                  <Link href="#">
-                    <IconBrandYoutube />
-                  </Link>
-              </li>
-            </ul>
+      <div className="navbar-container">
+  <div className="container">
+    {/* ====== start top navbar ====== */}
+    <div className="top-navbar style-1">
+      <div className="container p-0">
+        <div className="row align-items-center">
+          <div className="col-lg-4">
+            <div className="date-weather mb-3 mb-lg-0">
+              <div className="row align-items-center">
+                <div className="col-6">
+                  <div className="item">
+                    <div className="icon me-3 pt-1">
+                      <i className="la la-calendar" />
+                    </div>
+                    <div className="inf">
+                      <strong>Monday</strong>
+                      <p>Nov 25, 2023</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-6">
+                  <div className="item">
+                    <div className="icon me-3 pt-1">
+                      <IconSunHigh />
+                    </div>
+                    <div className="inf">
+                      <strong>32° deg, Cloudy</strong>
+                      <p>New York</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </nav>
-
-        <div className="container">
-          <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
-            <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-              <li>
-                <Button
-                  color="link"
-                  className="nav-link px-2"
-                  onClick={openSideNav}
-                >
-                  <IconMenu /> Sezioni
-                </Button>
-              </li>
-              <li>
-                <Link href="/notizie" className="nav-link px-2 link-dark">
-                  Ultime notizie
-                </Link>
-              </li>
-              <li>
-                <Link href="/eventi" className="nav-link px-2 link-dark">
-                  Eventi
-                </Link>
-              </li>
-              <li>
-                <Link href="/zone" className="nav-link px-2 link-dark">
-                  Zone
-                </Link>
-              </li>
-            </ul>
-            <Link
-              href="/"
-              className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
-            >
-              <img src="https://gardatoday.it/assets/images/logo.svg" />
+          <div className="col-lg-4">
+            <Link href="#" className="logo-brand d-none d-lg-block">
+              <img
+                src="https://gardatoday.it/assets/images/logo.svg"
+                alt=""
+                className="dark-none"
+              />
+              <img
+                src="https://gardatoday.it/assets/images/logo.svg"
+                alt=""
+                className="light-none"
+              />
             </Link>
-              <ul className="nav">
-              <li className="nav-item">
-                  <Button color="link" onClick={openSearch}>
-                    <IconSearch />
-                  </Button>
-                </li>
-              {session ? (
-              <>
-                <li className="nav-item">
-                  <UncontrolledDropdown>
-                    <DropdownToggle nav caret>
-                      Account
-                    </DropdownToggle>
-                    <DropdownMenu end>
-                      <DropdownItem tag="a">
-                        <Link href="/account">
-                          <IconUserCircle />
-                          Il mio acount
-                        </Link>
-                      </DropdownItem>
-                      <DropdownItem tag="a">
-                        <Link href="/account/preferiti">
-                          <IconBookmark /> Preferiti
-                        </Link>
-                      </DropdownItem>
-                      <DropdownItem tag="a">
-                        <Link href="/account/commenti">
-                          <IconMessageCircle /> Commenti
-                        </Link>
-                      </DropdownItem>
-                      <DropdownItem tag="a" className="mt-2">
-                        <Link href="/account/impostazioni">
-                          <IconSettings /> Impostazioni
-                        </Link>
-                      </DropdownItem>
-                      <DropdownItem divider />
-                <DropdownItem onClick={handleLogout}>Esci</DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
-                </li></>): ( <li className="nav-item">
-                  <Link href="/login" className="px-2">
-                    <Button color="primary" outline>
-                      <IconUserCircle /> Accedi
-                    </Button>
+          </div>
+          <div className="col-lg-4">
+            <div className="sub-darkLight">
+              <div className="row text-end align-items-center">
+                <div className="col-6">
+                  <Link
+                    href="#0"
+                    className="text-uppercase fs-6 border-bottom border-1 border-dark subs"
+                  >
+                    <i className="la la-envelope fs-5 me-1" />
+                    Subscribe
                   </Link>
-                </li>)}
-               
-              </ul>
-          </header>
+                </div>
+                <div className="col-6">
+                  <div className="darkLight-btn">
+                    <span className="icon active" id="light-icon">
+                    <IconSunHigh color="red" stroke={1.5}/>
+                    </span>
+                    <span className="icon" id="dark-icon">
+                      <i className="la la-moon" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="nav-subs-card">
+                <p className="fsz-16px text-uppercase mb-20"> Newsletter </p>
+                <div className="sub-form">
+                  <div className="form-group">
+                    <span className="icon">
+                      <i className="la la-envelope" />
+                    </span>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="your email"
+                    />
+                    <button>subscribe</button>
+                  </div>
+                  <p className="mt-3 color-666 fsz-12px fst-italic">
+                    By subscribing, you accepted the our{" "}
+                    <Link
+                      href="#0"
+                      className="color-777 text-decoration-underline fst-normal"
+                    >
+                      Policy
+                    </Link>
+                  </p>
+                </div>
+                <span className="cls">
+                  {" "}
+                  <i className="la la-times" />{" "}
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
+    {/* ====== end top navbar ====== */}
+    {/* ====== start navbar ====== */}
+    <nav className="navbar navbar-expand-lg navbar-light style-1">
+      <div className="container p-0">
+        <div className="mob-nav-toggles d-flex align-items-center justify-content-between">
+          <button
+            className="navbarList-icon me-lg-5"
+            data-bs-toggle="offcanvas"
+            href="#offcanvasExample"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <span />
+            <span />
+          </button>
+          <Link href="#" className="logo-brand d-block d-lg-none w-50 my-4">
+            <img
+              src="https://gardatoday.it/assets/images/logo.svg"
+              alt=""
+              className="dark-none"
+            />
+            <img
+              src="https://gardatoday.it/assets/images/logo.svg"
+              alt=""
+              className="light-none"
+            />
+          </Link>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
+        </div>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <Link
+              href="/"
+                className="nav-link"
+              >
+                Home
+              </Link>
+            </li>            
+            <li className="nav-item">
+              <Link
+              href="/notizie"
+                className="nav-link"
+              >
+                Ultime notizie
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+              href="/notizie"
+                className="nav-link"
+              >
+                Eventi
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" href="/zone">
+                Zone
+              </Link>
+            </li>
+          </ul>
+          <div className="nav-side">
+            <Link href="#" className="icon-link">
+            <IconSearch/>
+            </Link>
+            <Link href="/login" className="icon-link noti-dot">
+               <IconUserCircle/>
+            </Link>
+          </div>
+        </div>
+      </div>
+    </nav>
+    {/* ====== end navbar ====== */}
+    {/* ====== start nav-search ====== */}
+    <div className="nav-search-style1">
+      <div className="row justify-content-center align-items-center gx-lg-5">
+        <div className="col-lg-4">
+          <div className="info">
+            <h5>
+              {" "}
+              you can search by category <br /> or news title{" "}
+            </h5>
+          </div>
+        </div>
+        <div className="col-lg-6">
+          <form className="form">
+            <span className="color-777 fst-italic text-capitalize mb-2 fsz-13px">
+              Enter Keyword
+            </span>
+            <div className="form-group">
+              <span className="icon">
+                <IconSearch/>
+              </span>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Elon Musk ... "
+              />
+              <button type="submit">search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    {/* ====== end nav-search ====== */}
+  </div>
+</div>
+
     </>
   );
 };

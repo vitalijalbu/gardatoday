@@ -15,7 +15,7 @@ import Topics from "@/shared/sections/topics";
 import TopicsGrid from "@/shared/sections/topics-grid";
 import Newsletter from "@/shared/sections/newsletter";
 import UpcomingEvents from "@/shared/sections/upcoming-events";
-
+import AdLarge from "@/shared/ads/ad-large";
 /*
 import Masthead from "@/shared/sections/masthead";
 import MastheadHeroLg from "@/shared/sections/masthead-hero-lg";*/
@@ -28,9 +28,11 @@ const Home = () => {
       <div className="page-content">
       <FastHeader/>
       <MastHead/>
+      
       <FocusFeatured title="In evidenza" limit={8} topics={[82]}/>
       <FocusHalf title="Attualità e Cronaca" limit={7} topics={[25, 29]}/>
       <FocusFeatured title="In evidenza" limit={8} topics={[25, 29]}/>
+      <AdLarge/>
       <Areas/>
       <TopicsGrid/>
       <Stories/>

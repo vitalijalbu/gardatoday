@@ -4,12 +4,9 @@ import dayjs from "dayjs";
 
 const ArticleCard = ({ data, excerpt }) => {
   return (
-    <div className="card-wrapper article-item mb-3">
-      <div className="card card-img no-after">
-        <Link href={`/notizie/${data.slug}`} aria-label={data.title}>
-          <div className="img-responsive-wrapper">
-            <div className="img-responsive">
-              <figure className="img-wrapper">
+    <div className="item">
+  <div className="img img-cover th-180">
+  <figure className="img img-cover th-180">
                 <source
                   srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
@@ -20,27 +17,28 @@ const ArticleCard = ({ data, excerpt }) => {
                   alt={data.title}
                 />
               </figure>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="card-body">
-      <div className="category-top m-0">
-      {data?.category && data?.category.length > 0 ? (
-          <Link className="category" href={`/sezioni/${data?.category[0].slug}`}>
-            {data?.category[0].title}
-          </Link>
-        ) : null}
-            <span className="data">{data.postDate}</span>
-          </div>
-        
-          <h5 className="card-title serif underline"><Link href={`/notizie/${data.slug}`}>{data.title}</Link></h5>
-        
-
-        {excerpt === true && <p className="card-text d-md-block d-none">{data.excerpt}</p>}
-      </div>
+  </div>
+  <div className="content pt-20">
+    <a href="#" className="news-cat color-999 fsz-13px text-uppercase mb-10">
+      sport
+    </a>
+    <h4 className="title ltspc--1 mb-10">
+      <Link href={`/notizie/${data.slug}`}>{data.title}</Link>
+    </h4>
+    <div className="text color-666">
+      The Boston Red Sox scored three runs in the 10th inning [...]
     </div>
+    <div className="meta-bot lh-1 mt-20">
+      <ul className="d-flex">
+        <li className="date me-5">
+          <a href="#">
+            <i className="la la-calendar me-2" /> {data.postDate}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
   )
 }
 

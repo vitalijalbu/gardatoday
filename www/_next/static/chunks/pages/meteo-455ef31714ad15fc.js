@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[85],{391:function(n,e,t){(window.__NEXT_P=window.__NEXT_P||[]).push(["/meteo",function(){return t(9157)}])},9157:function(n,e,t){"use strict";t.r(e);var u=t(5893);t(7294);let _=()=>(0,u.jsx)("div",{className:"page",children:"Meteo"});e.default=_}},function(n){n.O(0,[774,888,179],function(){return n(n.s=391)}),_N_E=n.O()}]);

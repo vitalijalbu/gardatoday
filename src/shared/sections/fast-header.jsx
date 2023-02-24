@@ -7,81 +7,340 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Container, Row, Col } from "reactstrap";
 
 const FastHeader = ({ title }) => {
-  const FOCUS_QUERY = `query{
-      entries(section: "news", limit:8, category: 82) {
-        id
-        title
-        slug
-        dateCreated
-        postDate
-        ... on news_default_Entry {
-          excerpt
-          cover_image {
-            id,
-            url
-          }
-          author {
-            id,
-            fullName
-          }
-           category {
-            id,
-            title
-          }
-        }
-      }
-    }
-    `;
-
-  const [loading, setLoading] = useState(false);
-  const [data, setData] = useState(false);
-
-  async function getData() {
-    try {
-      const response = await graphQLClient.request(FOCUS_QUERY);
-      if (response) {
-        setData(response);
-      }
-    } catch (err) {
-      console.log("ERROR FROM GRAPHQL-REQUEST API CALL", err);
-    } finally {
-      setLoading(false);
-    }
-  }
-
-  useEffect(() => {
-    getData();
-  }, []);
-
-  if (!data) return <p>Nessun dato</p>;
 
   return (
-    <section id="fast-header">
-      <Container>
-        <Row>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={30}
-            centeredSlides={false}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            className="mySwiper"
-          >
-            {data.entries.map((article, i) => (
-              <SwiperSlide
-                key={i}
-                className="col-lg-6 col-md-6 col-12 mb-3 media story-item sm"
+    <section className="tc-breaking-news-style1 pt-50 pb-50">
+    <div className="container">
+      <p className="color-999 text-uppercase mb-30 ltspc-1">breaking news</p>
+      <div className="tc-post-grid-default">
+        <div className="tc-slider-style1">
+          <div className="swiper-container swiper-container-initialized swiper-container-horizontal">
+            <div
+              className="swiper-wrapper"
+              style={{
+                transform: "translate3d(-2846.67px, 0px, 0px)",
+                transitionDuration: "0ms"
+              }}
+            >
+              <div
+                className="swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index={1}
+                style={{ width: "356.667px", marginRight: 50 }}
               >
-                <ArticleListSM data={article} key={i} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </Row>
-        <hr/>
-      </Container>
-    </section>
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/4.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Economic policy between England &amp; Scotland
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 3 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index={2}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/5.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title"> Make Poetry, Not War! </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 15 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                data-swiper-slide-index={3}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/4.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Economic policy between England &amp; Scotland
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 3 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate-active"
+                data-swiper-slide-index={0}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/3.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Discover the secret in Sahara desert
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 24 Minutes ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate-next"
+                data-swiper-slide-index={1}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/4.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Economic policy between England &amp; Scotland
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 3 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide"
+                data-swiper-slide-index={2}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/5.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title"> Make Poetry, Not War! </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 15 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-prev"
+                data-swiper-slide-index={3}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/4.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Economic policy between England &amp; Scotland
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 3 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate swiper-slide-active"
+                data-swiper-slide-index={0}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/3.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Discover the secret in Sahara desert
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 24 Minutes ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate swiper-slide-next"
+                data-swiper-slide-index={1}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/4.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title">
+                          Economic policy between England &amp; Scotland
+                        </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 3 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                className="swiper-slide swiper-slide-duplicate"
+                data-swiper-slide-index={2}
+                style={{ width: "356.667px", marginRight: 50 }}
+              >
+                <a href="page-single-post-creative.html" className="item d-block">
+                  <div className="row gx-4 align-items-center">
+                    <div className="col-4">
+                      <div className="img th-70 img-cover">
+                        <img src="assets/img/latest/5.png" alt="" />
+                      </div>
+                    </div>
+                    <div className="col-8">
+                      <div className="content">
+                        <h5 className="title"> Make Poetry, Not War! </h5>
+                        <div className="meta-bot mt-10">
+                          <ul>
+                            <li className="date">
+                              {" "}
+                              <i className="la la-clock" /> 15 Hours ago
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <span
+              className="swiper-notification"
+              aria-live="assertive"
+              aria-atomic="true"
+            />
+          </div>
+          {/* arrows */}
+          <div
+            className="swiper-button-next"
+            tabIndex={0}
+            role="button"
+            aria-label="Next slide"
+          />
+          <div
+            className="swiper-button-prev"
+            tabIndex={0}
+            role="button"
+            aria-label="Previous slide"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+  
   );
 };
 export default FastHeader;
