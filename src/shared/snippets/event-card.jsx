@@ -5,41 +5,33 @@ import dayjs from "dayjs";
 
 const EventCard = ({data}) => {
   return (
-    <div className="card-wrapper article-item mb-3">
-      <div className="card card-img no-after">
-        <Link href={`/eventi/${data.slug}`} aria-label={data.title}>
-          <div className="img-responsive-wrapper">
-            <div className="img-responsive">
-              <figure className="img-wrapper">
-                <source
-                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.svg'}
-                  media="(min-width: 62.5em)"
-                />
-                <img
-                  srcSet={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.svg'}
-                  className="p-card__image"
-                  alt={data.title}
-                />
-              </figure>
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="card-body">
-      <div className="category-top m-0">
-      {data?.category && data?.category.length > 0 ? (
-          <Link className="category" href={`/sezioni/${data?.category[0].slug}`}>
-            {data?.category[0].title}
+<div className="tc-post-grid-default">
+  <div className="item">
+    <div className="img img-cover th-250 radius-2 overflow-hidden">
+      <img src={data.cover_image ? data.cover_image[0]?.url : '/images/placeholder.svg'} alt="" />
+    </div>
+    <div className="content pt-30">
+      <div className="date mb-20 fsz-14px">
+      {data?.area && data?.area.length > 0 ? (
+          <Link className="tag py-2 px-4 border-1 border brd-gray rounded-pill me-2" href={`/zone/${data?.area[0].slug}`}>
+            {data?.area[0].title}
           </Link>
         ) : null}
-            <span className="data">{data.postDate}</span>
-          </div>
-        
-          <h5 className="card-title serif underline"><Link href={`/eventi/${data.slug}`}>{data.title}</Link></h5>
-        <p className="card-text d-md-block d-none">{data.excerpt}</p>
+      </div>
+      <h2 className="title mb-20">
+        <a href="page-single-post-creative.html">
+          {data.title}
+        </a>
+      </h2>
+      <div className="text color-666 fsz-16px">
+        Yale historian Timothy Snyder said Russian <br /> President Vladimir
+        Putin plans to starve <br /> some countries as part of his <br />{" "}
+        efforts in Ukraine [...]
       </div>
     </div>
+  </div>
+</div>
+
             );
 };
 

@@ -86,6 +86,7 @@ const MastheadHero = ({ entries }) => {
         ))}
       </Row>
     </Container>
+
 )
 }
 export default MastheadHero;

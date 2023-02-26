@@ -37,19 +37,22 @@ import ArticleList from "@/shared/snippets/article-list";
       <div className="page">
        
       <div className="page-content">
-      <Container>
+      <section className="features-posts pt-50 pb-50 bg-gray1">
       <Row>
         <Col><h1 className="page-title">{`Ultime notizie da ${entry?.title}`}</h1></Col>
       </Row>
       <MastheadHero entries={articles}/>
+      </section>
+      <Container>
+
       <Row>
         <Col md={8}>
           <h1 className="page-title">{`Ultime notizie da ${entry?.title}`}</h1>
-          <ul className="list-unstyled">
+          <div className="tc-post-list-style3">
               {articles.map((entry, i) => (
     <ArticleList data={entry} key={i} excerpt={true}/>
    ))}
-   </ul>
+   </div>
           </Col> 
           <Col md={4}>
           <WidgetMeteo title={entry?.title} slug={entry?.slug}/>

@@ -47,16 +47,15 @@ const Page = () => {
             </Col>
           </Row>
           <MastheadHero entries={articles} />
-
           <Row>
             <hr />
             <Col md={8}>
               <h1 className="page-title">Ultime notizie</h1>
-              <ul className="list-unstyled">
+              <div className="tc-post-list-style3">
               {articles.map((entry, i) => (
     <ArticleList data={entry} key={i}/>
    ))}
-   </ul>
+   </div>
             </Col>
             <Col md={4}>
               <h1 className="page-title">I più letti</h1>

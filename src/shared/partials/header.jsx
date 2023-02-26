@@ -20,7 +20,7 @@ import {
   IconUserCircle,
   IconSearch,
   IconSunHigh,
-  IconBrandInstagram,
+  IconMoonStars,
   IconBrandFacebook,
   IconBrandYoutube
 } from "@tabler/icons-react";
@@ -116,11 +116,11 @@ const Header = () => {
                 </div>
                 <div className="col-6">
                   <div className="darkLight-btn">
-                    <span className="icon active" id="light-icon">
-                    <IconSunHigh color="red" stroke={1.5}/>
+                    <span className="icon" id="light-icon">
+                    <IconSunHigh/>
                     </span>
                     <span className="icon" id="dark-icon">
-                      <i className="la la-moon" />
+                      <IconMoonStars />
                     </span>
                   </div>
                 </div>

@@ -30,10 +30,17 @@ body {
   font-size: 14px;
   overflow-x: hidden;
   position: relative;
-  // background-color: #F5F6F8;
-  // font-weight: 400;
+  background-color: #F5F6F8;
 }
-
+#main-site {
+  max-width: 1660px;
+  margin: auto;
+  background: #fff;
+}
+.section-content{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .f-fm-inter{
   font-family: "Inter", sans-serif !important;
 }
@@ -49,7 +56,7 @@ body {
 }
 
 .container, .container-lg, .container-md, .container-sm, .container-xl{
-  max-width: 1200px;
+  max-width: 1320px;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -88,7 +95,8 @@ h6 {
   font-family: "Playfair Display";
   font-weight: 500;
   margin: 0;
-  line-height: 1.4;
+  font-size: 1rem;
+  line-height: 1.15;
 }
 
 .home-style2,

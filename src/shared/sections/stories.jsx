@@ -25,12 +25,12 @@ const Stories = () => {
   
 
   return (
-    <section className="section-content" id="entries">
+    <section className="tc-breaking-news-style8 bg-blue3 mb-30 section-content" id="stories">
       <Container>
         <Row>
-          <Col lg={12}>
-            <h2 className="section-title">Storie 24h</h2>
-          </Col>
+        <div className="tc-breaking-title">
+          <h2>Storie</h2>
+        </div>
           </Row>
           <Row>
           <Col lg={12}>

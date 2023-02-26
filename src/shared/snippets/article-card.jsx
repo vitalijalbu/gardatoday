@@ -3,12 +3,25 @@ import React, { useState, useEffect } from "react";
 import dayjs from "dayjs";
 
 const ArticleCard = ({ data, excerpt }) => {
+  let url;
+
+  switch (data.type) {
+    case 'pro':
+      url = `/article/${slug}/pro`;
+      break;
+    case 'sponsored':
+      url = `/article/${slug}/sponsorizzato`;
+      break;
+    default:
+      url = `/article/${slug}`;
+  }
+
   return (
     <div className="item">
   <div className="img img-cover th-180">
   <figure className="img img-cover th-180">
                 <source
-                  srcSet={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
+                  src={data.cover_image ? data.cover_image[0].url : '/images/placeholder.svg'}
                   media="(min-width: 62.5em)"
                 />
                 <img

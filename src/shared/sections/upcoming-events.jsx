@@ -27,7 +27,9 @@ const UpcomingEvents = () => {
     <Container>
       <Row>
       <Col>
-        <h1 className="section-title">Eventi in programma</h1>
+      <div className="tc-breaking-title">
+          <h2>Eventi in programma</h2>
+        </div>
         </Col>
       </Row>
       {entries && entries.length > 0 ? (
