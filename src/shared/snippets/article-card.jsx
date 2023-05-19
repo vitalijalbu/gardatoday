@@ -7,13 +7,13 @@ const ArticleCard = ({ data, excerpt }) => {
 
   switch (data.type) {
     case 'pro':
-      url = `/article/${slug}/pro`;
+      url = `/article/${data.slug}/pro`;
       break;
     case 'sponsored':
-      url = `/article/${slug}/sponsorizzato`;
+      url = `/article/${data.slug}/sponsorizzato`;
       break;
     default:
-      url = `/article/${slug}`;
+      url = `/article/${data.slug}`;
   }
 
   return (
